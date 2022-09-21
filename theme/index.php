@@ -1211,92 +1211,93 @@
                                             <div class="image-carousel">
                                                 <div class="image-carousel__item-list-wrapper">
                                                     <ul class="image-carousel__item-list"
-                                                      >
+                                                    >
                                                         <?php
-                                                        $arrFlash =[
-                                                                ['img'=>'','price'=>''],
-                                                                ['img'=>'','price'=>''],
-                                                                ['img'=>'','price'=>''],
-                                                                ['img'=>'','price'=>''],
-                                                                ['img'=>'','price'=>''],
-                                                                ['img'=>'','price'=>''],
-];
+                                                        $arrFlash = [
+                                                            ['img' => 'sac-du-phong-khong-day-remax-rpp281-xanh.jpg', 'price' => ''],
+                                                            ['img' => 'cu-sac-nhanh-20W-remax-rpu75-kich-thuoc-nho-gon-1.jpg', 'price' => ''],
+                                                            ['img' => 'sac-du-phong-khong-day-remax-rpp281-xanh.jpg', 'price' => ''],
+                                                            ['img' => 'cu-sac-nhanh-20W-remax-rpu75-kich-thuoc-nho-gon-1.jpg', 'price' => ''],
+                                                            ['img' => 'sac-du-phong-khong-day-remax-rpp281-xanh.jpg', 'price' => ''],
+                                                            ['img' => 'cu-sac-nhanh-20W-remax-rpu75-kich-thuoc-nho-gon-1.jpg', 'price' => ''],
+                                                        ];
                                                         foreach ($arrFlash as $flash):?>
-                                                        <li class="image-carousel__item"
-                                                            style="padding: 0px; width: 16.6667%;">
-                                                            <div class="fi33Fn">
-                                                                <div class="fR2ZHc KgcLFb"><a
-                                                                            href="/flash_sale?fromItem=2855699291&amp;promotionId=110875692490752">
-                                                                        <div class="wswZg0 KgcLFb">
-                                                                            <div class="aKKmc+">
-                                                                                <div class="VeRrqr RLjQVJ eVN6BL">
-                                                                                    <div class="_5ICO3M yV54ZD X7gzZ7 shopee-badge">
-                                                                                        <div class="_8PundJ"><span
-                                                                                                    class="percent">24%</span><span
-                                                                                                    class="tSV5KQ">giảm</span>
+                                                            <li class="image-carousel__item"
+                                                                style="padding: 0px; width: 16.6667%;">
+                                                                <div class="fi33Fn">
+                                                                    <div class="fR2ZHc KgcLFb"><a
+                                                                                href="/flash_sale?fromItem=2855699291&amp;promotionId=110875692490752">
+                                                                            <div class="wswZg0 KgcLFb">
+                                                                                <div class="aKKmc+">
+                                                                                    <div class="VeRrqr RLjQVJ eVN6BL">
+                                                                                        <div class="_5ICO3M yV54ZD X7gzZ7 shopee-badge">
+                                                                                            <div class="_8PundJ"><span
+                                                                                                        class="percent">24%</span><span
+                                                                                                        class="tSV5KQ">giảm</span>
+                                                                                            </div>
                                                                                         </div>
                                                                                     </div>
-                                                                                </div>
-                                                                                <div class="DKMfci vRvZJa">
-                                                                                    <div class="vRvZJa LKoGAt"
-                                                                                         style="background-image: url(img/aa811570bbc2889411efbf46c6cce891_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                                </div>
-                                                                                <div class="DKMfci XLRFuf">
-                                                                                    <div class="XLRFuf LKoGAt"
-                                                                                         style="background-image: url(img/9f7f22ffc492d59821fc4f4df5cd4a3a_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
+                                                                                    <div class="DKMfci vRvZJa">
+                                                                                        <div class="vRvZJa LKoGAt"
+                                                                                             style="background-image: url(img/aa811570bbc2889411efbf46c6cce891_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
+                                                                                    </div>
+                                                                                    <div class="DKMfci XLRFuf">
+                                                                                        <div class="XLRFuf LKoGAt"
+                                                                                             style="background-image: url(img/product/<?php echo $flash['img'] ?>); background-size: contain; background-repeat: no-repeat;"></div>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
-                                                                        <div class="TNHm44">
-                                                                            <div class="eHG6HN XEjq6m _0RSZ+W">
-                                                                                <div class="jGqYd- XEjq6m _0RSZ+W">
-                                                                                    <div class="R30Osg yziZbM -922Xl">
-                                                                                        <div class="bkz28I"><span
-                                                                                                    class="_7FEDbD yziZbM -922Xl">₫</span>82.000
+                                                                            <div class="TNHm44">
+                                                                                <div class="eHG6HN XEjq6m _0RSZ+W">
+                                                                                    <div class="jGqYd- XEjq6m _0RSZ+W">
+                                                                                        <div class="R30Osg yziZbM -922Xl">
+                                                                                            <div class="bkz28I"><span
+                                                                                                        class="_7FEDbD yziZbM -922Xl">₫</span>82.000
+                                                                                            </div>
                                                                                         </div>
                                                                                     </div>
-                                                                                </div>
-                                                                                <div class="shMEm0 XEjq6m">
-                                                                                    <div class="fR8rXH _15Ul6k">
-                                                                                        <div class="HIIASx">
-                                                                                            <div class="Ygavkn">Đã bán
-                                                                                                1
-                                                                                            </div>
-                                                                                            <div class="NiQ2DI">
-                                                                                                <div class="NwnNg9"
-                                                                                                     style="width: 99%;">
-                                                                                                    <div class="zYeAeX"></div>
+                                                                                    <div class="shMEm0 XEjq6m">
+                                                                                        <div class="fR8rXH _15Ul6k">
+                                                                                            <div class="HIIASx">
+                                                                                                <div class="Ygavkn">Đã
+                                                                                                    bán
+                                                                                                    1
+                                                                                                </div>
+                                                                                                <div class="NiQ2DI">
+                                                                                                    <div class="NwnNg9"
+                                                                                                         style="width: 99%;">
+                                                                                                        <div class="zYeAeX"></div>
+                                                                                                    </div>
                                                                                                 </div>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
-                                                                    </a></div>
-                                                            </div>
-                                                        </li>
-                                                        <?php endforeach;?>
+                                                                        </a></div>
+                                                                </div>
+                                                            </li>
+                                                        <?php endforeach; ?>
                                                     </ul>
                                                 </div>
-<!--                                                <div class="carousel-arrow carousel-arrow--prev carousel-arrow--hint carousel-arrow--hidden"-->
-<!--                                                     role="button" tabindex="0"-->
-<!--                                                     style="opacity: 1; visibility: hidden; transform: translateX(calc(-50% + 0px));">-->
-<!--                                                    <svg enable-background="new 0 0 13 20" viewBox="0 0 13 20" x="0"-->
-<!--                                                         y="0" class="shopee-svg-icon icon-arrow-left-bold">-->
-<!--                                                        <polygon-->
-<!--                                                                points="4.2 10 12.1 2.1 10 -.1 1 8.9 -.1 10 1 11 10 20 12.1 17.9"></polygon>-->
-<!--                                                    </svg>-->
-<!--                                                </div>-->
-<!--                                                <div class="carousel-arrow carousel-arrow--next carousel-arrow--hint"-->
-<!--                                                     role="button" tabindex="0"-->
-<!--                                                     style="opacity: 1; visibility: visible; transform: translateX(calc(50% - 0px));">-->
-<!--                                                    <svg enable-background="new 0 0 13 21" viewBox="0 0 13 21" x="0"-->
-<!--                                                         y="0" class="shopee-svg-icon icon-arrow-right-bold">-->
-<!--                                                        <polygon-->
-<!--                                                                points="11.1 9.9 2.1 .9 -.1 3.1 7.9 11 -.1 18.9 2.1 21 11.1 12 12.1 11"></polygon>-->
-<!--                                                    </svg>-->
-<!--                                                </div>-->
+                                                <!--                                                <div class="carousel-arrow carousel-arrow--prev carousel-arrow--hint carousel-arrow--hidden"-->
+                                                <!--                                                     role="button" tabindex="0"-->
+                                                <!--                                                     style="opacity: 1; visibility: hidden; transform: translateX(calc(-50% + 0px));">-->
+                                                <!--                                                    <svg enable-background="new 0 0 13 20" viewBox="0 0 13 20" x="0"-->
+                                                <!--                                                         y="0" class="shopee-svg-icon icon-arrow-left-bold">-->
+                                                <!--                                                        <polygon-->
+                                                <!--                                                                points="4.2 10 12.1 2.1 10 -.1 1 8.9 -.1 10 1 11 10 20 12.1 17.9"></polygon>-->
+                                                <!--                                                    </svg>-->
+                                                <!--                                                </div>-->
+                                                <!--                                                <div class="carousel-arrow carousel-arrow--next carousel-arrow--hint"-->
+                                                <!--                                                     role="button" tabindex="0"-->
+                                                <!--                                                     style="opacity: 1; visibility: visible; transform: translateX(calc(50% - 0px));">-->
+                                                <!--                                                    <svg enable-background="new 0 0 13 21" viewBox="0 0 13 21" x="0"-->
+                                                <!--                                                         y="0" class="shopee-svg-icon icon-arrow-right-bold">-->
+                                                <!--                                                        <polygon-->
+                                                <!--                                                                points="11.1 9.9 2.1 .9 -.1 3.1 7.9 11 -.1 18.9 2.1 21 11.1 12 12.1 11"></polygon>-->
+                                                <!--                                                    </svg>-->
+                                                <!--                                                </div>-->
                                             </div>
                                         </div>
                                     </div>
@@ -1353,9 +1354,9 @@
                                                     <ul class="image-carousel__item-list">
                                                         <?php
                                                         $arrSale = [
+                                                            ['label' => 'Tặng dây sạc 99k', 'img' => 'tai-nghe-chup-tai-gaming-Remax-RM-850-am-thanh-gia-lap-7.1-1.jpg'],
                                                             ['label' => 'Tặng dây sạc 99k', 'img' => 'product1.jpg'],
-                                                            ['label' => 'Tặng dây sạc 99k', 'img' => 'product1.jpg'],
-                                                            ['label' => 'Tặng dây sạc 99k', 'img' => 'product1.jpg'],
+                                                            ['label' => 'Tặng dây sạc 99k', 'img' => 'tai-nghe-chup-tai-chong-on-ANC-Remax-RB-800HB.jpg'],
                                                             ['label' => 'Tặng dây sạc 99k', 'img' => 'product1.jpg'],
 
                                                         ];
@@ -1370,10 +1371,10 @@
                                                                                 href="/nivea-fmcg">
                                                                             <div class="n-CE6j">
                                                                                 <div class="ofs-carousel__cover-image edy5hG"
-                                                                                     style="background-image: url(img/product/<?php echo $sale['img']?>); background-size: contain; background-repeat: no-repeat;"></div>
+                                                                                     style="background-image: url(img/product/<?php echo $sale['img'] ?>); background-size: contain; background-repeat: no-repeat;"></div>
                                                                             </div>
                                                                         </a>
-                                                                        <div class="ofs-carousel__item__text"><?php echo $sale['label']?> </div>
+                                                                        <div class="ofs-carousel__item__text"><?php echo $sale['label'] ?> </div>
                                                                     </div>
                                                                     <div class="ofs-carousel__item" location="1"
                                                                          shopid="299282693"><a
@@ -1381,10 +1382,10 @@
                                                                                 href="/pinkflash.vn">
                                                                             <div class="n-CE6j">
                                                                                 <div class="ofs-carousel__cover-image edy5hG"
-                                                                                     style="background-image: url(img/product/<?php echo $sale['img']?>); background-size: contain; background-repeat: no-repeat;"></div>
+                                                                                     style="background-image: url(img/product/<?php echo $sale['img'] ?>); background-size: contain; background-repeat: no-repeat;"></div>
                                                                             </div>
                                                                         </a>
-                                                                        <div class="ofs-carousel__item__text"><?php echo $sale['label']?>
+                                                                        <div class="ofs-carousel__item__text"><?php echo $sale['label'] ?>
 
                                                                         </div>
                                                                     </div>
@@ -1400,9 +1401,12 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <!--                            section  top ban chay-->
                             <div class="shopee-header-section zRDhJC shopee-header-section--simple">
                                 <div class="shopee-header-section__header">
-                                    <div class="shopee-header-section__header__title"><span class="OJR0Qm">Tìm kiếm hàng đầu</span>
+                                    <div class="shopee-header-section__header__title"><span
+                                                class="OJR0Qm">Top bán chạy</span>
                                     </div>
                                     <a class="shopee-header-section__header-link" tabindex="-1"
                                        href="/top_products?catId=VN_BITL0_718%3Atop_sold">
@@ -1413,56 +1417,38 @@
                                             </svg>
                                         </button>
                                     </a></div>
+                                <?php $arrTopSale = [
+                                    ['label' => 'Tai nghe chụp tai', 'img' => 'tai-nghe-chup-tai-gaming-Remax-RM-850-am-thanh-gia-lap-7.1-1.jpg'],
+                                    ['label' => 'Tặng dây sạc 99k', 'img' => 'product1.jpg'],
+                                    ['label' => 'Tai nghe chụp tai', 'img' => 'tai-nghe-chup-tai-chong-on-ANC-Remax-RB-800HB.jpg'],
+                                    ['label' => 'Tặng dây sạc 99k', 'img' => 'product1.jpg'],
+                                    ['label' => 'Tai nghe chụp tai', 'img' => 'tai-nghe-chup-tai-chong-on-ANC-Remax-RB-800HB.jpg'],
+                                    ['label' => 'Tặng dây sạc 99k', 'img' => 'product1.jpg'],
+                                ] ?>
                                 <div class="shopee-header-section__content">
                                     <div class="image-carousel">
                                         <div class="image-carousel__item-list-wrapper">
                                             <ul class="image-carousel__item-list">
-                                                <li class="image-carousel__item" style="padding: 0px; width: 16.6667%;">
-                                                    <a class="K5psIF Wh3W7J"
-                                                       href="/top_products?catId=VN_BITL0_976%3Atop_sold">
-                                                        <div class="xpdSwI">
-                                                            <div class="uVbGLf od+H03 li78LN"></div>
-                                                            <div class="n-CE6j _06bq+d"><img width="invalid-value"
-                                                                                             height="invalid-value"
-                                                                                             class="QQTrlS edy5hG"
-                                                                                             style="object-fit: contain"
-                                                                                             src="img/2f86775ad6d5485bfba44c8c2cca02e5">
+                                                <?php foreach ($arrTopSale as $sale): ?>
+                                                    <li class="image-carousel__item"
+                                                        style="padding: 0px; width: 16.6667%;">
+                                                        <a class="K5psIF Wh3W7J"
+                                                           href="/top_products?catId=VN_BITL0_976%3Atop_sold">
+                                                            <div class="xpdSwI">
+                                                                <div class="uVbGLf od+H03 li78LN"></div>
+                                                                <div class="n-CE6j _06bq+d">
+                                                                    <img width="invalid-value"
+                                                                         height="invalid-value"
+                                                                         class="QQTrlS edy5hG"
+                                                                         style="object-fit: contain"
+                                                                         src="img/product/<?php echo $sale['img'] ?>">
+                                                                </div>
+                                                                <div class="pDTGqb">Bán 917 / tháng</div>
                                                             </div>
-                                                            <div class="pDTGqb">Bán 917 / tháng</div>
-                                                        </div>
-                                                        <div class="cXODCZ">Máy Tính Bảng</div>
-                                                    </a></li>
-                                                <li class="image-carousel__item" style="padding: 0px; width: 16.6667%;">
-                                                    <a class="K5psIF Wh3W7J"
-                                                       href="/top_products?catId=VN_BITL0_291%3Atop_sold">
-                                                        <div class="xpdSwI">
-                                                            <div class="uVbGLf od+H03 li78LN"></div>
-                                                            <div class="n-CE6j _06bq+d"><img width="invalid-value"
-                                                                                             height="invalid-value"
-                                                                                             class="QQTrlS edy5hG"
-                                                                                             style="object-fit: contain"
-                                                                                             src="img/6b3c1192593f0cb20ee40dc6612a57af">
-                                                            </div>
-                                                            <div class="pDTGqb">Bán 2k+ / tháng</div>
-                                                        </div>
-                                                        <div class="cXODCZ">Hộp truyền hình</div>
-                                                    </a></li>
-                                                <li class="image-carousel__item" style="padding: 0px; width: 16.6667%;">
-                                                    <a class="K5psIF Wh3W7J"
-                                                       href="/top_products?catId=VN_BITL0_2686%3Atop_sold">
-                                                        <div class="xpdSwI">
-                                                            <div class="uVbGLf od+H03 li78LN"></div>
-                                                            <div class="n-CE6j _06bq+d"><img width="invalid-value"
-                                                                                             height="invalid-value"
-                                                                                             class="QQTrlS edy5hG"
-                                                                                             style="object-fit: contain"
-                                                                                             src="img/251d735e04da78422ac0af44904d66fa">
-                                                            </div>
-                                                            <div class="pDTGqb">Bán 5k+ / tháng</div>
-                                                        </div>
-                                                        <div class="cXODCZ">Ổ Điện Đa Năng</div>
-                                                    </a></li>
-
+                                                            <div class="cXODCZ"><?php echo $sale['label'] ?></div>
+                                                        </a>
+                                                    </li>
+                                                <?php endforeach; ?>
                                             </ul>
                                         </div>
                                         <div class="carousel-arrow carousel-arrow--prev carousel-arrow--hint carousel-arrow--hidden"
@@ -1486,6 +1472,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!--    --------------------------       goi y hom nay-->
                             <div class="section-recommend-products-wrapper">
                                 <div>
                                     <div class="ARwPBS">
@@ -1495,164 +1482,102 @@
                                                 <li class="stardust-tabs-header__tab stardust-tabs-header__tab--active">
                                                     <div class="FA284N N-5qHu"
                                                          style="background: rgb(238, 77, 45);"></div>
-                                                    <div class="FJibgJ"><span style="color: rgb(238, 77, 45);">GỢI Ý HÔM NAY</span>
+                                                    <div class="FJibgJ"><span style="color: rgb(238, 77, 45);">Sản phẩm đang được yêu thích</span>
                                                     </div>
                                                 </li>
-                                                <li class="stardust-tabs-header__tab">
-                                                    <div class="FA284N N-5qHu"
-                                                         style="background: rgb(238, 77, 45);"></div>
-                                                    <div class="FJibgJ"><img
-                                                                src="img/8f8e434581a523a62fbf1bcd5485f81b"
-                                                                style="width: auto; height: 1.25rem;"></div>
-                                                </li>
+                                                <!--                                                <li class="stardust-tabs-header__tab">-->
+                                                <!--                                                    <div class="FA284N N-5qHu"-->
+                                                <!--                                                         style="background: rgb(238, 77, 45);"></div>-->
+                                                <!--                                                    <div class="FJibgJ"><img-->
+                                                <!--                                                                src="img/8f8e434581a523a62fbf1bcd5485f81b"-->
+                                                <!--                                                                style="width: auto; height: 1.25rem;"></div>-->
+                                                <!--                                                </li>-->
                                             </ul>
                                             <i class="stardust-tabs-header__tab-indicator"
-                                               style="display: none; width: 50%; transform: translateX(0%);"></i></nav>
+                                               style="display: none; width: 50%; transform: translateX(0%);"></i>
+                                        </nav>
                                         <div class="stardust-tabs-panels">
                                             <section class="stardust-tabs-panels__panel" style="display: block;">
                                                 <div class="_6wTCb6">
-                                                    <div class="_4beVMw"><a data-sqe="link"
-                                                                            href="/-Mã-159FMCG-giảm-8-đơn-250K-Kệ-gia-vị-việt-Nhật-kèm-lọ-gia-vị-i.48715403.6556080962?sp_atk=0a55ad11-6204-416b-b81d-58f1bce3bdd1&amp;xptdk=0a55ad11-6204-416b-b81d-58f1bce3bdd1">
-                                                            <div class="yZLQT4">
-                                                                <div class="uA1waf _4QQ4Ir">
-                                                                    <div style="pointer-events: none;">
-                                                                        <div class="n-CE6j iR+sxV"><img
-                                                                                    width="invalid-value"
-                                                                                    height="invalid-value"
-                                                                                    alt="[Mã 159FMCG giảm 8% đơn 250K] Kệ gia vị việt Nhật kèm lọ gia vị"
-                                                                                    class="Vz6gJ3 edy5hG"
-                                                                                    style="object-fit: contain"
-                                                                                    src="img/55f57fa3bbfb582b0143f265b507120a_tn.png">
-                                                                            <div class="X5j9y1">
-                                                                                <div class="VGupoO wuWR8e"
-                                                                                     style="color: rgb(242, 82, 32);">
-                                                                                    <span class="_6UEPfo">Yêu thích</span>
+                                                    <?php $arrSuggest = [
+                                                        ['label' => 'Tai nghe chụp tai', 'img' => 'tai-nghe-chup-tai-gaming-Remax-RM-850-am-thanh-gia-lap-7.1-1.jpg'],
+                                                        ['label' => 'Tặng dây sạc 99k', 'img' => 'product1.jpg'],
+                                                        ['label' => 'Tai nghe chụp tai', 'img' => 'tai-nghe-chup-tai-chong-on-ANC-Remax-RB-800HB.jpg'],
+                                                        ['label' => 'Tặng dây sạc 99k', 'img' => 'product1.jpg'],
+                                                        ['label' => 'Tai nghe chụp tai', 'img' => 'tai-nghe-chup-tai-chong-on-ANC-Remax-RB-800HB.jpg'],
+                                                        ['label' => 'Tặng dây sạc 99k', 'img' => 'product1.jpg'],
+                                                        ['label' => 'Tặng dây sạc 99k', 'img' => 'product1.jpg'],
+                                                        ['label' => 'Tặng dây sạc 99k', 'img' => 'product1.jpg'],
+                                                        ['label' => 'Tai nghe chụp tai', 'img' => 'tai-nghe-chup-tai-gaming-Remax-RM-850-am-thanh-gia-lap-7.1-1.jpg'],
+                                                    ];
+                                                    foreach ($arrSuggest as $product):
+                                                        ?>
+                                                        <div class="_4beVMw">
+                                                            <a data-sqe="link" href="#">
+                                                                <div class="yZLQT4">
+                                                                    <div class="uA1waf _4QQ4Ir">
+                                                                        <div style="pointer-events: none;">
+                                                                            <div class="n-CE6j iR+sxV">
+                                                                                <img alt="<?php $product['label']?>"
+                                                                                        class="Vz6gJ3 edy5hG"
+                                                                                        style="object-fit: contain"
+                                                                                        src="img/product/<?php echo $product['img'] ?>">
+                                                                                <div class="X5j9y1">
+                                                                                    <div class="VGupoO wuWR8e"
+                                                                                         style="color: rgb(242, 82, 32);">
+                                                                                        <span class="_6UEPfo">Yêu thích</span>
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="vmaKHl">
-                                                                                <div class="C2-vN- dCT7bq Od5TJM"><span
-                                                                                            class="percent">31%</span><span
-                                                                                            class="mXP-A3">giảm</span>
+                                                                                <div class="vmaKHl">
+                                                                                    <div class="C2-vN- dCT7bq Od5TJM"><span
+                                                                                                class="percent">31%</span><span
+                                                                                                class="mXP-A3">giảm</span>
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="PhrpPs">
-                                                                                <div class="customized-overlay-image">
-                                                                                    <img src="img/06a3e58731c9cae7d5ba2bccae9d46b1"
-                                                                                         width="" height=""></div>
+
                                                                             </div>
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="W3bJfG">
-                                                                        <div class="qUEEG4">
-                                                                            <div class="hPc1Pf">
-                                                                                <div class="vc0PvV AxYdVM">[Mã 159FMCG
-                                                                                    giảm 8% đơn 250K] Kệ gia vị việt
-                                                                                    Nhật kèm lọ gia vị
+                                                                        <div class="W3bJfG">
+                                                                            <div class="qUEEG4">
+                                                                                <div class="hPc1Pf">
+                                                                                    <div class="vc0PvV AxYdVM">[Mã 159FMCG giảm 8% đơn 250K] Kệ gia vị việt Nhật kèm lọ gia vị
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="bVKmWS">
+                                                                                    <div class="YGu43g">
+                                                                                        <svg viewBox="0 0 20 12" height="12" width="20" class="freeship">
+                                                                                            <path fill="#00bfa5"
+                                                                                                  d="M5 0h10c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1H5c-.6 0-1-.4-1-1V1c0-.6.4-1 1-1z"></path>
+                                                                                            <path fill="#00bfa5" d="M14 2h5c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1h-5c-.6 0-1-.4-1-1V3c0-.6.4-1 1-1z"></path>
+                                                                                            <circle fill="#00bfa5" cx="8" cy="10" r="2"></circle>
+                                                                                            <circle fill="#00bfa5" cx="15" cy="10" r="2"></circle>
+                                                                                            <path fill="#fff"
+                                                                                                  d="M17.3 5.9h.7c-.2.6-.7.9-1.5.9-1 0-1.6-.6-1.6-1.6s.6-1.7 1.6-1.7 1.5.6 1.5 1.6v.2h-2.4c0 .6.4.9.9.9.4.1.7 0 .8-.3zm-.8-1.8c-.5 0-.9.3-.9.8h1.7c0-.5-.3-.8-.8-.8zm-2.7 1.8h.7c-.2.6-.7.9-1.5.9-1 0-1.6-.6-1.6-1.6S12 3.5 13 3.5s1.5.6 1.5 1.6v.2h-2.4c0 .6.4.9.9.9.4.1.7 0 .8-.3zM13 4.1c-.5 0-.9.3-.9.8h1.7c0-.5-.3-.8-.8-.8zM9.4 6.8V3.6h.6v.5h.1c.1-.3.5-.5.9-.5h.3v.6h-.4c-.5 0-.9.3-.9.8v1.9h-.6zm-2.7 0H6V2.6h2.8v.6H6.7v1.3h2V5h-2v1.8z"></path>
+                                                                                            <path fill="#00bfa5" d="M.5 8.5H4v.8H.5z"></path>
+                                                                                            <path fill="#00bfa5" d="M0 10.2h3.5v.8H0z"></path>
+                                                                                            <circle fill="#047565" cx="8" cy="10" r="1"></circle>
+                                                                                            <circle fill="#047565" cx="15" cy="10" r="1"></circle>
+                                                                                        </svg>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="bVKmWS">
-                                                                                <div class="YGu43g">
-                                                                                    <svg viewBox="0 0 20 12" height="12"
-                                                                                         width="20"
-                                                                                         data="[object Object]"
-                                                                                         i18nCollection="[object Object]">
-                                                                                        <path fill="#00bfa5"
-                                                                                              d="M5 0h10c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1H5c-.6 0-1-.4-1-1V1c0-.6.4-1 1-1z"></path>
-                                                                                        <path fill="#00bfa5"
-                                                                                              d="M14 2h5c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1h-5c-.6 0-1-.4-1-1V3c0-.6.4-1 1-1z"></path>
-                                                                                        <circle fill="#00bfa5" cx="8"
-                                                                                                cy="10" r="2"></circle>
-                                                                                        <circle fill="#00bfa5" cx="15"
-                                                                                                cy="10" r="2"></circle>
-                                                                                        <path fill="#fff"
-                                                                                              d="M17.3 5.9h.7c-.2.6-.7.9-1.5.9-1 0-1.6-.6-1.6-1.6s.6-1.7 1.6-1.7 1.5.6 1.5 1.6v.2h-2.4c0 .6.4.9.9.9.4.1.7 0 .8-.3zm-.8-1.8c-.5 0-.9.3-.9.8h1.7c0-.5-.3-.8-.8-.8zm-2.7 1.8h.7c-.2.6-.7.9-1.5.9-1 0-1.6-.6-1.6-1.6S12 3.5 13 3.5s1.5.6 1.5 1.6v.2h-2.4c0 .6.4.9.9.9.4.1.7 0 .8-.3zM13 4.1c-.5 0-.9.3-.9.8h1.7c0-.5-.3-.8-.8-.8zM9.4 6.8V3.6h.6v.5h.1c.1-.3.5-.5.9-.5h.3v.6h-.4c-.5 0-.9.3-.9.8v1.9h-.6zm-2.7 0H6V2.6h2.8v.6H6.7v1.3h2V5h-2v1.8z"></path>
-                                                                                        <path fill="#00bfa5"
-                                                                                              d="M.5 8.5H4v.8H.5z"></path>
-                                                                                        <path fill="#00bfa5"
-                                                                                              d="M0 10.2h3.5v.8H0z"></path>
-                                                                                        <circle fill="#047565" cx="8"
-                                                                                                cy="10" r="1"></circle>
-                                                                                        <circle fill="#047565" cx="15"
-                                                                                                cy="10" r="1"></circle>
-                                                                                    </svg>
+                                                                            <div class="imdVqB _2fuFWg">
+                                                                                <div class="WSVId4 fepoRf"><span
+                                                                                            class="Fea6JM">₫</span><span
+                                                                                            class="j0vBz2">69.000</span>
+                                                                                </div>
+                                                                                <div class="upl8wJ _82UoSS">Đã bán 1,1k
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="imdVqB _2fuFWg">
-                                                                            <div class="WSVId4 fepoRf"><span
-                                                                                        class="Fea6JM">₫</span><span
-                                                                                        class="j0vBz2">69.000</span>
-                                                                            </div>
-                                                                            <div class="upl8wJ _82UoSS">Đã bán 1,1k
-                                                                            </div>
+                                                                        <div class="shopee-item-card__hover-footer _1X2yZq">
+                                                                            Tìm sản phẩm tương tự
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="shopee-item-card__hover-footer _1X2yZq">
-                                                                        Tìm sản phẩm tương tự
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </a></div>
-                                                    <div class="_4beVMw"><a data-sqe="link"
-                                                                            href="/Thau-chậu-gấp-gọn-thông-minh-tiện-lợi-i.119045415.7146401003?sp_atk=b7d2ba2e-d10e-4026-8ff6-b4bf1310bfae&amp;xptdk=b7d2ba2e-d10e-4026-8ff6-b4bf1310bfae">
-                                                            <div class="yZLQT4">
-                                                                <div class="uA1waf _4QQ4Ir">
-                                                                    <div style="pointer-events: none;">
-                                                                        <div class="n-CE6j iR+sxV"><img
-                                                                                    width="invalid-value"
-                                                                                    height="invalid-value"
-                                                                                    alt="Thau chậu gấp gọn thông minh tiện lợi"
-                                                                                    class="Vz6gJ3 edy5hG"
-                                                                                    style="object-fit: contain"
-                                                                                    src="img/cabce510c2308866f6e831486b4845a7_tn.png">
-                                                                            <div class="X5j9y1">
-                                                                                <div class="VGupoO _7zJYfY"
-                                                                                     style="color: rgb(242, 82, 32);">
-                                                                                    <div class="e8AcC7 t7oRm5"></div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="+QxcSK">
-                                                                                <svg viewBox="0 0 20 20"
-                                                                                     enable-background="new 0 0 20 20"
-                                                                                     class="shopee-svg-icon fJ4FuK icon-video-play2">
-                                                                                    <path d="m10 20c5.5228 0 10-4.4772 10-10 0-5.5228-4.4772-10-10-10-5.5228 0-10 4.4772-10 10 0 5.5228 4.4772 10 10 10z"
-                                                                                          clip-rule="evenodd"
-                                                                                          fill-opacity=".5"
-                                                                                          fill-rule="evenodd"></path>
-                                                                                    <path d="m7 6.1263c0-0.55798 0.4141-0.78618 0.91986-0.50718l6.6976 3.8599c0.506 0.27899 0.506 0.73534 0 1.0143l-6.6976 3.8876c-0.50603 0.279-0.91986 0.0508-0.91986-0.5072v-7.7474z"
-                                                                                          fill="#fff"></path>
-                                                                                </svg>
-                                                                            </div>
-                                                                            <div class="PhrpPs">
-                                                                                <div class="customized-overlay-image">
-                                                                                    <img src="img/4c283dad86a126eda623144b6460bb76"
-                                                                                         width="" height=""></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="W3bJfG">
-                                                                        <div class="qUEEG4">
-                                                                            <div class="hPc1Pf">
-                                                                                <div class="vc0PvV AxYdVM">Thau chậu gấp
-                                                                                    gọn thông minh tiện lợi
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="imdVqB _2fuFWg">
-                                                                            <div class="WSVId4 fepoRf"><span
-                                                                                        class="Fea6JM">₫</span><span
-                                                                                        class="j0vBz2">28.500</span>
-                                                                            </div>
-                                                                            <div class="upl8wJ _82UoSS">Đã bán 2,7k
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="shopee-item-card__hover-footer _1X2yZq">
-                                                                        Tìm sản phẩm tương tự
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </a></div>
+                                                            </a>
+                                                        </div>
+                                                    <?php endforeach; ?>
 
                                                     <div class="qqV7Rl"><a
                                                                 class="btn btn-light btn--m btn--inline btn-light--link FA8aij"

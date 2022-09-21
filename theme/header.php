@@ -3,7 +3,8 @@
         <nav class="container navbar">
             <div class="flex v-center FAQGyh">
 
-                <div class="shopee-drawer ZUq1cc" id="pc-drawer-id-0"><a class="_2TLLZP" href="/web/"
+                <div class="shopee-drawer ZUq1cc" id="pc-drawer-id-0">
+                    <a class="_2TLLZP" href="/web/"
                                                                          target="_blank"
                                                                          rel="noopener noreferrer"
                                                                          id="temporaryId">Tải ứng dụng</a></div>

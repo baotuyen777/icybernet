@@ -7,3 +7,6 @@
 hearder{
     background: #cd1818 !important;
 }
+.chatbox{
+    display: none;
+}
