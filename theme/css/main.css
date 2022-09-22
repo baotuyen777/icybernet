@@ -4,9 +4,13 @@
 .pull-left{
     float: left;
 }
-hearder{
-    background: #cd1818 !important;
+header{
+    background: #d52220 !important;
+    background: linear-gradient(-180deg,#f53d2d,#f63);
 }
 .chatbox{
     display: none;
+}
+button{
+    background: #d52220 !important;
 }

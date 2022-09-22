@@ -1,8 +1,6 @@
 <html dir="ltr" lang="vi">
 <?php include 'head.php' ?>
-<body class="nt-s nl-t"
-">
-
+<body class="nt-s nl-t">
 <div id="main">
     <div>
         <?php require 'header.php' ?>
@@ -72,7 +70,7 @@
                                                 <div class="full-home-banners__right-banner-image edy5hG"
                                                      style="background-image: url(img/banner/banner3.jpg); background-size: cover; background-repeat: no-repeat;"></div>
                                             </div>
-                                        </a><a href="https://doitac.shopee.vn/lp/prudentialtang50kxu/"
+                                        </a><a href="https://doitac.icybernet.vn/lp/prudentialtang50kxu/"
                                                class="full-home-banners__right-banner" target="_blank"
                                                rel="noopener noreferrer">
                                             <div class="n-CE6j full-home-banners__full-height full-home-banners__light-background">
@@ -125,479 +123,72 @@
                                             <div class="shopee-header-section__header__title">Danh Mục</div>
                                         </div>
                                         <div class="shopee-header-section__content">
+
                                             <div class="image-carousel">
                                                 <div class="image-carousel__item-list-wrapper">
-                                                    <ul class="image-carousel__item-list"
-                                                        style="width: 130%; transform: translate(0px, 0px);">
-                                                        <li class="image-carousel__item"
-                                                            style="padding: 0px; width: 10%;">
-                                                            <div class="home-category-list__group"><a
-                                                                        class="home-category-list__category-grid"
-                                                                        href="/Thời-Trang-Nam-cat.11035567">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/687f3967b7c2fe6a134a2c11894eea4b_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
+                                                    <ul class="image-carousel__item-list">
+                                                        <?php
+                                                        $arrCat1 = [
+                                                            ['label' => 'Điện thoại', 'img' => 'Dienthoai-128x129.png'],
+                                                            ['label' => 'Bàn phím', 'img' => 'ban-phim-128x129.png'],
+                                                            ['label' => 'Laptop', 'img' => 'Laptop-129x129.png'],
+                                                            ['label' => 'Cáp sạc', 'img' => 'Capsac-129x129.png'],
+                                                            ['label' => 'Máy tính bảng', 'img' => 'Tablet-128x129.png'],
+                                                            ['label' => 'Chuột', 'img' => 'chuot-128x129.png'],
+                                                            ['label' => 'Đồng hồ thông mình', 'img' => 'Donghothongminh-128x129.png'],
+                                                            ['label' => 'Loa bluetooth', 'img' => 'Loa-128x128.png'],
+                                                            ['label' => 'Máy chiếu', 'img' => 'may-chieu-icon-128x129.png'],
+                                                            ['label' => 'Phụ kiện gamming', 'img' => 'Phukiengaming-128x129.png'],
+
+                                                            ['label' => 'Sạc dự phòng', 'img' => 'Sacduphong-128x129.png'],
+                                                            ['label' => 'Thiết bị mạng', 'img' => 'Thietbimang-128x129.png'],
+                                                            ['label' => 'Máy tính bàn', 'img' => 'Maytinhbo-128x129.png'],
+                                                            ['label' => 'Sim thẻ', 'img' => 'Simthecao-129x129.png'],
+                                                            ['label' => 'Op lưng', 'img' => 'Oplung-128x128.png'],
+                                                            ['label' => 'Chuột', 'img' => 'chuot-128x129.png'],
+                                                            ['label' => 'Đồng hồ thông mình', 'img' => 'Donghothongminh-128x129.png'],
+                                                            ['label' => 'Loa bluetooth', 'img' => 'Loa-128x128.png'],
+                                                            ['label' => 'Máy chiếu', 'img' => 'may-chieu-icon-128x129.png'],
+                                                            ['label' => 'Phụ kiện gamming', 'img' => 'Phukiengaming-128x129.png'],
+                                                        ];
+                                                        for ($i = 0; $i < count($arrCat1); $i +=2):
+                                                            $catUp = $arrCat1[$i];
+                                                            $catDown = $arrCat1[$i + 1];
+                                                            ?>
+                                                            <li class="image-carousel__item"
+                                                                style="padding: 0px; width: 10%;">
+                                                                <div class="home-category-list__group">
+                                                                    <a class="home-category-list__category-grid"
+                                                                       href="#">
+                                                                        <div class="_1l+Pw-">
+                                                                            <div class="H8mXLe">
+                                                                                <div class="n-CE6j -rN11Y">
+                                                                                    <div class="-rN11Y edy5hG"
+                                                                                         style="background-image: url(img/danhmuc/<?php echo $catUp['img'] ?>); background-size: contain; background-repeat: no-repeat;"></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="cZdsLQ">
+                                                                                <div class="C9kwfl"><?php echo $catUp['label'] ?></div>
                                                                             </div>
                                                                         </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Thời Trang Nam</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a><a class="home-category-list__category-grid"
+                                                                    </a>
+                                                                    <a class="home-category-list__category-grid"
                                                                        href="/Thời-Trang-Nữ-cat.11035639">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/75ea42f9eca124e9cb3cde744c060e4d_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Thời Trang Nữ</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a></div>
-                                                        </li>
-                                                        <li class="image-carousel__item"
-                                                            style="padding: 0px; width: 10%;">
-                                                            <div class="home-category-list__group"><a
-                                                                        class="home-category-list__category-grid"
-                                                                        href="/Điện-Thoại-Phụ-Kiện-cat.11036030">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/31234a27876fb89cd522d7e3db1ba5ca_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Điện Thoại &amp; Phụ
-                                                                                Kiện
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a><a class="home-category-list__category-grid"
-                                                                       href="/Mẹ-Bé-cat.11036194">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/099edde1ab31df35bc255912bab54a5e_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Mẹ &amp; Bé</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a></div>
-                                                        </li>
-                                                        <li class="image-carousel__item"
-                                                            style="padding: 0px; width: 10%;">
-                                                            <div class="home-category-list__group"><a
-                                                                        class="home-category-list__category-grid"
-                                                                        href="/Thiết-Bị-Điện-Tử-cat.11036132">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/978b9e4cb61c611aaaf58664fae133c5_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Thiết Bị Điện Tử</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a><a class="home-category-list__category-grid"
-                                                                       href="/Nhà-Cửa-Đời-Sống-cat.11036670">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/24b194a695ea59d384768b7b471d563f_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Nhà Cửa &amp; Đời Sống
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a></div>
-                                                        </li>
-                                                        <li class="image-carousel__item"
-                                                            style="padding: 0px; width: 10%;">
-                                                            <div class="home-category-list__group"><a
-                                                                        class="home-category-list__category-grid"
-                                                                        href="/Máy-Tính-Laptop-cat.11035954">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/c3f3edfaa9f6dafc4825b77d8449999d_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Máy Tính &amp; Laptop
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a><a class="home-category-list__category-grid"
-                                                                       href="/Sắc-Đẹp-cat.11036279">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/ef1f336ecc6f97b790d5aae9916dcb72_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Sắc Đẹp</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a></div>
-                                                        </li>
-                                                        <li class="image-carousel__item"
-                                                            style="padding: 0px; width: 10%;">
-                                                            <div class="home-category-list__group"><a
-                                                                        class="home-category-list__category-grid"
-                                                                        href="/Máy-Ảnh-Máy-Quay-Phim-cat.11036101">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/ec14dd4fc238e676e43be2a911414d4d_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Máy Ảnh &amp; Máy Quay
-                                                                                Phim
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a><a class="home-category-list__category-grid"
-                                                                       href="/Sức-Khỏe-cat.11036345">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/49119e891a44fa135f5f6f5fd4cfc747_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Sức Khỏe</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a></div>
-                                                        </li>
-                                                        <li class="image-carousel__item"
-                                                            style="padding: 0px; width: 10%;">
-                                                            <div class="home-category-list__group"><a
-                                                                        class="home-category-list__category-grid"
-                                                                        href="/Đồng-Hồ-cat.11035788">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/86c294aae72ca1db5f541790f7796260_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Đồng Hồ</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a><a class="home-category-list__category-grid"
-                                                                       href="/Giày-Dép-Nữ-cat.11035825">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/48630b7c76a7b62bc070c9e227097847_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Giày Dép Nữ</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a></div>
-                                                        </li>
-                                                        <li class="image-carousel__item"
-                                                            style="padding: 0px; width: 10%;">
-                                                            <div class="home-category-list__group"><a
-                                                                        class="home-category-list__category-grid"
-                                                                        href="/Giày-Dép-Nam-cat.11035801">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/74ca517e1fa74dc4d974e5d03c3139de_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Giày Dép Nam</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a><a class="home-category-list__category-grid"
-                                                                       href="/Túi-Ví-Nữ-cat.11035761">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/fa6ada2555e8e51f369718bbc92ccc52_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Túi Ví Nữ</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a></div>
-                                                        </li>
-                                                        <li class="image-carousel__item"
-                                                            style="padding: 0px; width: 10%;">
-                                                            <div class="home-category-list__group"><a
-                                                                        class="home-category-list__category-grid"
-                                                                        href="/Thiết-Bị-Điện-Gia-Dụng-cat.11036971">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/7abfbfee3c4844652b4a8245e473d857_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Thiết Bị Điện Gia Dụng
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a><a class="home-category-list__category-grid"
-                                                                       href="/Phụ-Kiện-Trang-Sức-Nữ-cat.11035853">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/8e71245b9659ea72c1b4e737be5cf42e_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Phụ Kiện &amp; Trang Sức
-                                                                                Nữ
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a></div>
-                                                        </li>
-                                                        <li class="image-carousel__item"
-                                                            style="padding: 0px; width: 10%;">
-                                                            <div class="home-category-list__group"><a
-                                                                        class="home-category-list__category-grid"
-                                                                        href="/Thể-Thao-Du-Lịch-cat.11035478">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/6cb7e633f8b63757463b676bd19a50e4_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Thể Thao &amp; Du Lịch
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a><a class="home-category-list__category-grid"
-                                                                       href="/Bách-Hóa-Online-cat.11036525">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/c432168ee788f903f1ea024487f2c889_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Bách Hóa Online</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a></div>
-                                                        </li>
-                                                        <li class="image-carousel__item"
-                                                            style="padding: 0px; width: 10%;">
-                                                            <div class="home-category-list__group"><a
-                                                                        class="home-category-list__category-grid"
-                                                                        href="/Ô-Tô-Xe-Máy-Xe-Đạp-cat.11036793">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/3fb459e3449905545701b418e8220334_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Ô Tô &amp; Xe Máy &amp;
-                                                                                Xe Đạp
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a><a class="home-category-list__category-grid"
-                                                                       href="/Nhà-Sách-Online-cat.11036863">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y edy5hG"
-                                                                                     style="background-image: url(img/36013311815c55d303b0e6c62d6a8139_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="C9kwfl">Nhà Sách Online</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a></div>
-                                                        </li>
-                                                        <li class="image-carousel__item"
-                                                            style="padding: 0px; width: 10%;">
-                                                            <div class="home-category-list__group"><a
-                                                                        class="home-category-list__category-grid"
-                                                                        href="/Balo-Túi-Ví-Nam-cat.11035741">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y +HNXw-"></div>
-                                                                                <div class="lJRMbr">
-                                                                                    <div class="skeleton-base__container-fallback">
-                                                                                        <div class="skeleton-base__shape skeleton-base__shape-static"></div>
-                                                                                    </div>
+                                                                        <div class="_1l+Pw-">
+                                                                            <div class="H8mXLe">
+                                                                                <div class="n-CE6j -rN11Y">
+                                                                                    <div class="-rN11Y edy5hG"
+                                                                                         style="background-image: url(img/danhmuc/<?php echo $catDown['img'] ?>); background-size: contain; background-repeat: no-repeat;"></div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="fldlfB">
-                                                                                <div class="skeleton-base__shape skeleton-base__shape-rounded skeleton-base__shape-static"></div>
-                                                                            </div>
-                                                                            <div class="fldlfB">
-                                                                                <div class="skeleton-base__shape skeleton-base__shape-rounded skeleton-base__shape-static"></div>
+                                                                            <div class="cZdsLQ">
+                                                                                <div class="C9kwfl"><?php echo $catDown['label'] ?></div>
                                                                             </div>
                                                                         </div>
-                                                                    </div>
-                                                                </a><a class="home-category-list__category-grid"
-                                                                       href="/Thời-Trang-Trẻ-Em-cat.11036382">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y +HNXw-"></div>
-                                                                                <div class="lJRMbr">
-                                                                                    <div class="skeleton-base__container-fallback">
-                                                                                        <div class="skeleton-base__shape skeleton-base__shape-static"></div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="fldlfB">
-                                                                                <div class="skeleton-base__shape skeleton-base__shape-rounded skeleton-base__shape-static"></div>
-                                                                            </div>
-                                                                            <div class="fldlfB">
-                                                                                <div class="skeleton-base__shape skeleton-base__shape-rounded skeleton-base__shape-static"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a></div>
-                                                        </li>
-                                                        <li class="image-carousel__item"
-                                                            style="padding: 0px; width: 10%;">
-                                                            <div class="home-category-list__group"><a
-                                                                        class="home-category-list__category-grid"
-                                                                        href="/Đồ-Chơi-cat.11036932">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y +HNXw-"></div>
-                                                                                <div class="lJRMbr">
-                                                                                    <div class="skeleton-base__container-fallback">
-                                                                                        <div class="skeleton-base__shape skeleton-base__shape-static"></div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="fldlfB">
-                                                                                <div class="skeleton-base__shape skeleton-base__shape-rounded skeleton-base__shape-static"></div>
-                                                                            </div>
-                                                                            <div class="fldlfB">
-                                                                                <div class="skeleton-base__shape skeleton-base__shape-rounded skeleton-base__shape-static"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a><a class="home-category-list__category-grid"
-                                                                       href="/Giặt-Giũ-Chăm-Sóc-Nhà-Cửa-cat.11036624">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y +HNXw-"></div>
-                                                                                <div class="lJRMbr">
-                                                                                    <div class="skeleton-base__container-fallback">
-                                                                                        <div class="skeleton-base__shape skeleton-base__shape-static"></div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="fldlfB">
-                                                                                <div class="skeleton-base__shape skeleton-base__shape-rounded skeleton-base__shape-static"></div>
-                                                                            </div>
-                                                                            <div class="fldlfB">
-                                                                                <div class="skeleton-base__shape skeleton-base__shape-rounded skeleton-base__shape-static"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a></div>
-                                                        </li>
-                                                        <li class="image-carousel__item"
-                                                            style="padding: 0px; width: 10%;">
-                                                            <div class="home-category-list__group"><a
-                                                                        class="home-category-list__category-grid"
-                                                                        href="/Chăm-Sóc-Thú-Cưng-cat.11036478">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y +HNXw-"></div>
-                                                                                <div class="lJRMbr">
-                                                                                    <div class="skeleton-base__container-fallback">
-                                                                                        <div class="skeleton-base__shape skeleton-base__shape-static"></div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="fldlfB">
-                                                                                <div class="skeleton-base__shape skeleton-base__shape-rounded skeleton-base__shape-static"></div>
-                                                                            </div>
-                                                                            <div class="fldlfB">
-                                                                                <div class="skeleton-base__shape skeleton-base__shape-rounded skeleton-base__shape-static"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a><a class="home-category-list__category-grid"
-                                                                       href="/Voucher-Dịch-Vụ-cat.11035898">
-                                                                    <div class="_1l+Pw-">
-                                                                        <div class="H8mXLe">
-                                                                            <div class="n-CE6j -rN11Y">
-                                                                                <div class="-rN11Y +HNXw-"></div>
-                                                                                <div class="lJRMbr">
-                                                                                    <div class="skeleton-base__container-fallback">
-                                                                                        <div class="skeleton-base__shape skeleton-base__shape-static"></div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="cZdsLQ">
-                                                                            <div class="fldlfB">
-                                                                                <div class="skeleton-base__shape skeleton-base__shape-rounded skeleton-base__shape-static"></div>
-                                                                            </div>
-                                                                            <div class="fldlfB">
-                                                                                <div class="skeleton-base__shape skeleton-base__shape-rounded skeleton-base__shape-static"></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </a></div>
-                                                        </li>
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                        <?php endfor; ?>
                                                     </ul>
                                                 </div>
                                                 <div class="carousel-arrow carousel-arrow--prev carousel-arrow--hint carousel-arrow--hidden"
@@ -1314,17 +905,16 @@
                                             <div class="_9FdTU0"><a class="ecCXWo usxt6W" href="/combo">Siêu khuyến
                                                     mại</a>
                                                 <div class="_5Ru4Na">
-                                                    <div class="LetK2C"><img class="a8XyX2"
-                                                                             src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/homepage/6c502a2641457578b0d5f5153b53dd5d.png">7
+                                                    <div class="LetK2C"><img class="a8XyX2" src="img/icon/doitra.png">7
                                                         ngày miễn phí trả hàng
                                                     </div>
                                                     <div class="LetK2C"><img class="a8XyX2"
-                                                                             src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/homepage/511aca04cc3ba9234ab0e4fcf20768a2.png">Hàng
-                                                        chính hãng 100%
+                                                                             src="img/icon/chinhhang.png">Hàng chính
+                                                        hãng 100%
                                                     </div>
                                                     <div class="LetK2C"><img class="a8XyX2"
-                                                                             src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/homepage/16ead7e0a68c3cff9f32910e4be08122.png">Miễn
-                                                        phí vận chuyển
+                                                                             src="img/icon/freeshipred.png">Miễn phí vận
+                                                        chuyển
                                                     </div>
                                                 </div>
                                             </div>
@@ -1518,10 +1108,10 @@
                                                                     <div class="uA1waf _4QQ4Ir">
                                                                         <div style="pointer-events: none;">
                                                                             <div class="n-CE6j iR+sxV">
-                                                                                <img alt="<?php $product['label']?>"
-                                                                                        class="Vz6gJ3 edy5hG"
-                                                                                        style="object-fit: contain"
-                                                                                        src="img/product/<?php echo $product['img'] ?>">
+                                                                                <img alt="<?php $product['label'] ?>"
+                                                                                     class="Vz6gJ3 edy5hG"
+                                                                                     style="object-fit: contain"
+                                                                                     src="img/product/<?php echo $product['img'] ?>">
                                                                                 <div class="X5j9y1">
                                                                                     <div class="VGupoO wuWR8e"
                                                                                          style="color: rgb(242, 82, 32);">
@@ -1540,23 +1130,38 @@
                                                                         <div class="W3bJfG">
                                                                             <div class="qUEEG4">
                                                                                 <div class="hPc1Pf">
-                                                                                    <div class="vc0PvV AxYdVM">[Mã 159FMCG giảm 8% đơn 250K] Kệ gia vị việt Nhật kèm lọ gia vị
+                                                                                    <div class="vc0PvV AxYdVM">[Mã
+                                                                                        159FMCG giảm 8% đơn 250K] Kệ gia
+                                                                                        vị việt Nhật kèm lọ gia vị
                                                                                     </div>
                                                                                 </div>
                                                                                 <div class="bVKmWS">
                                                                                     <div class="YGu43g">
-                                                                                        <svg viewBox="0 0 20 12" height="12" width="20" class="freeship">
+                                                                                        <svg viewBox="0 0 20 12"
+                                                                                             height="12" width="20"
+                                                                                             class="freeship">
                                                                                             <path fill="#00bfa5"
                                                                                                   d="M5 0h10c.6 0 1 .4 1 1v7c0 .6-.4 1-1 1H5c-.6 0-1-.4-1-1V1c0-.6.4-1 1-1z"></path>
-                                                                                            <path fill="#00bfa5" d="M14 2h5c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1h-5c-.6 0-1-.4-1-1V3c0-.6.4-1 1-1z"></path>
-                                                                                            <circle fill="#00bfa5" cx="8" cy="10" r="2"></circle>
-                                                                                            <circle fill="#00bfa5" cx="15" cy="10" r="2"></circle>
+                                                                                            <path fill="#00bfa5"
+                                                                                                  d="M14 2h5c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1h-5c-.6 0-1-.4-1-1V3c0-.6.4-1 1-1z"></path>
+                                                                                            <circle fill="#00bfa5"
+                                                                                                    cx="8" cy="10"
+                                                                                                    r="2"></circle>
+                                                                                            <circle fill="#00bfa5"
+                                                                                                    cx="15" cy="10"
+                                                                                                    r="2"></circle>
                                                                                             <path fill="#fff"
                                                                                                   d="M17.3 5.9h.7c-.2.6-.7.9-1.5.9-1 0-1.6-.6-1.6-1.6s.6-1.7 1.6-1.7 1.5.6 1.5 1.6v.2h-2.4c0 .6.4.9.9.9.4.1.7 0 .8-.3zm-.8-1.8c-.5 0-.9.3-.9.8h1.7c0-.5-.3-.8-.8-.8zm-2.7 1.8h.7c-.2.6-.7.9-1.5.9-1 0-1.6-.6-1.6-1.6S12 3.5 13 3.5s1.5.6 1.5 1.6v.2h-2.4c0 .6.4.9.9.9.4.1.7 0 .8-.3zM13 4.1c-.5 0-.9.3-.9.8h1.7c0-.5-.3-.8-.8-.8zM9.4 6.8V3.6h.6v.5h.1c.1-.3.5-.5.9-.5h.3v.6h-.4c-.5 0-.9.3-.9.8v1.9h-.6zm-2.7 0H6V2.6h2.8v.6H6.7v1.3h2V5h-2v1.8z"></path>
-                                                                                            <path fill="#00bfa5" d="M.5 8.5H4v.8H.5z"></path>
-                                                                                            <path fill="#00bfa5" d="M0 10.2h3.5v.8H0z"></path>
-                                                                                            <circle fill="#047565" cx="8" cy="10" r="1"></circle>
-                                                                                            <circle fill="#047565" cx="15" cy="10" r="1"></circle>
+                                                                                            <path fill="#00bfa5"
+                                                                                                  d="M.5 8.5H4v.8H.5z"></path>
+                                                                                            <path fill="#00bfa5"
+                                                                                                  d="M0 10.2h3.5v.8H0z"></path>
+                                                                                            <circle fill="#047565"
+                                                                                                    cx="8" cy="10"
+                                                                                                    r="1"></circle>
+                                                                                            <circle fill="#047565"
+                                                                                                    cx="15" cy="10"
+                                                                                                    r="1"></circle>
                                                                                         </svg>
                                                                                     </div>
                                                                                 </div>

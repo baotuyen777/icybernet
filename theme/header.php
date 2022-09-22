@@ -30,7 +30,7 @@
                     </div>
                 </li>
                 <a class="navbar__link navbar__link--tappable navbar__link--hoverable navbar__link--help"
-                   href="https://help.shopee.vn/vn/s" target="_blank" rel="noopener noreferrer" tabindex="0">
+                   href="https://help.icybernet.vn/vn/s" target="_blank" rel="noopener noreferrer" tabindex="0">
                     <div class="navbar__help-center-icon">
                         <svg height="16" viewBox="0 0 16 16" width="16"
                              class="shopee-svg-icon icon-help-center">
