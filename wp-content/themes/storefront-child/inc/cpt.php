@@ -1,20 +1,20 @@
 <?php
-add_action('init', 'project_register');
+add_action('init', 'video_register');
 
-function project_register()
+function video_register()
 {
     global $themename;
     $labels = array(
-        'name' => __('Dự án', 'post type general name', $themename),
-        'singular_name' => __('Dự án', 'post type singular name', $themename),
-        'add_new' => __('Thêm mới', 'project', $themename),
-        'add_new_item' => __('Thêm dự án', $themename),
-        'edit_item' => __('Edit project', $themename),
-        'new_item' => __('New project', $themename),
-        'view_item' => __('View project', $themename),
-        'search_items' => __('Search project', $themename),
-        'not_found' => __('No project have been added yet', $themename),
-        'not_found_in_trash' => __('Nothing found in project', $themename),
+        'name' => __('Video', 'post type general name', $themename),
+        'singular_name' => __('Video', 'post type singular name', $themename),
+        'add_new' => __('Thêm mới', 'video', $themename),
+        'add_new_item' => __('Thêm Video', $themename),
+        'edit_item' => __('Edit video', $themename),
+        'new_item' => __('New video', $themename),
+        'view_item' => __('View video', $themename),
+        'search_items' => __('Search video', $themename),
+        'not_found' => __('No video have been added yet', $themename),
+        'not_found_in_trash' => __('Nothing found in video', $themename),
         'parent_item_colon' => ''
     );
 
@@ -29,7 +29,7 @@ function project_register()
         'has_archive' => false,
     );
 
-    register_post_type('project', $args);
+    register_post_type('video', $args);
 }
 
 add_action('init', 'create_branch', 0);

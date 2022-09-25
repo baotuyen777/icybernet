@@ -9513,9 +9513,9 @@ Button[data-cy=IDLargeSubmitBtn] {
     width: 1.125rem
 }
 
-.shopee-header-section--simple {
-    padding-top: 1.25rem
-}
+/*.shopee-header-section--simple {*/
+/*    padding-top: 1.25rem*/
+/*}*/
 
 .shopee-header-section--simple > .shopee-header-section__header:before {
     content: none

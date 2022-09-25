@@ -1,0 +1,91 @@
+
+.yZLQT4, .yZLQT4 .uA1waf {
+    height: 100%;
+    box-sizing: border-box
+}
+
+.yZLQT4 .uA1waf {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .87);
+    display: block;
+    box-shadow: 0 .0625rem .125rem 0 rgba(0, 0, 0, .1);
+    border-radius: .125rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    position: relative;
+    overflow: visible;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    padding: 0;
+    transition: transform .1s cubic-bezier(.4, 0, .6, 1), box-shadow .1s cubic-bezier(.4, 0, .6, 1)
+}
+
+.yZLQT4 .uA1waf._2vtPx-, .yZLQT4 .uA1waf:focus, .yZLQT4 .uA1waf:focus-visible, .yZLQT4 .uA1waf:hover {
+    box-shadow: 0 .0625rem 20px 0 rgba(0, 0, 0, .05);
+    transform: translateY(-.0625rem);
+    z-index: 1
+}
+
+.yZLQT4 .uA1waf:active {
+    box-shadow: 0 .0625rem 5px 0 rgba(0, 0, 0, .05);
+    transform: translateY(0)
+}
+
+.yZLQT4 .ytw9ct {
+    border: 1px solid rgba(0, 0, 0, .09) !important;
+    box-shadow: none
+}
+
+.yZLQT4 .uA1waf.dstLRy {
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.25rem
+}
+
+.yZLQT4 ._4QQ4Ir {
+    overflow: visible;
+    border: 1px solid transparent
+}
+
+.yZLQT4 ._4QQ4Ir:hover {
+    border: 1px solid #ee4d2d;
+    z-index: 2
+}
+
+.yZLQT4 ._4QQ4Ir:hover .shopee-item-card__hover-footer {
+    opacity: 1;
+    transition: opacity .1s
+}
+
+.W3bJfG {
+    padding: .5rem;
+    overflow: hidden
+}
+.vc0PvV {
+    display: inline;
+    line-height: 14px;
+    font-size: .75rem
+}
+
+.AxYdVM.AxYdVM {
+    display: inline-block;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
+}
+.bVKmWS {
+    display: flex;
+    height: 1rem;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 0.25rem;
+}

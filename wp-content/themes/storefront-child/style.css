@@ -304,14 +304,20 @@ footer {
 }
 
 footer img {
-	max-height: 100px;
-	width:auto;
+    max-height: 100px;
+    width: auto;
 }
+
+.qrcode {
+    max-height: 50px;
+}
+
 footer a img {
-	max-height: 35px;
-    margin: 10px;
+
+    /*margin: 10px;*/
     display: inline-block;
 }
+
 .post-type-archive-product #primary, .tax-product_cat #primary {
     width: 75%;
     float: left;
@@ -604,9 +610,11 @@ ul.products li.product .price ins {
 .bacs_details {
     background: #69b595
 }
-div[dir=auto]{
+
+div[dir=auto] {
     padding: 10px;
 }
+
 @media (min-width: 480px) {
     .storefront-full-width-content .site-main ul.products.columns-4 li.product {
         width: 47%;

@@ -14,7 +14,7 @@
     min-height: calc(100vh - 11.25rem);
     flex-wrap: wrap;
     align-content: flex-start;
-    padding-top: .3125rem
+    /*padding-top: .3125rem*/
 }
 
 ._6wTCb6 .stardust-spinner {
