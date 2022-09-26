@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-    <main class="home-page" style="margin-top: 7.4375rem">
+    <main class="home-page" >
     <!--    banner-->
     <section class="container">
         <div class="full-home-banners">

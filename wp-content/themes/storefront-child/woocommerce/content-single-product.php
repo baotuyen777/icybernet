@@ -260,8 +260,7 @@ $gallery = $product->get_gallery_image_ids();
 
                             </div>
                         </div>
-                        <div class="flex VrhRS0 uBD5Gu"><label class="_34CHXV">Vận
-                                chuyển</label>
+                        <div class="flex VrhRS0 uBD5Gu"><label class="_34CHXV">Vận chuyển</label>
                             <div class="FmL3rv _3ihqr8">
                                 <div class="zikqoN">
                                     <div class="pJhgZK"><img
