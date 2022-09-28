@@ -2248,6 +2248,9 @@
     top: -.1875rem;
     padding-right: 2.5rem
 }
+.header-with-search__logo-section img{
+    height: 50px;
+}
 
 .header-with-search__logo-section.focus-visible:before, .header-with-search__logo-section:focus-visible:before {
     content: "";

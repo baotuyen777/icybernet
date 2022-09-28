@@ -36,19 +36,19 @@
     <?php
 
     $styles = [
-        'bundle.53aea8d390f2412e.css',
-        'pcmall-homepage.b119514be9ab77725a53.css',
-        '5823.dc7b2374aaea5c4b.css',
-        '7464.b12bbc087f0b8b27.css',
-        '1179.1181c7c1be76d994.css',
-        '849.a44a68bf5bf08143b3af.legacy.css',
+//        'bundle.53aea8d390f2412e.css',
+//        'pcmall-homepage.b119514be9ab77725a53.css',
+//        '5823.dc7b2374aaea5c4b.css', --detail
+//        '7464.b12bbc087f0b8b27.css',--detail
+//        '1179.1181c7c1be76d994.css',--detail
+//        '849.a44a68bf5bf08143b3af.legacy.css',
 //        '73.89d72296cd333c9fd5f1.legacy.css',
-        'HomeOfficialShopSection.ec62e6cc621fd63669d7.css',
-        'HomeTopProducts.ad72d6a1e44164c7a839.css',
-        'yeuthich.css',
-        'mini-chat.css',
+//        'HomeOfficialShopSection.ec62e6cc621fd63669d7.css',
+//        'HomeTopProducts.ad72d6a1e44164c7a839.css', = ko dung
+//        'yeuthich.css',
+//        'mini-chat.css',
         'theme.css',
-        'other.css',
+//        'other.css',
         'main.css',
     ];
     foreach ($styles as $style):?>
@@ -134,7 +134,7 @@
     <div class="container-wrapper header-with-search-wrapper">
         <div class="container header-with-search">
             <a class="header-with-search__logo-section" href="/">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo2.png" height="50px" class="logo"/>
+                <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo2.png" class="logo"/>
             </a>
             <div class="header-with-search__search-section">
                 <div class="shopee-searchbar">
