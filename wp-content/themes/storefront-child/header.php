@@ -40,7 +40,7 @@
 //        'pcmall-homepage.b119514be9ab77725a53.css',
 //        '5823.dc7b2374aaea5c4b.css', --detail
 //        '7464.b12bbc087f0b8b27.css',--detail
-//        '1179.1181c7c1be76d994.css',--detail
+//        '1179.1181c7c1be76d994.css', -- footer
 //        '849.a44a68bf5bf08143b3af.legacy.css',
 //        '73.89d72296cd333c9fd5f1.legacy.css',
 //        'HomeOfficialShopSection.ec62e6cc621fd63669d7.css',

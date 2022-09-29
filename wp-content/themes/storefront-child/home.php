@@ -93,17 +93,23 @@ get_header(); ?>
             ['label' => 'Deal shock từ 1k', 'img' => '1k.png'],
             ['label' => 'Sổ xố hàng ngày', 'img' => 'soxo.png'],
         ];
-        foreach ($arrCat1 as $cat):
+        $terms = get_terms( array(
+            'taxonomy' => 'group',
+            'hide_empty' => false,
+        ) );
+//        var_dump($terms);
+        foreach ($terms as $cat):
             ?>
             <a href="#">
                 <div class="KYggX9" style="width: 100px;">
                     <div class="_2Ehn-F ybDQTz">
                         <div class="n-CE6j dNmwQY">
                             <div class="_5l6amx edy5hG"
-                                 style="background-image: url(<?php echo get_stylesheet_directory_uri() ?>/img/<?= $cat['img'] ?>); background-size: contain; background-repeat: no-repeat;"></div>
+                                 style="background-image: url(<?php echo get_stylesheet_directory_uri() ?>/img/<?= 'soxo.png' ?>);
+                                         background-size: contain; background-repeat: no-repeat;"></div>
                         </div>
                     </div>
-                    <div class="KSe2W7 TF67TG"><?php echo $cat['label'] ?></div>
+                    <div class="KSe2W7 TF67TG"><?php echo $cat->name ?></div>
                 </div>
             </a>
         <?php endforeach; ?>
@@ -1162,39 +1168,6 @@ get_header(); ?>
             <?php endforeach; ?>
         </div>
     </section>
-    <!--Tin công nghệ-->
-    <section>
-        <div class="shopee-header-section__header">
-            <div class="shopee-header-section__header__title"><span
-                        class="OJR0Qm">Tin công nghệ</span>
-            </div>
-
-            <a class="shopee-header-section__header-link shopee-button-no-outline" href="#">Xem tất cả&nbsp;<svg
-                        enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0"
-                        class="shopee-svg-icon icon-arrow-right">
-                    <path d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z"></path>
-                </svg>
-            </a>
-        </div>
-        <div class="fullwidth__row">
-            <?php
-            $args = array(
-                'post_type' => 'post',
-                'orderby' => 'id',
-                'order' => 'ASC',
-            );
-            $posts = get_posts($args);
-            foreach ($posts as $post):
-                ?>
-                <div class="fullwidth__item">
-                    <a href="<?php echo get_permalink($post->ID) ?>">
-                        <?php echo get_the_post_thumbnail($post->ID, 'thumb', array('class' => 'full')) ?>
-                        <p><?php echo $post->post_title ?></p>
-                    </a>
-                </div>
-            <?php endforeach; ?>
-        </div>
-    </section>
     <!--video-->
     <section class="stardust-tabs-panels__panel">
         <div class="shopee-header-section__header">
@@ -1239,5 +1212,40 @@ get_header(); ?>
 
         </div>
     </section>
+
+    <!--Tin công nghệ-->
+    <section>
+        <div class="shopee-header-section__header">
+            <div class="shopee-header-section__header__title"><span
+                        class="OJR0Qm">Tin công nghệ</span>
+            </div>
+
+            <a class="shopee-header-section__header-link shopee-button-no-outline" href="#">Xem tất cả&nbsp;<svg
+                        enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0"
+                        class="shopee-svg-icon icon-arrow-right">
+                    <path d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="fullwidth__row">
+            <?php
+            $args = array(
+                'post_type' => 'post',
+                'orderby' => 'id',
+                'order' => 'ASC',
+            );
+            $posts = get_posts($args);
+            foreach ($posts as $post):
+                ?>
+                <div class="fullwidth__item">
+                    <a href="<?php echo get_permalink($post->ID) ?>">
+                        <?php echo get_the_post_thumbnail($post->ID, 'thumb', array('class' => 'full')) ?>
+                        <p><?php echo $post->post_title ?></p>
+                    </a>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </section>
+
 <?php
 get_footer();

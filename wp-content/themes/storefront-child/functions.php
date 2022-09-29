@@ -1,6 +1,7 @@
 <?php
 
 require 'inc/cpt.php';
+require 'inc/ctx.php';
 //remove_filter( 'the_content', 'wpautop' );
 //remove_filter( 'the_excerpt', 'wpautop' );
 //add_filter ( 'the_content', 'add_newlines_to_post_content' );
