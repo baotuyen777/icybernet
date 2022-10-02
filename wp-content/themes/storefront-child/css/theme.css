@@ -759,7 +759,7 @@ a {
     right: 0;
     transform: translateZ(0);
     z-index: 100;
-    background: #d52220 !important;
+    background: #14244b !important;
 }
 
 .navbar {
@@ -3669,7 +3669,6 @@ head {
 }
 
 
-
 .bVKmWS > div:only-child {
     flex-shrink: 0
 }
@@ -3880,3 +3879,120 @@ head {
 }
 
 /*# sourceMappingURL=https://shopee.sg/assets/1179.1181c7c1be76d994.css.map*/
+
+.pDTGqb {
+    bottom: 0;
+    left: 0;
+    height: 1.5625rem;
+    background-color: rgba(0, 0, 0, .26);
+    color: #fff;
+    text-align: center;
+}
+
+.cXODCZ {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-top: 1.25rem;
+    color: #555;
+    font-size: 1.125rem;
+    text-align: left;
+    text-transform: capitalize;
+    word-break: break-word;
+}
+
+.cXODCZ, .pDTGqb {
+    line-height: 1.5625rem;
+    font-weight: 500;
+}
+
+/*customize*/
+button {
+    padding: 13px 36px;
+    margin: 0 22px 0 15px;
+    text-transform: capitalize;
+    font-weight: 300;
+    height: 2.5rem;
+    box-sizing: border-box;
+    font-size: .875rem;
+    border-radius: 2px;
+    width: 13.125rem;
+    position: relative;
+    overflow: visible;
+    outline: 0;
+    background: #ee4d2d;
+}
+
+a {
+    text-decoration: none !important;
+}
+input,textarea{
+    background-color: white !important;
+}
+
+a:hover {
+    color: #6491ff;
+}
+
+.comment-image img {
+    height: 72px;
+}
+
+.add_to_cart_button {
+    stroke: #ee4d2d;
+    margin-right: 10px;
+    background: var(--brand-primary-light-color);
+    color: var(--brand-primary-color);
+    border: 1px solid var(--brand-primary-color);
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 3%);
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.add_to_cart_button:hover {
+    background: var(--brand-primary-light-color);
+}
+
+.add_to_cart_button svg {
+    /*font-size: 1.25rem;*/
+}
+
+.tawk-branding {
+    display: none !important;
+}
+
+.entry-content {
+    margin-top: 100px;
+}
+
+/*customize woocommerce*/
+table.cart th {
+    background: white;
+    border-bottom: 1px solid #ccc;
+}
+
+table.cart td.product-remove {
+    vertical-align: middle;
+    padding: 0;
+}
+
+table.cart .actions button {
+    margin-bottom: 10px;
+    background: #0A246A;
+    color: white;
+}
+
+.cart-collaterals .cart_totals {
+    width: 570px;
+    border-top: 0;
+}
+
+.checkout-button {
+    background: #0A246A !important;
+}
+/*checkout page*/
+#billing_company_field, #billing_postcode_field, #billing_address_2_field, #billing_country_field{
+    display: none !important;
+}

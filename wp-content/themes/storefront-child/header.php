@@ -33,27 +33,8 @@
           content="Mua sắm trực tuyến hàng triệu sản phẩm ở tất cả ngành hàng...Giá tốt &amp; nhiều ưu đãi. Mua và bán online trong 30 giây. iCybernet đảm bảo nhận hàng hoặc hoàn tiền. iCybernet Đảm Bảo | Miễn Phí Vận Chuyển | Gợi Ý Hôm Nay"
           data-rh="true">
     <?php wp_head(); ?>
-    <?php
-
-    $styles = [
-//        'bundle.53aea8d390f2412e.css',
-//        'pcmall-homepage.b119514be9ab77725a53.css',
-//        '5823.dc7b2374aaea5c4b.css', --detail
-//        '7464.b12bbc087f0b8b27.css',--detail
-//        '1179.1181c7c1be76d994.css', -- footer
-//        '849.a44a68bf5bf08143b3af.legacy.css',
-//        '73.89d72296cd333c9fd5f1.legacy.css',
-//        'HomeOfficialShopSection.ec62e6cc621fd63669d7.css',
-//        'HomeTopProducts.ad72d6a1e44164c7a839.css', = ko dung
-//        'yeuthich.css',
-//        'mini-chat.css',
-        'theme.css',
-//        'other.css',
-        'main.css',
-    ];
-    foreach ($styles as $style):?>
-        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/css/<?php echo $style ?>">
-    <?php endforeach; ?>
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/css/theme.css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/css/main.css">
 </head>
 <body <?php body_class(); ?>>
 
@@ -187,5 +168,5 @@
         </div>
     </div>
 </header>
-
+<div class="body">
 <?php do_action('storefront_before_header'); ?>

@@ -479,29 +479,39 @@ label.container .checkmark:after {
     margin-bottom: 10px;
 }
 
-/*checkoout page*/
+/*checkout page*/
 
 ul.order_details {
     margin: 0px;
+    font-size: 16px;
 }
 
 ul.order_details li:first-child {
     padding-top: 0px;
 }
-
-ul.woocommerce-order-overview li {
-    display: block;
-    width: 30%;
-    margin-right: 10px;
-    float: left;
+table.woocommerce-checkout-review-order-table .product-name{
+    width: 60%;
+}
+.woocommerce-terms-and-conditions-wrapper{
+    display: none;
+}
+.woocommerce-shipping-fields{
+    display: none;
 }
 
-ul.woocommerce-order-overview {
-    background: #ee4d2d;
-    height: 2em;
-    color: white;
-    padding-top: 5px;
-}
+/*ul.woocommerce-order-overview li {*/
+/*    display: block;*/
+/*    width: 30%;*/
+/*    margin-right: 10px;*/
+/*    float: left;*/
+/*}*/
+
+/*ul.woocommerce-order-overview {*/
+/*    background: #ee4d2d;*/
+/*    height: 2em;*/
+/*    color: white;*/
+/*    padding-top: 5px;*/
+/*}*/
 
 ul.woocommerce-order-overview li strong {
     display: inline;
@@ -522,7 +532,12 @@ ul.wc-bacs-bank-details {
 ul.order_details li {
     padding: 0 10px;
     border-bottom: none;
+    font-size: 1em;
 
+}
+
+h3.wc-bacs-bank-details-account-name {
+    display: none;
 }
 
 .bank_name span, .iban {
@@ -548,6 +563,31 @@ ul.order_details li strong {
     font-size: 14px;
 }
 
+.woocommerce-bacs-bank-details:after {
+    content: '';
+    clear: both;
+}
+.clearfix{
+    clear: both;
+}
+/*thankyou page*/
+table.order_details th, table.order_details td{
+    background: white;
+    border:1px solid #ccc;
+}
+.woocommerce-column--billing-address{
+    display: none;
+}
+.woocommerce-column--shipping-address{
+    float: none !important;
+    background: white;
+    padding: 10px;
+    width: 100% !important;
+}
+
+/*.woocommerce-order-details__title{*/
+/*    margin-top: 20px;*/
+/*}*/
 .woocommerce-notice {
     color: white;
     padding: 5px;

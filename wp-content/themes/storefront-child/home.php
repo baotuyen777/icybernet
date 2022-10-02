@@ -282,7 +282,7 @@ get_header(); ?>
                                             <div class="ofs-carousel__item" location="1"
                                                  shopid="299282693"><a
                                                         class="ofs-carousel__shop-cover-image"
-                                                        href="/pinkflash.vn">
+                                                        href="#topbanchay">
                                                     <div class="n-CE6j">
                                                         <div class="ofs-carousel__cover-image edy5hG"
                                                              style="background-image: url(<?php echo get_stylesheet_directory_uri() ?>/img/product/<?php echo $sale['img'] ?>); background-size: contain; background-repeat: no-repeat;"></div>
@@ -312,7 +312,7 @@ get_header(); ?>
                         class="OJR0Qm">Top bán chạy</span>
             </div>
             <a class="shopee-header-section__header-link" tabindex="-1"
-               href="/top_products?catId=VN_BITL0_718%3Atop_sold">
+               href="#top_sold2">
                 <button class="shopee-button-no-outline">Xem tất cả&nbsp;<svg
                             enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0"
                             class="shopee-svg-icon icon-arrow-right">
@@ -337,7 +337,7 @@ get_header(); ?>
                             <li class="image-carousel__item"
                                 style="padding: 0px; width: 16.6667%;">
                                 <a class="K5psIF Wh3W7J"
-                                   href="/top_products?catId=VN_BITL0_976%3Atop_sold">
+                                   href="#topsold3">
                                     <div class="xpdSwI">
                                         <div class="uVbGLf od+H03 li78LN"></div>
                                         <div class="n-CE6j _06bq+d">
@@ -384,7 +384,7 @@ get_header(); ?>
                         class="OJR0Qm">Gợi ý hôm nay</span>
             </div>
             <a class="shopee-header-section__header-link" tabindex="-1"
-               href="/top_products?catId=VN_BITL0_718%3Atop_sold">
+               href="#top_sold">
                 <button class="shopee-button-no-outline">Xem tất cả&nbsp;<svg
                             enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0"
                             class="shopee-svg-icon icon-arrow-right">
@@ -426,9 +426,7 @@ get_header(); ?>
                                         <div class="hPc1Pf">
                                             <div class="vc0PvV AxYdVM"><?php the_title() ?></div>
                                         </div>
-                                        <div class="bVKmWS">
-                                            <?php echo FREESHIP ?>
-                                        </div>
+                                        <div class="bVKmWS"><?php echo FREESHIP ?></div>
                                     </div>
                                     <div class="imdVqB _2fuFWg">
                                         <div class="WSVId4 fepoRf"><span
