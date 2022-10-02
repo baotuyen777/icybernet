@@ -11,7 +11,9 @@ header {
     /*background: linear-gradient(-180deg, #f53d2d, #f63);*/
     /*margin-top: 30px;*/
 }
-
+.body{
+    margin-top: 130px;
+}
 .chatbox {
     display: none;
 }
@@ -19,14 +21,14 @@ header {
 .btn-solid-primary {
     background: #d52220 !important;
 }
-mý
+
 .logo {
     max-height: 50px;
 }
 
-main {
-    margin-top: 95px;
-}
+/*main {*/
+/*    margin-top: 95px;*/
+/*}*/
 
 .content-area {
     width: auto !important;

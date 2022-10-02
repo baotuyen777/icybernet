@@ -98,7 +98,7 @@ $regula_price = $product->get_regular_price() ? '₫' . number_format($product->
                                 <div class="flex items-center _34BHKe">
                                     <div class="_2yjfFH"><?php echo $regula_price ?></div>
                                     <div class="flex items-center">
-                                        <div class="_2Shl1j">₫<?php echo number_format($product->get_price()); ?></div>
+                                        <div class="_2Shl1j"> <?php echo $product->get_price() ? number_format($product->get_price()).'₫' : "Liên hệ" ?></div>
                                         <div class="_3PlIlX">41% giảm</div>
                                     </div>
                                 </div>
@@ -321,7 +321,7 @@ $regula_price = $product->get_regular_price() ? '₫' . number_format($product->
                                     </div>
                                 </div>
                             </div>
-                            <div class="shopee-page-controller product-ratings__page-controller">
+                            <div class="shopee-page-controller product-ratings__page-controller hidden">
                                 <button class="shopee-icon-button shopee-icon-button--left ">
                                     <svg enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0"
                                          y="0" class="shopee-svg-icon icon-arrow-left">

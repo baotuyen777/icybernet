@@ -20,16 +20,18 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'database_name_here' );
+const WP_CACHE = true;
+define( 'WPCACHEHOME', 'D:\xampp\htdocs\icybernet\wp-content\plugins\wp-super-cache/' );
+define( 'DB_NAME', 'u262945054_icybernet' );
 
 /** Database username */
-define( 'DB_USER', 'username_here' );
+define( 'DB_USER', 'u262945054_icybernet' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'password_here' );
+define( 'DB_PASSWORD', 'Batman@123' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', '194.59.164.43' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -79,8 +81,9 @@ $table_prefix = 'wp_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'WP_DEBUG', false );
-
+define( 'WP_DEBUG', true );
+define( 'WP_POST_REVISIONS', 3 );
+define( 'WP_MEMORY_LIMIT', '96M' );
 /* Add any custom values between this line and the "stop editing" line. */
 
 
@@ -89,7 +92,7 @@ define( 'WP_DEBUG', false );
 
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
-	define( 'ABSPATH', __DIR__ . '/' );
+    define( 'ABSPATH', __DIR__ . '/' );
 }
 
 /** Sets up WordPress vars and included files. */

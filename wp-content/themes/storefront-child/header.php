@@ -119,13 +119,12 @@
             </a>
             <div class="header-with-search__search-section">
                 <div class="shopee-searchbar">
-                    <div class="shopee-searchbar__main">
-                        <form role="search" class="shopee-searchbar-input" autocomplete="off"><input
-                                    aria-label="FLASH SALE -50%" class="shopee-searchbar-input__input"
-                                    maxlength="128" placeholder="FLASH SALE -50%" autocomplete="off"
-                                    aria-autocomplete="list" aria-controls="shopee-searchbar-listbox"
-                                    aria-expanded="false" role="combobox" value=""></form>
-                    </div>
+                    <form role="search" class="" autocomplete="off">
+                        <input
+                                aria-label="FLASH SALE -50%" class=""
+                                maxlength="128" autocomplete="off"
+                                aria-expanded="false" role="combobox" value="">
+                    </form>
                     <button type="button"
                             class="btn btn-solid-primary btn--s btn--inline shopee-searchbar__search-button">
                         <svg height="19" viewBox="0 0 19 19" width="19" class="shopee-svg-icon">
@@ -149,8 +148,10 @@
             <div class="header-with-search__cart-wrapper">
                 <div class="stardust-popover" id="cart_drawer_target_id">
                     <div role="button" class="stardust-popover__target">
-                        <div class="cart-drawer-container"><a class="cart-drawer flex v-center"
-                                                              id="cart_drawer_target_id" href="/cart">
+                        <div class="cart-drawer-container">
+                            <a class="cart-drawer flex v-center"
+                                                              id="cart_drawer_target_id"
+                                                              href="<?php echo wc_get_cart_url() ?>">
                                 <svg viewBox="0 0 26.6 25.6"
                                      class="shopee-svg-icon navbar__link-icon icon-shopping-cart-2">
                                     <polyline fill="none"
@@ -160,7 +161,7 @@
                                     <circle cx="10.7" cy="23" r="2.2" stroke="none"></circle>
                                     <circle cx="19.7" cy="23" r="2.2" stroke="none"></circle>
                                 </svg>
-                                <div class="shopee-cart-number-badge">126</div>
+<!--                                <div class="shopee-cart-number-badge">126</div>-->
                             </a></div>
                     </div>
                 </div>

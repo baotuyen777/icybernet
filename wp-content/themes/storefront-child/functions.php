@@ -5,13 +5,20 @@ require 'inc/ctx.php';
 require 'inc/icon.php';
 require 'inc/config.php';
 
+//sidebar
+add_action('widgets_init', 'david_widgets_init');
+function david_widgets_init() {
+    register_sidebar(array(
+        'name' => __('Shop sidebar', 'david'),
+        'id' => 'sidebar-shop',
+        'description' => __('Widgets in this area will be shown on shop pages.', 'david'),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '',
+        'after_title' => '',
+    ));
+}
 
-//remove_filter( 'the_content', 'wpautop' );
-//remove_filter( 'the_excerpt', 'wpautop' );
-//add_filter ( 'the_content', 'add_newlines_to_post_content' );
-//function add_newlines_to_post_content( $content ) {
-//    return nl2br( $content );
-//}
 //add_filter('auto_update_plugin', '__return_false');
 // Load the theme stylesheets
 //function theme_styles() {

@@ -323,18 +323,18 @@ footer a img {
     float: left;
 }
 
-.post-type-archive-product .WOOF_Widget, .tax-product_cat .WOOF_Widget {
-    width: 20%;
-    float: left;
-    margin-right: 40px;
-}
+/*.post-type-archive-product .WOOF_Widget, .tax-product_cat .WOOF_Widget {*/
+/*    width: 20%;*/
+/*    float: left;*/
+/*    margin-right: 40px;*/
+/*}*/
 
-.woof_container {
-    border-bottom: 1px solid #ccc;
-    border-top: 1px solid #ccc;
-    /*margin-top: 10px;*/
-    padding-top: 10px;
-}
+/*.woof_container {*/
+/*    border-bottom: 1px solid #ccc;*/
+/*    border-top: 1px solid #ccc;*/
+/*    !*margin-top: 10px;*!*/
+/*    padding-top: 10px;*/
+/*}*/
 
 .woof_checkbox_label {
     margin-left: 0
@@ -654,7 +654,14 @@ ul.products li.product .price ins {
 div[dir=auto] {
     padding: 10px;
 }
-
+.shop-page aside{
+    width: 25%;
+    float: left;
+}
+.shop-page main{
+    width: 70%;
+    float: right;
+}
 @media (min-width: 480px) {
     .storefront-full-width-content .site-main ul.products.columns-4 li.product {
         width: 47%;

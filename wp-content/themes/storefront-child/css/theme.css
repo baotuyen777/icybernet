@@ -212,13 +212,17 @@ a {
     left: calc(var(--focus-indicator-spacing) * -1);
     margin: calc(var(--focus-indicator-spacing) * -1)
 }
-
-.shopee-searchbar-input {
-    display: flex;
-    flex: 1;
-    box-sizing: border-box;
-    padding: 0 .625rem;
-    position: relative
+.shopee-searchbar form {
+    margin: 0;
+    width: 100%;
+}
+.shopee-searchbar input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.shopee-searchbar input:focus{
+    outline: none;
 }
 
 .shopee-searchbar-input__input {
@@ -3928,7 +3932,8 @@ button {
 a {
     text-decoration: none !important;
 }
-input,textarea{
+
+input, textarea {
     background-color: white !important;
 }
 
@@ -3992,7 +3997,13 @@ table.cart .actions button {
 .checkout-button {
     background: #0A246A !important;
 }
+
 /*checkout page*/
-#billing_company_field, #billing_postcode_field, #billing_address_2_field, #billing_country_field{
+#billing_company_field, #billing_postcode_field, #billing_address_2_field, #billing_country_field {
     display: none !important;
+}
+
+.searchbar input {
+    height: 100%;
+    width: 100%;
 }
