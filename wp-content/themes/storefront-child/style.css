@@ -573,7 +573,10 @@ ul.order_details li strong {
 /*thankyou page*/
 table.order_details th, table.order_details td{
     background: white;
-    border:1px solid #ccc;
+    border:1px solid #ccc3;
+}
+.woocommerce-thankyou-order-details{
+    background: white;
 }
 .woocommerce-column--billing-address{
     display: none;
@@ -623,9 +626,13 @@ button.menu-toggle:after, button.menu-toggle:before, button.menu-toggle span:bef
 table.cart {
     margin-bottom: 0;
 }
-
+table.cart td.actions{
+    padding: 10px 0;
+}
 .cart_totals {
     border-top: 1px solid #ccc;
+    background: white;
+    padding: 10px;
 }
 
 /*.order-total td{*/

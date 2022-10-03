@@ -1,7 +1,6 @@
 <?php get_header(); ?>
     <div id="content">
         <section id="main-content" class="container">
-            <?php woocommerce_breadcrumb(); ?>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <?php get_template_part('content', get_post_format()); ?>
                 <?php get_template_part('author-bio'); ?>
