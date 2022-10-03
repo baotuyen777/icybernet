@@ -343,12 +343,12 @@ class WP_Styles extends WP_Dependencies {
 			return $output;
 		}
 
-		printf(
-			"<style id='%s-inline-css'%s>\n%s\n</style>\n",
-			esc_attr( $handle ),
-			$this->type_attr,
-			$output
-		);
+//		printf(
+//			"<style id='%s-inline-css'%s>\n%s\n</style>\n",
+//			esc_attr( $handle ),
+//			$this->type_attr,
+//			$output
+//		);
 
 		return true;
 	}

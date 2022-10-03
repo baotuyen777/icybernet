@@ -7,7 +7,7 @@
 global $product;
 
 $images = wp_get_attachment_image_src(get_post_thumbnail_id($product->get_id()), 'full');
-$product_feature = $images[0];
+$product_feature = $images[0] ?? [];
 $gallery = $product->get_gallery_image_ids();
 $quantity_sold = get_field('quantity_sold');
 $regula_price = $product->get_regular_price() ? '₫' . number_format($product->get_regular_price()) : '';
@@ -16,7 +16,6 @@ $regula_price = $product->get_regular_price() ? '₫' . number_format($product->
 ?>
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/detail.css">
 <main role="main" class="container">
-    <?php woocommerce_breadcrumb(); ?>
 
     <div class="product-briefing flex card _2qM0Iy">
         <div></div>
@@ -148,12 +147,7 @@ $regula_price = $product->get_regular_price() ? '₫' . number_format($product->
                     </div>
                 </div>
                 <div style="margin-top: 15px;">
-<!--                    <div class="_3pcTIL">-->
-<!--                        <div class="_37uIr4">-->
-<!--                            <button type="button" class="btn btn-tinted btn--l _3f7_YI _1TpzVc "-->
-<!--                                    aria-disabled="false">-->
-<!--                                --><?php //echo CART ?>
-<!--                                <span>thêm vào giỏ hàng</span></button>-->
+
                             <a href="?add-to-cart=<?php the_ID()?>" data-quantity="1"
                                class="button product_type_simple add_to_cart_button ajax_add_to_cart added"
                                data-product_id="<?php the_ID()?>" data-product_sku="">

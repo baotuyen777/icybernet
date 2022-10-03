@@ -150,8 +150,8 @@
                     <div role="button" class="stardust-popover__target">
                         <div class="cart-drawer-container">
                             <a class="cart-drawer flex v-center"
-                                                              id="cart_drawer_target_id"
-                                                              href="<?php echo wc_get_cart_url() ?>">
+                               id="cart_drawer_target_id"
+                               href="<?php echo wc_get_cart_url() ?>">
                                 <svg viewBox="0 0 26.6 25.6"
                                      class="shopee-svg-icon navbar__link-icon icon-shopping-cart-2">
                                     <polyline fill="none"
@@ -161,7 +161,7 @@
                                     <circle cx="10.7" cy="23" r="2.2" stroke="none"></circle>
                                     <circle cx="19.7" cy="23" r="2.2" stroke="none"></circle>
                                 </svg>
-<!--                                <div class="shopee-cart-number-badge">126</div>-->
+                                <!--                                <div class="shopee-cart-number-badge">126</div>-->
                             </a></div>
                     </div>
                 </div>
@@ -170,4 +170,6 @@
     </div>
 </header>
 <div class="body">
+    <div class="container"><?php woocommerce_breadcrumb(); ?></div>
+
 <?php do_action('storefront_before_header'); ?>

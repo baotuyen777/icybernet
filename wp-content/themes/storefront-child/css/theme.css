@@ -2056,11 +2056,11 @@ head {
     padding-top: 126%
 }
 
-.home-page {
-    display: flex;
-    flex-direction: column;
-    /*margin-bottom: 4.375rem*/
-}
+/*.home-page {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    !*margin-bottom: 4.375rem*!*/
+/*}*/
 
 .home-page .shopee-header-section__header {
     background: #fff;
@@ -3306,22 +3306,13 @@ head {
     box-shadow: none
 }
 
-.homepage-mall-section .ofs-carousel__item__text {
-    position: absolute;
-    left: 14px;
-    bottom: 18px;
-    width: 172px;
-    height: 27px;
-    line-height: 27px;
+.homepage-mall-section .product_name {
     text-align: center;
     font-size: 18px;
-    display: -webkit-box;
-    text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
     word-wrap: break-word;
     overflow: hidden;
-    color: #d0011b
+    color: #d0011b;
+    line-height: 2rem;
 }
 
 .homepage-mall-section .ofs-carousel__shop-cover-image {
@@ -3406,15 +3397,13 @@ head {
     height: 1.25rem
 }
 
-._0P\+BHf {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1.125rem;
-    height: 1.125rem;
+.bg_icon_round {
     background-color: #d0011b;
     margin-left: .5rem;
-    border-radius: 50%
+    border-radius: 50%;
+    padding: 5px 4px 2px 4px;
+    font-size: 10px;
+    color: white;
 }
 
 ._0P\+BHf > .icon-arrow-right {
@@ -4006,4 +3995,9 @@ table.cart .actions button {
 .searchbar input {
     height: 100%;
     width: 100%;
+}
+
+.title{
+    color: #d52220 ;
+    margin-right: 10px;
 }

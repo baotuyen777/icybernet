@@ -29,7 +29,8 @@ get_header('shop');
 do_action('woocommerce_before_main_content');
 
 ?>
-<section class="container shop-page">
+<section class="container shop-page ">
+
     <header class="woocommerce-products-header">
         <?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
             <h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
@@ -49,7 +50,8 @@ do_action('woocommerce_before_main_content');
         <?php //the_widget('WOOF_Widget', $instance, $args);
         dynamic_sidebar('sidebar-shop'); ?>
     </aside>
-    <main>
+    <main class="main">
+
         <?php
 
         if (woocommerce_product_loop()) {
@@ -100,7 +102,7 @@ do_action('woocommerce_before_main_content');
          *
          * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
          */
-        do_action('woocommerce_after_main_content');
+//        do_action('woocommerce_after_main_content');
 
         /**
          * Hook: woocommerce_sidebar.
@@ -108,8 +110,9 @@ do_action('woocommerce_before_main_content');
          * @hooked woocommerce_get_sidebar - 10
          */
 //        do_action('woocommerce_sidebar');
-
-        get_footer('shop');
         ?>
+
     </main>
+    <div class="clearfix"></div>
 </section>
+<?php get_footer('shop');?>
