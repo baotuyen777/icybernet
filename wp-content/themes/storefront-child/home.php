@@ -11,52 +11,18 @@ get_header(); ?>
     <!--    banner-->
     <section class="container">
         <div class="full-home-banners">
-            <div class="full-home-banners__main-banner">
-                <div class="stardust-carousel">
-                    <div class="stardust-carousel__item-list-wrapper">
-                        <ul class="stardust-carousel__item-list">
-                            <li class="stardust-carousel__item" style="width: 100%;">
-                                <div class="stardust-carousel__item-inner-wrapper stardust-carousel__item-inner-wrapper--hide">
-                                    <a class="full-home-banners__banner-image" href="">
-                                        <div class="n-CE6j full-home-banners__light-background">
-                                            <div class="full-home-banners__main-banner-image edy5hG"
-                                                 style="background-image: url('<?php echo get_stylesheet_directory_uri() ?>/img/banner/banner1.jpg'); background-size: cover; background-repeat: no-repeat;"></div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="stardust-carousel__arrow stardust-carousel__arrow--type-1 stardust-carousel__arrow--prev">
-                        <svg enable-background="new 0 0 13 20" viewBox="0 0 13 20" role="img"
-                             class="stardust-icon stardust-icon-arrow-left-bold">
-                            <path stroke="none"
-                                  d="m4.2 10l7.9-7.9-2.1-2.2-9 9-1.1 1.1 1.1 1 9 9 2.1-2.1z"></path>
-                        </svg>
-                    </div>
-                    <div class="stardust-carousel__arrow stardust-carousel__arrow--type-1 stardust-carousel__arrow--next">
-                        <svg enable-background="new 0 0 13 21" viewBox="0 0 13 21" role="img"
-                             class="stardust-icon stardust-icon-arrow-right-bold">
-                            <path stroke="none"
-                                  d="m11.1 9.9l-9-9-2.2 2.2 8 7.9-8 7.9 2.2 2.1 9-9 1-1z"></path>
-                        </svg>
-                    </div>
-                    <div class="stardust-carousel__dots">
-                        <div class="stardust-carousel__dot  stardust-carousel__dot--active"></div>
-                        <div class="stardust-carousel__dot"></div>
-                        <div class="stardust-carousel__dot"></div>
-                        <div class="stardust-carousel__dot"></div>
-                        <div class="stardust-carousel__dot"></div>
-                        <div class="stardust-carousel__dot"></div>
-                        <div class="stardust-carousel__dot"></div>
-                        <div class="stardust-carousel__dot"></div>
-                        <div class="stardust-carousel__dot"></div>
-                        <div class="stardust-carousel__dot"></div>
-                        <div class="stardust-carousel__dot"></div>
-                        <div class="stardust-carousel__dot"></div>
-                    </div>
-                </div>
+            <div id="slider">
+                <a href="#" class="control_next">></a>
+                <a href="#" class="control_prev"><</a>
+                <ul>
+                    <?php
+                    $mainSlider = get_field('banner_top');
+                    foreach ($mainSlider as $slide):
+                        ?>
+                        <li style="width:800px; height: 235px"><img
+                                    src="<?php echo $slide['full_image_url'] ?>"></li>
+                    <?php endforeach; ?>
+                </ul>
             </div>
 
             <div class="full-home-banners__right-wrapper">
@@ -213,7 +179,7 @@ get_header(); ?>
             </div>
         </div>
     </section>
-    <section class="homepage-mall-section container">
+    <section class="homepage-mall-section container white">
         <div class="shopee-header-section shopee-header-section--simple">
             <div class="shopee-header-section__header">
                 <div class="shopee-header-section__header__title">
@@ -240,7 +206,7 @@ get_header(); ?>
                 </a>
             </div>
             <div class="shopee-header-section__content">
-                <div class="wdSKrN pull-left">
+                <div class="pull-left">
                     <div style="width: 100%;">
                         <img src="<?php echo get_stylesheet_directory_uri() ?>/img/banner/banner4.png">
                     </div>
@@ -301,35 +267,31 @@ get_header(); ?>
                href="#top_sold2">Xem tất cả&nbsp;<span class="bg_icon_round"><?php echo ARROW_GO ?></span>
             </a>
         </div>
-        <?php $arrTopSale = [
-            ['label' => 'Tai nghe chụp tai', 'img' => 'tai-nghe-chup-tai-gaming-Remax-RM-850-am-thanh-gia-lap-7.1-1.jpg'],
-            ['label' => 'Tặng dây sạc 99k', 'img' => 'product1.jpg'],
-            ['label' => 'Tai nghe chụp tai', 'img' => 'tai-nghe-chup-tai-chong-on-ANC-Remax-RB-800HB.jpg'],
-            ['label' => 'Tặng dây sạc 99k', 'img' => 'product1.jpg'],
-            ['label' => 'Tai nghe chụp tai', 'img' => 'tai-nghe-chup-tai-chong-on-ANC-Remax-RB-800HB.jpg'],
-            ['label' => 'Tặng dây sạc 99k', 'img' => 'product1.jpg'],
-        ] ?>
+
+
         <ul class="flex">
-            <?php foreach ($arrTopSale as $sale): ?>
-                <li class="image-carousel__item"
-                    style="padding: 0px; width: 16.6667%;">
-                    <a class="K5psIF Wh3W7J"
-                       href="#topsold3">
-                        <div class="xpdSwI">
-                            <div class="uVbGLf od+H03 li78LN"></div>
-                            <div class="n-CE6j _06bq+d">
-                                <img width="invalid-value"
-                                     height="invalid-value"
-                                     class="QQTrlS edy5hG"
-                                     style="object-fit: contain"
-                                     src="<?php echo get_stylesheet_directory_uri() ?>/img/product/<?php echo $sale['img'] ?>">
+            <?php
+            $featured_posts = get_field('top_sale');
+            if ($featured_posts):
+                foreach ($featured_posts as $post):
+                    setup_postdata($post);
+                    ?>
+                    <li class="white col-2 p-b-30">
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="relative">
+                                <div class="product_label"><img
+                                            src="<?php echo get_stylesheet_directory_uri() ?>/img/product_label_top.png"/>
+                                </div>
+                                <?php the_post_thumbnail('thumbnail'); ?>
+                                <div class="pDTGqb">Bán <?php the_field('quantity_sold_in_month'); ?> / tháng</div>
                             </div>
-                            <div class="pDTGqb">Bán 917 / tháng</div>
-                        </div>
-                        <div class="cXODCZ"><?php echo $sale['label'] ?></div>
-                    </a>
-                </li>
-            <?php endforeach; ?>
+                            <div class="cXODCZ"><?php the_title() ?></div>
+                        </a>
+                    </li>
+                <?php
+                endforeach;
+                wp_reset_postdata(); ?>
+            <?php endif; ?>
         </ul>
     </section>
     <!--    --------------------------       goi y hom nay-->
@@ -341,11 +303,11 @@ get_header(); ?>
             </div>
             <a class="shopee-header-section__header-link" tabindex="-1"
                href="#top_sold">
-               Xem tất cả&nbsp;<svg
-                            enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0"
-                            class="shopee-svg-icon icon-arrow-right">
-                        <path d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z"></path>
-                    </svg>
+                Xem tất cả&nbsp;<svg
+                        enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0"
+                        class="shopee-svg-icon icon-arrow-right">
+                    <path d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z"></path>
+                </svg>
             </a>
         </div>
         <div class="_6wTCb6">
@@ -467,6 +429,8 @@ get_header(); ?>
                 'post_type' => 'post',
                 'orderby' => 'id',
                 'order' => 'ASC',
+                'posts_per_page' => 4,
+                'cat' => TERM_NEWS
             );
             $posts = get_posts($args);
             foreach ($posts as $post):

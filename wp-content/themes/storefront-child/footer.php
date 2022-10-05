@@ -13,20 +13,13 @@
                                                      class="FA0WjS" title="" target="_blank"
                                                      rel="noopener noreferrer"><span
                                         class="xTjlXx">iCybernet Blog</span></a></li>
-                        <li class="o8Gbgv yy98Or"><a
-                                    href="https://help.iCybernet.vn/vn/s/article/C%C3%A1c-c%C3%A2u-h%E1%BB%8Fi-li%C3%AAn-quan-%C4%91%E1%BA%BFn-iCybernet-MALL"
-                                    class="FA0WjS" title="" target="_blank"
-                                    rel="noopener noreferrer"><span class="xTjlXx">iCybernet Mall</span></a></li>
+
                         <li class="o8Gbgv yy98Or"><a
                                     href="https://help.iCybernet.vn/vn/s/article/H%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-mua-h%C3%A0ng-t%E1%BA%A1i-iCybernet-1542942315487"
                                     class="FA0WjS" title="" target="_blank"
                                     rel="noopener noreferrer"><span class="xTjlXx">Hướng dẫn mua hàng</span></a>
                         </li>
-                        <li class="o8Gbgv yy98Or"><a
-                                    href="https://help.iCybernet.vn/vn/s/article/L%C3%A0m-c%C3%A1ch-n%C3%A0o-%C4%91%E1%BB%83-b%E1%BA%AFt-%C4%91%E1%BA%A7u-%C4%91%C4%83ng-b%C3%A1n-tr%C3%AAn-iCybernet-1542942317110"
-                                    class="FA0WjS" title="" target="_blank"
-                                    rel="noopener noreferrer"><span class="xTjlXx">Hướng dẫn bán hàng</span></a>
-                        </li>
+
                         <li class="o8Gbgv yy98Or"><a
                                     href="https://help.iCybernet.vn/vn/s/topic/0TO6F000000QzBjWAK/thanh-to%C3%A1n"
                                     class="FA0WjS" title="" target="_blank"
@@ -83,15 +76,7 @@
                                                      class="FA0WjS" title=""
                                                      target="_blank" rel="noopener noreferrer"><span
                                         class="xTjlXx">Flash Sales</span></a></li>
-                        <li class="o8Gbgv yy98Or"><a href="https://iCybernet.vn/affiliate/"
-                                                     class="FA0WjS" title=""
-                                                     target="_blank" rel="noopener noreferrer"><span
-                                        class="xTjlXx">Chương trình Tiếp thị liên kết iCybernet</span></a></li>
-                        <li class="o8Gbgv yy98Or"><a href="mailto:media.vn%40iCybernet.com"
-                                                     class="FA0WjS"
-                                                     title="media.vn@iCybernet.com" target="_blank"
-                                                     rel="noopener noreferrer"><span class="xTjlXx">Liên Hệ Với Truyền Thông</span></a>
-                        </li>
+
                     </ul>
                 </div>
                 <div class="PuXQrZ">

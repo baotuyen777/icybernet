@@ -7,30 +7,17 @@
     <title>iCybernet | Mua và Bán Trên Ứng Dụng Di Động Hoặc Website</title>
     <meta name="theme-color" content="#f53d2d" data-rh="true">
     <meta property="og:title" content="iCybernet | Mua và Bán Trên Ứng Dụng Di Động Hoặc Website" data-rh="true">
-
+    <link rel="icon" type="image/x-icon" href="<?php echo site_url()?>/favicon.ico">
     <link rel="canonical" href="https://icybernet.vn/" data-rh="true">
     <meta name="robots" content="all" data-rh="true">
     <meta property="og:type" content="website" data-rh="true">
     <meta property="og:url" content="https://icybernet.vn" data-rh="true">
-    <meta property="og:image"
-          content="css/26c9324913c021677768c36975d635ef.png"
-          data-rh="true">
-    <meta name="msvalidate.01" content="A8650C3843A8C2692D699CD74854A0AA" data-rh="true">
-    <meta name="ahrefs-site-verification" content="1ba832b5763f71544fe8b6f29a003193997e35e5448e585df071910f83597119"
-          data-rh="true">
-    <meta property="fb:pages" content="1557782724478208" data-rh="true">
-    <meta property="al:ios:url" content="icybernet.vn://home" data-rh="true">
-    <meta property="al:ios:app_store_id" content="959841449" data-rh="true">
-    <meta property="al:ios:app_name" content="iCybernet VN" data-rh="true">
-    <meta property="al:android:package" content="icybernet.vn" data-rh="true">
-    <meta property="al:android:url" content="shopeevn://home" data-rh="true">
-    <meta property="al:android:app_name" content="iCybernet VN" data-rh="true">
-    <meta property="al:web:url" content="https://icybernet.vn" data-rh="true">
+
     <meta name="description"
-          content="Mua sắm trực tuyến hàng triệu sản phẩm ở tất cả ngành hàng...Giá tốt &amp; nhiều ưu đãi. Mua và bán online trong 30 giây. iCybernet đảm bảo nhận hàng hoặc hoàn tiền. iCybernet Đảm Bảo | Miễn Phí Vận Chuyển | Gợi Ý Hôm Nay"
+          content="Mua sắm trực tuyến hàng triệu sản phẩm ...Giá tốt &amp; nhiều ưu đãi. Mua và bán online trong 30 giây. iCybernet đảm bảo nhận hàng hoặc hoàn tiền. iCybernet Đảm Bảo | Miễn Phí Vận Chuyển | Gợi Ý Hôm Nay"
           data-rh="true">
     <meta property="og:description"
-          content="Mua sắm trực tuyến hàng triệu sản phẩm ở tất cả ngành hàng...Giá tốt &amp; nhiều ưu đãi. Mua và bán online trong 30 giây. iCybernet đảm bảo nhận hàng hoặc hoàn tiền. iCybernet Đảm Bảo | Miễn Phí Vận Chuyển | Gợi Ý Hôm Nay"
+          content="Mua sắm trực tuyến hàng triệu sản phẩm ở...Giá tốt &amp; nhiều ưu đãi. Mua và bán online trong 30 giây. iCybernet đảm bảo nhận hàng hoặc hoàn tiền. iCybernet Đảm Bảo | Miễn Phí Vận Chuyển | Gợi Ý Hôm Nay"
           data-rh="true">
     <?php wp_head(); ?>
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/css/theme.css">

@@ -212,16 +212,19 @@ a {
     left: calc(var(--focus-indicator-spacing) * -1);
     margin: calc(var(--focus-indicator-spacing) * -1)
 }
+
 .shopee-searchbar form {
     margin: 0;
     width: 100%;
 }
+
 .shopee-searchbar input {
     width: 100%;
     height: 100%;
     border: 0;
 }
-.shopee-searchbar input:focus{
+
+.shopee-searchbar input:focus {
     outline: none;
 }
 
@@ -1228,6 +1231,16 @@ body {
 
 a {
     text-decoration: none
+}
+
+.product_label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 2rem;
+    height: 2.5rem;
+    background-size: 2rem 2.5rem;
 }
 
 .product-variation:focus-visible:before {
@@ -3361,12 +3374,12 @@ head {
 }
 
 .homepage-mall-section .wdSKrN {
-    width: 390px;
-    height: 452px;
-    display: inline-block;
-    padding: 10px 0 10px 10px;
-    background-color: #fff;
-    vertical-align: top
+    /*width: 390px;*/
+    /*height: 452px;*/
+    /*display: inline-block;*/
+    /*padding: 10px 0 0px 0px;*/
+    /*background-color: #fff;*/
+    /*vertical-align: top*/
 }
 
 .flex {
@@ -3777,7 +3790,7 @@ head {
 }
 
 .footer-vn-background {
-    background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/3ce17addcf90b8cd3952b8ae0ffc1299.png)
+    background-image: url("../img/icon.png")
 }
 
 .footer-vn-amex-png {
@@ -3871,34 +3884,25 @@ head {
     margin: 0 auto
 }
 
-/*# sourceMappingURL=https://shopee.sg/assets/1179.1181c7c1be76d994.css.map*/
-
 .pDTGqb {
     bottom: 0;
-    left: 0;
+    left: 5%;
     height: 1.5625rem;
     background-color: rgba(0, 0, 0, .26);
     color: #fff;
     text-align: center;
+    position: absolute;
+    width: 90%;
+    line-height: 1.5625rem;
 }
 
 .cXODCZ {
-    overflow: hidden;
-    display: -webkit-box;
-    text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    margin-top: 1.25rem;
-    color: #555;
     font-size: 1.125rem;
-    text-align: left;
+    text-align: center;
     text-transform: capitalize;
-    word-break: break-word;
-}
-
-.cXODCZ, .pDTGqb {
-    line-height: 1.5625rem;
-    font-weight: 500;
+    padding: 21px 5px;
+    overflow: hidden;
+    height: 4rem;
 }
 
 /*customize*/
@@ -3928,6 +3932,10 @@ input, textarea {
 
 a:hover {
     color: #6491ff;
+}
+
+.col-2 {
+    width: 16.6667%;
 }
 
 .comment-image img {
@@ -3997,7 +4005,7 @@ table.cart .actions button {
     width: 100%;
 }
 
-.title{
-    color: #d52220 ;
+.title {
+    color: #d52220;
     margin-right: 10px;
 }
