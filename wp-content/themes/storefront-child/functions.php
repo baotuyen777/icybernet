@@ -40,7 +40,8 @@ function smartwp_remove_wp_block_library_css()
 }
 
 add_action('wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100);
-//add_filter('show_admin_bar', '__return_false');
+add_filter('show_admin_bar', '__return_false');
+
 //add_filter('auto_update_plugin', '__return_false');
 // Load the theme stylesheets
 //function theme_styles() {

@@ -39,6 +39,7 @@ ul{
 .p-b-30{
     padding-bottom: 30px;
 }
+
 .reset_variations {
     display: none !important;
 }
@@ -88,20 +89,20 @@ section {
 }
 /*style banner*/
 
-#slider {
+.slider {
     position: relative;
     overflow: hidden;
     border-radius: 4px;
 }
 
-#slider ul {
+.slider ul {
     position: relative;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-#slider ul li {
+.slider ul li {
     position: relative;
     display: block;
     float: left;
