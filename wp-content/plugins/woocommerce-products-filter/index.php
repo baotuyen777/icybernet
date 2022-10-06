@@ -933,7 +933,7 @@ final class WOOF {
         'rating': "<?php esc_html_e('rating', 'woocommerce-products-filter') ?>",
         'price': "<?php esc_html_e('price low to high', 'woocommerce-products-filter') ?>",
         'price-desc': "<?php esc_html_e('price high to low', 'woocommerce-products-filter') ?>",
-        'clear_all': "<?php esc_html_e(apply_filters('woof_clear_all_text', esc_html__('Clear All', 'woocommerce-products-filter'))) ?>"
+        'clear_all': "<?php esc_html_e(apply_filters('woof_clear_all_text', esc_html__('Reset bộ lọc', 'woocommerce-products-filter'))) ?>"
         };
 
         if (typeof woof_lang_custom == 'undefined') {

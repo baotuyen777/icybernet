@@ -9,9 +9,9 @@ License:      	GNU General Public License v2 or later
 License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:  	storefront
 */
-body {
-    font-family: sans-serif !important;
-}
+/*body {*/
+/*    font-family: sans-serif !important;*/
+/*}*/
 
 .site-branding {
     width: 200px !important;
@@ -673,7 +673,13 @@ div[dir=auto] {
     /*background: white;*/
     padding: 10px;
 }
-
+.woof_reset_button_2{
+    color: white;
+}
+.woocommerce-pagination .page-numbers li .page-numbers.current {
+    background-color: #14244b ;
+    color: white;
+}
 @media (min-width: 480px) {
     .storefront-full-width-content .site-main ul.products.columns-4 li.product {
         width: 47%;

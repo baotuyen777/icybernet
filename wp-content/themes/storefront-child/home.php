@@ -9,6 +9,7 @@ get_header(); ?>
 
     <main class="home-page">
     <!--    banner-->
+
     <section class="container">
         <div class="full-home-banners">
             <div id="slider">
@@ -45,7 +46,7 @@ get_header(); ?>
         </div>
     </section>
 
-    <section class="xZ4bbg" id="cate1">
+    <section class="xZ4bbg container" id="cate1">
         <?php
         $terms = get_terms(array(
             'taxonomy' => 'group',
@@ -80,7 +81,7 @@ get_header(); ?>
                     $thumbnail_id = get_term_meta($term->term_id, 'thumbnail_id', true);
                     $image = wp_get_attachment_url($thumbnail_id);
                     ?>
-                    <li class="image-carousel__item" style="padding: 0px; width: 10%;">
+                    <li class="home_product_cat_item" >
                         <div class="home-category-list__group">
                             <a class="home-category-list__category-grid"
                                href="<?php echo get_term_link($term->term_id) ?>">
@@ -121,7 +122,8 @@ get_header(); ?>
                     while ($loop->have_posts()) : $loop->the_post();
                         global $product;
                         ?>
-                        <li style="padding: 0px; width: 16.6667%;">
+                        <li class
+                            ="col-2">
                             <div class="fi33Fn">
                                 <div class="fR2ZHc KgcLFb">
                                     <a href="<?php the_permalink(); ?>">
@@ -223,7 +225,7 @@ get_header(); ?>
                         while ($loop->have_posts()) : $loop->the_post();
                             global $product;
                             ?>
-                            <li style="padding: 0px; width: 25%;">
+                            <li class="col-3">
                                 <div>
                                     <div class="ofs-carousel__item" location="0"
                                          shopid="61922582"><a target="_blank"
@@ -310,55 +312,17 @@ get_header(); ?>
                 </svg>
             </a>
         </div>
-        <div class="_6wTCb6">
+        <div class="flex">
             <?php
             $args = array(
                 'post_type' => 'product',
                 'posts_per_page' => 12,
-//                'product_cat' => 'hoodies'
             );
             $loop = new WP_Query($args);
             while ($loop->have_posts()) : $loop->the_post();
-                global $product;
                 ?>
-                <div class="_4beVMw">
-                    <a data-sqe="link" href="<?php echo the_permalink() ?>">
-                        <div class="yZLQT4">
-                            <div class="uA1waf _4QQ4Ir">
-                                <?php echo woocommerce_get_product_thumbnail('full') ?>
-                                <div class="X5j9y1">
-                                    <div class="VGupoO wuWR8e"
-                                         style="color: rgb(242, 82, 32);">
-                                        <span class="_6UEPfo">Yêu thích</span>
-                                    </div>
-                                </div>
-                                <div class="vmaKHl">
-                                    <div class="C2-vN- dCT7bq Od5TJM">
-                                        <span class="percent">31%</span><span class="mXP-A3">giảm</span>
-                                    </div>
-                                </div>
-
-                                <div class="W3bJfG">
-                                    <div class="qUEEG4">
-                                        <div class="hPc1Pf">
-                                            <div class="vc0PvV AxYdVM"><?php the_title() ?></div>
-                                        </div>
-                                        <div class="bVKmWS"><?php echo FREESHIP ?></div>
-                                    </div>
-                                    <div class="imdVqB _2fuFWg">
-                                        <div class="WSVId4 fepoRf"><span
-                                                    class="j0vBz2"><?php echo number_format($product->get_price()) ?></span>
-                                        </div>
-                                        <div class="upl8wJ _82UoSS">Đã
-                                            bán <?php echo get_field('quantity_sold') ?></div>
-                                    </div>
-                                </div>
-                                <div class="shopee-item-card__hover-footer _1X2yZq">
-                                    Tìm sản phẩm tương tự
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                <div class="col-2">
+                    <?php get_template_part('template-part/product','item', get_post_format() ); ?>
                 </div>
             <?php endwhile;
             wp_reset_query(); ?>
@@ -378,7 +342,7 @@ get_header(); ?>
                 </svg>
             </a>
         </div>
-        <div class="fullwidth__row">
+        <div class="flex">
             <?php $arrVideo = [
                 ['label' => 'Đánh giá sạc nhanh remax', 'link' => 'https://www.youtube.com/embed/xMUeG0f4GO4'],
                 ['label' => 'Đánh giá sạc nhanh remax', 'link' => 'https://www.youtube.com/embed/VoiDoa4s9B4'],
@@ -386,7 +350,7 @@ get_header(); ?>
             ];
             foreach ($arrVideo as $video):
                 ?>
-                <div class="fullwidth__item">
+                <div class="">
                     <iframe width="400" height="300" src="<?php echo $video['link'] ?>"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
@@ -423,7 +387,7 @@ get_header(); ?>
                 </svg>
             </a>
         </div>
-        <div class="fullwidth__row">
+        <div class="flex">
             <?php
             $args = array(
                 'post_type' => 'post',
@@ -435,7 +399,7 @@ get_header(); ?>
             $posts = get_posts($args);
             foreach ($posts as $post):
                 ?>
-                <div class="fullwidth__item">
+                <div class="">
                     <a href="<?php echo get_permalink($post->ID) ?>">
                         <?php echo get_the_post_thumbnail($post->ID, 'thumb', array('class' => 'full')) ?>
                         <p><?php echo $post->post_title ?></p>
@@ -444,6 +408,6 @@ get_header(); ?>
             <?php endforeach; ?>
         </div>
     </section>
-
+    </main>
 <?php
 get_footer();

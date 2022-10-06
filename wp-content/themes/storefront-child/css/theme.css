@@ -1027,9 +1027,9 @@ a {
     box-sizing: border-box
 }
 
-.PuXQrZ:last-child {
-    width: 12.5rem
-}
+/*.PuXQrZ:last-child {*/
+/*    width: 12.5rem*/
+/*}*/
 
 .JMCbqu {
     font-size: .75rem;
@@ -1070,9 +1070,9 @@ body {
     margin: 0
 }
 
-footer, header, main, nav, section {
-    display: block
-}
+/*footer, header, main, nav, section {*/
+/*    display: block*/
+/*}*/
 
 a {
     background-color: transparent
@@ -1090,11 +1090,11 @@ svg:not(:root) {
     overflow: hidden
 }
 
-button, input, textarea {
-    color: inherit;
-    font: inherit;
-    margin: 0
-}
+/*button, input, textarea {*/
+/*    color: inherit;*/
+/*    font: inherit;*/
+/*    margin: 0*/
+/*}*/
 
 button {
     overflow: visible
@@ -1132,67 +1132,67 @@ textarea {
     min-width: 1200px
 }
 
-@font-face {
-    font-display: swap;
-    font-family: OCR A Std;
-    src: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/cb14165cac0923899a1d112382edc8ef.eot);
-    src: local("OCR A Std"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/fd2622718d9af0e62af689d71132b8aa.woff) format("woff"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/78fbe3734c909300864ea46818d26643.ttf) format("truetype"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/89dbe49c3f752520e00f096965d4a11b.svg#svgFontName) format("svg")
-}
+/*@font-face {*/
+/*    font-display: swap;*/
+/*    font-family: OCR A Std;*/
+/*    src: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/cb14165cac0923899a1d112382edc8ef.eot);*/
+/*    src: local("OCR A Std"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/fd2622718d9af0e62af689d71132b8aa.woff) format("woff"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/78fbe3734c909300864ea46818d26643.ttf) format("truetype"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/89dbe49c3f752520e00f096965d4a11b.svg#svgFontName) format("svg")*/
+/*}*/
 
-@font-face {
-    font-display: swap;
-    font-family: Neuzeit Grotesk Bold;
-    src: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/e33e039e3931f99245e9f373107b10bd.eot);
-    src: local("Neuzeit Grotesk Bold"), local("NeuzeitGro-Bol"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/e33e039e3931f99245e9f373107b10bd.eot#iefix) format("embedded-opentype"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/6f64fdfb0f322d17d2241c606a4f1aba.woff) format("woff"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/05f2d190143c21f047d7ec834cc6f15a.ttf) format("truetype"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/80e36568c10e1d8bbca9e52ec72093b5.svg#NeuzeitGro-Bol) format("svg")
-}
+/*@font-face {*/
+/*    font-display: swap;*/
+/*    font-family: Neuzeit Grotesk Bold;*/
+/*    src: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/e33e039e3931f99245e9f373107b10bd.eot);*/
+/*    src: local("Neuzeit Grotesk Bold"), local("NeuzeitGro-Bol"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/e33e039e3931f99245e9f373107b10bd.eot#iefix) format("embedded-opentype"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/6f64fdfb0f322d17d2241c606a4f1aba.woff) format("woff"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/05f2d190143c21f047d7ec834cc6f15a.ttf) format("truetype"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/80e36568c10e1d8bbca9e52ec72093b5.svg#NeuzeitGro-Bol) format("svg")*/
+/*}*/
 
-@font-face {
-    font-display: swap;
-    font-family: Roboto;
-    src: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/f1bcf0f64a201912072b3597bdbf269b.eot);
-    src: local("Roboto Light"), local("Roboto-Light"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/8dc942c71385e7509b87af5d07f3db78.woff) format("woff"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/c248e1508ed79ef03adf0260317acc33.ttf) format("truetype"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/22b00e9ebe4fb931e1969e81af9b3b77.svg#Roboto-Light) format("svg");
-    font-weight: 300;
-    font-style: normal
-}
+/*@font-face {*/
+/*    font-display: swap;*/
+/*    font-family: Roboto;*/
+/*    src: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/f1bcf0f64a201912072b3597bdbf269b.eot);*/
+/*    !*src: local("Roboto Light"), local("Roboto-Light"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/8dc942c71385e7509b87af5d07f3db78.woff) format("woff"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/c248e1508ed79ef03adf0260317acc33.ttf) format("truetype"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/22b00e9ebe4fb931e1969e81af9b3b77.svg#Roboto-Light) format("svg");*!*/
+/*    font-weight: 300;*/
+/*    font-style: normal*/
+/*}*/
 
-@font-face {
-    font-display: swap;
-    font-family: Roboto;
-    src: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/5edb75fadfbc53d7745c4c85046781f7.eot);
-    src: local("Roboto"), local("Roboto-Regular"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/770a8fca674a3550e241a6de7fa82d8b.woff) format("woff"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/10952ea0fbd7cb93977fad8128712d87.ttf) format("truetype"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/530bb210634462ee86def85cac06cd98.svg#Roboto-Regular) format("svg");
-    font-weight: 400;
-    font-style: normal
-}
+/*@font-face {*/
+/*    font-display: swap;*/
+/*    font-family: Roboto;*/
+/*    src: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/5edb75fadfbc53d7745c4c85046781f7.eot);*/
+/*    !*src: local("Roboto"), local("Roboto-Regular"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/770a8fca674a3550e241a6de7fa82d8b.woff) format("woff"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/10952ea0fbd7cb93977fad8128712d87.ttf) format("truetype"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/530bb210634462ee86def85cac06cd98.svg#Roboto-Regular) format("svg");*!*/
+/*    font-weight: 400;*/
+/*    font-style: normal*/
+/*}*/
 
-@font-face {
-    font-display: swap;
-    font-family: Roboto;
-    src: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/37f419871727f019c788ddf132dca114.eot);
-    src: local("Roboto Bold"), local("Roboto-Bold"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/8bd7856b64b4313341ebfbc0136c9d74.woff) format("woff"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/69c061b7c23590e75a8806c4ed465be4.ttf) format("truetype"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/e68a8399887dea81b6f6f236b74c2e66.svg#Roboto-Bold) format("svg");
-    font-weight: 700;
-    font-style: normal
-}
+/*@font-face {*/
+/*    font-display: swap;*/
+/*    font-family: Roboto;*/
+/*    src: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/37f419871727f019c788ddf132dca114.eot);*/
+/*    !*src: local("Roboto Bold"), local("Roboto-Bold"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/8bd7856b64b4313341ebfbc0136c9d74.woff) format("woff"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/69c061b7c23590e75a8806c4ed465be4.ttf) format("truetype"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/e68a8399887dea81b6f6f236b74c2e66.svg#Roboto-Bold) format("svg");*!*/
+/*    font-weight: 700;*/
+/*    font-style: normal*/
+/*}*/
 
-@font-face {
-    font-display: swap;
-    font-family: Roboto;
-    src: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/f4df501fdaf4863dc4e07e1eb19af8f8.eot);
-    src: local("Roboto Medium"), local("Roboto-Medium"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/eb797abfa6a5cca2463e423c07c4f6ea.woff) format("woff"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/ad148b1c1dd7fb964d14f7c4c547c1b4.ttf) format("truetype"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/b9511d3bde226fd11da07e3bb26e4b7c.svg#Roboto-Medium) format("svg");
-    font-weight: 500;
-    font-style: normal
-}
+/*@font-face {*/
+/*    font-display: swap;*/
+/*    font-family: Roboto;*/
+/*    src: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/f4df501fdaf4863dc4e07e1eb19af8f8.eot);*/
+/*    src: local("Roboto Medium"), local("Roboto-Medium"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/eb797abfa6a5cca2463e423c07c4f6ea.woff) format("woff"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/ad148b1c1dd7fb964d14f7c4c547c1b4.ttf) format("truetype"), url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/b9511d3bde226fd11da07e3bb26e4b7c.svg#Roboto-Medium) format("svg");*/
+/*    font-weight: 500;*/
+/*    font-style: normal*/
+/*}*/
 
-body {
-    font-size: .875rem;
-    text-size-adjust: none;
-    -webkit-text-size-adjust: none
-}
+/*body {*/
+/*    font-size: .875rem;*/
+/*    text-size-adjust: none;*/
+/*    -webkit-text-size-adjust: none*/
+/*}*/
 
-body, html {
-    font-family: Helvetica Neue, Helvetica, Arial, 文泉驛正黑, WenQuanYi Zen Hei, Hiragino Sans GB, 儷黑 Pro, LiHei Pro, Heiti TC, 微軟正黑體, Microsoft JhengHei UI, Microsoft JhengHei, sans-serif;
-    color: rgba(0, 0, 0, .8);
-    line-height: 1.2
-}
+/*body, html {*/
+/*    !*font-family: Helvetica Neue, Helvetica, Arial, 文泉驛正黑, WenQuanYi Zen Hei, Hiragino Sans GB, 儷黑 Pro, LiHei Pro, Heiti TC, 微軟正黑體, Microsoft JhengHei UI, Microsoft JhengHei, sans-serif;*!*/
+/*    color: rgba(0, 0, 0, .8);*/
+/*    line-height: 1.2*/
+/*}*/
 
 .flex {
     display: flex
@@ -1701,7 +1701,7 @@ head {
     display: flex;
     justify-content: space-around;
     background-color: #fff;
-    width: 1200px;
+    /*width: 1200px;*/
     margin: 10px auto 0;
     min-height: 108px
 }
@@ -3383,7 +3383,11 @@ head {
 }
 
 .flex {
-    display: flex
+    display: flex;
+    flex-wrap: wrap;
+}
+.home_product_cat_item{
+    width: 102px;
 }
 
 .v-center {
@@ -3713,7 +3717,7 @@ head {
 /*    box-sizing: border-box*/
 /*}*/
 
-.yZLQT4 .uA1waf {
+.product .uA1waf {
     text-decoration: none;
     display: block;
     box-shadow: 0 .0625rem .125rem 0 rgba(0, 0, 0, .1);
@@ -3733,28 +3737,28 @@ head {
     /*padding-top: 5px;*/
 }
 
-.yZLQT4 .uA1waf:focus, .yZLQT4 .uA1waf:focus-visible, .yZLQT4 .uA1waf:hover {
-    box-shadow: 0 .0625rem 20px 0 rgba(0, 0, 0, .05);
-    transform: translateY(-.0625rem);
-    z-index: 1
-}
+/*.yZLQT4 .uA1waf:focus, .yZLQT4 .uA1waf:focus-visible, .yZLQT4 .uA1waf:hover {*/
+/*    box-shadow: 0 .0625rem 20px 0 rgba(0, 0, 0, .05);*/
+/*    transform: translateY(-.0625rem);*/
+/*    z-index: 1*/
+/*}*/
 
-.yZLQT4 .uA1waf:active {
-    box-shadow: 0 .0625rem 5px 0 rgba(0, 0, 0, .05);
-    transform: translateY(0)
-}
+/*.yZLQT4 .uA1waf:active {*/
+/*    box-shadow: 0 .0625rem 5px 0 rgba(0, 0, 0, .05);*/
+/*    transform: translateY(0)*/
+/*}*/
 
-.yZLQT4 ._4QQ4Ir {
+.product ._4QQ4Ir {
     overflow: visible;
     border: 1px solid transparent
 }
 
-.yZLQT4 ._4QQ4Ir:hover {
+.product ._4QQ4Ir:hover {
     border: 1px solid #ee4d2d;
     z-index: 2
 }
 
-.yZLQT4 ._4QQ4Ir:hover .shopee-item-card__hover-footer {
+.product ._4QQ4Ir:hover .shopee-item-card__hover-footer {
     opacity: 1;
     transition: opacity .1s
 }
@@ -3936,6 +3940,14 @@ a:hover {
 
 .col-2 {
     width: 16.6667%;
+    padding: 0.3125rem;
+    box-sizing: border-box;
+}
+
+.col-3 {
+    width: 25%;
+    padding: 0.3125rem;
+    box-sizing: border-box;
 }
 
 .comment-image img {
@@ -4008,4 +4020,20 @@ table.cart .actions button {
 .title {
     color: #d52220;
     margin-right: 10px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+    .product{
+        width: 150px;
+    }
+}
+
+@media (max-width: 991px) {
+    .shopee-top .navbar-wrapper {
+        display: none;
+    }
+
 }

@@ -1,7 +1,7 @@
 <footer role="contentinfo" class="_5mVtqL uZncG4">
-    <div class="PjIOU+">
-        <div class="jP2PzH">
-            <div class="Lj4LG2">
+    <div class="">
+        <div class="">
+            <div class="flex">
                 <div class="PuXQrZ">
                     <div class="JMCbqu raWI9Y">Chăm sóc khách hàng</div>
                     <ul class="SOb2n7">
@@ -158,18 +158,7 @@
 
         </div>
         <div class="_4FDN71">
-            <div class="Hyfopi">
-                <div class="EWPRwa">
-                    <div class="d56atc"><a class="Dc8l4L" href="https://iCybernet.vn/legaldoc/privacy"><span>Chính sách bảo mật</span></a>
-                    </div>
-                    <div class="d56atc"><a class="Dc8l4L"
-                                           href="https://iCybernet.vn/docs/170"><span>Quy chế hoạt động</span></a>
-                    </div>
-                    <div class="d56atc"><a class="Dc8l4L" href="https://iCybernet.vn/legaldoc/shipping"><span>Chính sách vận chuyển</span></a>
-                    </div>
-                    <div class="d56atc"><a class="Dc8l4L" href="https://iCybernet.vn/docs/3111"><span>CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</span></a>
-                    </div>
-                </div>
+            <div class="">
 
                 <div class="BV2E6Y ggg4D-">Công ty TNHH iCybernet</div>
                 <div class="BV2E6Y">VPGD: Số 6, phố Trần Hữu Dực, phường Cầu Diễn, quận Nam Từ Liêm, TP Hà Nội
