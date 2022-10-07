@@ -253,8 +253,7 @@ get_header(); ?>
                 <div class="shopee-header-section__header__title"><span
                             class="OJR0Qm">Top bán chạy</span>
                 </div>
-                <a class="shopee-header-section__header-link " tabindex="-1"
-                   href="#top_sold2">Xem tất cả&nbsp;<span class="bg_icon_round"><?php echo ARROW_GO ?></span>
+                <a class="shopee-header-section__header-link "   href="#top_sold2">Xem tất cả&nbsp;<span class="bg_icon_round"><?php echo ARROW_GO ?></span>
                 </a>
             </div>
 
@@ -376,7 +375,7 @@ get_header(); ?>
                 foreach ($posts as $post):
                     ?>
                     <div class="col-3">
-                        <a href="<?php echo get_permalink($post->ID) ?>">
+                        <a href="<?php echo get_permalink($post->ID) ?>" class="flex_item">
                             <?php echo get_the_post_thumbnail($post->ID, 'thumb', array('class' => 'full')) ?>
                             <p><?php echo $post->post_title ?></p>
                         </a>

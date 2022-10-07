@@ -37,14 +37,14 @@ jQuery(document).ready(function ($) {
 
     $('.slider ul').css({width: sliderUlWidth, marginLeft: -slideWidth});
 
-    $('.slider ul li:last-child').prependTo('#slider ul');
+    $('.slider ul li:last-child').prependTo('.slider ul');
 
     function moveLeft() {
         $('.slider ul').animate({
             left: +slideWidth
         }, 1000, function () {
-            $('#slider ul li:last-child').prependTo('#slider ul');
-            $('#slider ul').css('left', '');
+            $('.slider ul li:last-child').prependTo('.slider ul');
+            $('.slider ul').css('left', '');
         });
     };
 
@@ -52,8 +52,8 @@ jQuery(document).ready(function ($) {
         $('.slider ul').animate({
             left: -slideWidth
         }, 1000, function () {
-            $('#slider ul li:first-child').appendTo('#slider ul');
-            $('#slider ul').css('left', '');
+            $('.slider ul li:first-child').appendTo('.slider ul');
+            $('.slider ul').css('left', '');
         });
     };
 
