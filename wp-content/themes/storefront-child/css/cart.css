@@ -1,0 +1,37 @@
+table.shop_table_responsive tr td {
+    display: table-cell;
+    text-align: left;
+    /*clear: both;*/
+}
+
+table.shop_table_responsive tr td.actions {
+    text-align: right;
+}
+
+table.shop_table_responsive thead {
+    display: table-header-group;
+}
+
+table.shop_table_responsive tr td[data-title]::before {
+    content: '';
+}
+
+table.cart td.product-name {
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+#order_review {
+    width: 100%;
+}
+
+form.checkout.woocommerce-checkout {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+    #customer_details {
+        width: 100%;
+    }
+}

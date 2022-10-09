@@ -44,7 +44,7 @@ if (post_password_required()) {
             do_action('woocommerce_before_single_product_summary');
             ?>
             <!--        <div class="white">-->
-            <div class="summary entry-summary ">
+            <div class="summary entry-summary padding20">
                 <?php
                 /**
                  * Hook: woocommerce_single_product_summary.
@@ -65,7 +65,7 @@ if (post_password_required()) {
             </div>
             <div class="clearfix"></div>
         </section>
-        <section class="white padding20">
+        <section class="white padding20 relative">
             <h3 class="_2N2_VN">MÔ TẢ SẢN PHẨM</h3>
             <div class="compact_box">
                 <?php the_content(); ?>
@@ -87,8 +87,34 @@ if (post_password_required()) {
              * @hooked woocommerce_upsell_display - 15
              * @hooked woocommerce_output_related_products - 20
              */
-            do_action('woocommerce_after_single_product_summary');
+//            do_action('woocommerce_after_single_product_summary');
+//            call_user_func( 'comments_template', 'reviews' );
+//            comments_template('reviews')
+              comments_template('comments.php');
             ?>
+        </section>
+
+        <section class="white padding20">
+            <?php
+            $commenter = wp_get_current_commenter();
+            $req = get_option( 'require_name_email' );
+            $aria_req = ( $req ? " aria-required='true'" : '' );
+            $fields =  array(
+                'author' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Name' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
+                    '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></p>',
+                'email'  => '<p class="comment-form-email"><label for="email">' . __( 'Email' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
+                    '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></p>',
+                'phone'  => '<p class="comment-form-email"><label for="email">' . __( 'Điện thoại' ) . '</label> ' . ( $req ? '<span class="required">*</span>' : '' ) .
+                    '<input id="phone" name="phone" type="text" value="" size="30"/></p>',
+            );
+            $comments_args = array(
+                'fields' =>  $fields,
+                 'title_reply'=>'Bình luận',
+            );
+            comment_form($comments_args);
+//            comment_form()
+            ?>
+            <div class="clearfix"></div>
         </section>
     </main>
 </div>

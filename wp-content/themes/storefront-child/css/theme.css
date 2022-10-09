@@ -1,6 +1,10 @@
 body {
     transition: opacity ease-in 0.2s;
 }
+.body{
+    margin-top: 135px;
+}
+
 
 a {
     color: rgba(0, 0, 0, .87);
@@ -1200,7 +1204,7 @@ textarea {
 .whitebox {
     display: block;
     background: white;
-    box-shadow: 1px 3px 3px 0px #888888;
+    box-shadow: 4px 3px 6px -3px #888888;
 }
 
 .whitebox p {
@@ -3944,6 +3948,7 @@ a {
 
 input[type=text], textarea {
     background-color: white !important;
+    border: 1px solid #ccc;
 }
 
 a:hover {
@@ -4027,7 +4032,7 @@ table.cart .actions button {
     font-size: 0.8rem;
 }
 .padding20{
-    padding: 20px;
+    padding: 20px !important;
 }
 .product_label_bottom{
     position: absolute;
@@ -4073,6 +4078,9 @@ table.cart .actions button {
 @media (max-width: 991px) {
     .shopee-top .navbar-wrapper {
         display: none;
+    }
+    .body{
+        margin-top: 85px;
     }
 
     .pc {

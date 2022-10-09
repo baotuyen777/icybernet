@@ -1356,6 +1356,8 @@ function comments_template( $file = '/comments.php', $separate_comments = false 
 	}
 
 	$req = get_option( 'require_name_email' );
+//    var_dump($req);
+    $req =0;
 
 	/*
 	 * Comment author information fetched from the comment cookies.
@@ -1386,6 +1388,7 @@ function comments_template( $file = '/comments.php', $separate_comments = false 
 		'post_id'                   => $post->ID,
 		'no_found_rows'             => false,
 		'update_comment_meta_cache' => false, // We lazy-load comment meta for performance.
+        'comment_type' =>'review'
 	);
 
 	if ( get_option( 'thread_comments' ) ) {
@@ -2415,7 +2418,7 @@ function comment_form( $args = array(), $post_id = null ) {
 			),
 			sprintf(
 				'<label for="wp-comment-cookies-consent">%s</label>',
-				__( 'Save my name, email, and website in this browser for the next time I comment.' )
+				__( 'Lưu thông tin cho bình luận kế tiếp.' )
 			)
 		);
 

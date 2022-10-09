@@ -9,7 +9,6 @@ get_header(); ?>
 
     <main class="home-page">
         <!--    banner-->
-
         <section class="container">
             <div class="full-home-banners">
                 <div id="home_slider" class="slider">
@@ -20,8 +19,8 @@ get_header(); ?>
                         $mainSlider = get_field('banner_top');
                         foreach ($mainSlider as $slide):
                             ?>
-                            <li style="width:800px; height: 235px"><img
-                                        src="<?php echo $slide['full_image_url'] ?>"></li>
+                            <li style="width:800px; height: 235px">
+                                <img src="<?php echo $slide['full_image_url'] ?>" srcset="<?php echo $slide['large_srcset'] ?>"></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
