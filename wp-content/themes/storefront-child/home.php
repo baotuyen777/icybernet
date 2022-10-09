@@ -331,13 +331,16 @@ get_header(); ?>
                 ];
                 foreach ($arrVideo as $video):
                     ?>
-                    <div class="col-4">
-                        <iframe width="100%" max-height="300" src="<?php echo $video['link'] ?>"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+                    <div class="col-4 ">
+                        <div class="whitebox">
+                            <iframe width="100%" max-height="300" src="<?php echo $video['link'] ?>"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
                                 picture-in-picture"
-                                allowfullscreen></iframe>
-                        <div><?php echo $video['label'] ?></div>
+                                    allowfullscreen></iframe>
+                            <div><?php echo $video['label'] ?></div>
+                        </div>
+
 
                     </div>
                 <?php endforeach; ?>
