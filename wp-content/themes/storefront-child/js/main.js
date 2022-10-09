@@ -1,3 +1,6 @@
+jQuery(".btn_show_all").on('click', function () {
+    jQuery('.compact_box').toggleClass('show_all');
+});
 // jQuery(".filter_price").change(function () {
 //     var link = jQuery(this).data('link');
 //     if (this.checked) {

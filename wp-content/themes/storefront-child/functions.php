@@ -37,6 +37,9 @@ function smartwp_remove_wp_block_library_css()
     remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
 
     wp_enqueue_script('main', get_stylesheet_directory_uri() . '/js/main.js', [], null, true);
+    if ( is_product() ){
+        wp_enqueue_style('detail', get_stylesheet_directory_uri() . '/css/detail.css');
+    }
 }
 
 add_action('wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100);
@@ -77,7 +80,5 @@ add_filter('show_admin_bar', '__return_false');
 //        'after_title' => '',
 //    ));
 //}
-
-
 
 

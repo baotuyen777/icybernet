@@ -1095,18 +1095,18 @@ svg:not(:root) {
 /*    margin: 0*/
 /*}*/
 
-button {
-    overflow: visible
-}
+/*button {*/
+/*    overflow: visible*/
+/*}*/
 
-button {
-    text-transform: none
-}
+/*button {*/
+/*    text-transform: none*/
+/*}*/
 
-button, input[type=submit] {
-    -webkit-appearance: button;
-    cursor: pointer
-}
+/*button, input[type=submit] {*/
+/*    -webkit-appearance: button;*/
+/*    cursor: pointer*/
+/*}*/
 
 button::-moz-focus-inner, input::-moz-focus-inner {
     border: 0;
@@ -1197,15 +1197,18 @@ textarea {
     display: flex
 }
 
-.flex_item {
+.whitebox {
     display: block;
     background: white;
-    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    box-shadow: 1px 3px 3px 0px #888888;
 }
 
-.flex_item p {
+.whitebox p {
     padding: 5px;
     margin-bottom: 0;
+}
+.white{
+    background: white;
 }
 
 .v-center {
@@ -3158,11 +3161,11 @@ head {
     box-sizing: border-box
 }
 
-.fR2ZHc.KgcLFb {
-    width: 12.5rem;
-    height: 15.5rem;
-    padding: 0 .9375rem
-}
+/*.fR2ZHc.KgcLFb {*/
+/*    width: 12.5rem;*/
+/*    height: 15.5rem;*/
+/*    padding: 0 .9375rem*/
+/*}*/
 
 .wswZg0.KgcLFb {
     height: 10.625rem
@@ -3923,23 +3926,23 @@ button {
     padding: 13px 36px;
     /*margin: 0 22px 0 15px;*/
     text-transform: capitalize;
-    font-weight: 300;
-    height: 2.5rem;
+    font-weight: 400;
+    /*height: 2.5rem;*/
     box-sizing: border-box;
-    font-size: .875rem;
+    /*font-size: .875rem;*/
     border-radius: 2px;
-    width: 13.125rem;
+    /*width: 13.125rem;*/
     position: relative;
     overflow: visible;
     outline: 0;
-    background: #ee4d2d;
+    background: #19b5fe !important;
 }
 
 a {
     text-decoration: none !important;
 }
 
-input, textarea {
+input[type=text], textarea {
     background-color: white !important;
 }
 
@@ -4023,6 +4026,14 @@ table.cart .actions button {
 .fs-08 {
     font-size: 0.8rem;
 }
+.padding20{
+    padding: 20px;
+}
+.product_label_bottom{
+    position: absolute;
+    bottom: 0;
+    height: 24px;
+}
 
 .col-1, .col-2, .col-3, .col-4 {
     padding: 0.3125rem;
@@ -4074,6 +4085,12 @@ table.cart .actions button {
 
     .col-1 {
         width: 20%
+    }
+    aside{
+        display: none;
+    }
+    .shop-page .main{
+        width: 100%;
     }
 }
 

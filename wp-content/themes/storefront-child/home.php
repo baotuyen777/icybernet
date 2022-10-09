@@ -122,57 +122,51 @@ get_header(); ?>
                         while ($loop->have_posts()) : $loop->the_post();
                             global $product;
                             ?>
-                            <li class
-                                ="col-2">
-                                <div class="fi33Fn">
-                                    <div class="fR2ZHc KgcLFb">
-                                        <a href="<?php the_permalink(); ?>">
-                                            <div class="wswZg0 KgcLFb">
-                                                <div class="aKKmc+">
-                                                    <div class="VeRrqr RLjQVJ eVN6BL">
-                                                        <div class="_5ICO3M yV54ZD X7gzZ7 shopee-badge">
-                                                            <div class="_8PundJ"><span
-                                                                        class="percent">24%</span><span
-                                                                        class="tSV5KQ">giảm</span>
-                                                            </div>
+                            <li class="col-2">
+                                <div class="fR2ZHc KgcLFb">
+                                    <a href="<?php the_permalink(); ?>">
+                                        <div class="relative">
+                                            <?php if ($product->is_on_sale()): ?>
+                                                <div class="VeRrqr">
+                                                    <div class="_5ICO3M yV54ZD X7gzZ7 shopee-badge">
+                                                        <div class="_8PundJ"><span
+                                                                    class="percent">24%</span><span
+                                                                    class="tSV5KQ">giảm</span>
                                                         </div>
-                                                    </div>
-                                                    <div class="DKMfci vRvZJa">
-                                                        <div class="vRvZJa LKoGAt"
-                                                             style="background-image: url(<?php echo get_stylesheet_directory_uri() ?>/img/aa811570bbc2889411efbf46c6cce891_tn.png); background-size: contain; background-repeat: no-repeat;"></div>
-                                                    </div>
-                                                    <div class="DKMfci XLRFuf">
-                                                        <?php echo woocommerce_get_product_thumbnail('thumbnail') ?>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="TNHm44">
-                                                <div class="eHG6HN XEjq6m _0RSZ+W">
-                                                    <div class="jGqYd- XEjq6m _0RSZ+W">
-                                                        <div class="R30Osg yziZbM -922Xl">
-                                                            <div class="bkz28I"><span
-                                                                        class="_7FEDbD yziZbM -922Xl">₫</span><?php echo number_format($product->get_price()) ?>
-                                                            </div>
+                                            <?php endif; ?>
+                                            <img class="product_label_bottom"
+                                                 src="<?php echo get_stylesheet_directory_uri() ?>/img/hhgt.png"/>
+
+                                            <?php echo woocommerce_get_product_thumbnail('thumbnail') ?>
+                                        </div>
+                                        <div class="TNHm44">
+                                            <div class="eHG6HN XEjq6m _0RSZ+W">
+                                                <div class="jGqYd- XEjq6m _0RSZ+W">
+                                                    <div class="R30Osg yziZbM -922Xl">
+                                                        <div class="bkz28I"><span
+                                                                    class="_7FEDbD yziZbM -922Xl">₫</span><?php echo number_format($product->get_price()) ?>
                                                         </div>
                                                     </div>
-                                                    <div class="shMEm0 XEjq6m">
-                                                        <div class="fR8rXH _15Ul6k">
-                                                            <div class="HIIASx">
-                                                                <div class="Ygavkn">Đã
-                                                                    bán <?php the_field('quantity_sold_flash'); ?></div>
-                                                                <div class="NiQ2DI">
-                                                                    <div class="NwnNg9"
-                                                                         style="width: <?php the_field('quantity_sold_flash'); ?>%;">
-                                                                        <div class="zYeAeX"></div>
-                                                                    </div>
+                                                </div>
+                                                <div class="shMEm0 XEjq6m">
+                                                    <div class="fR8rXH _15Ul6k">
+                                                        <div class="HIIASx">
+                                                            <div class="Ygavkn">Đã
+                                                                bán <?php the_field('quantity_sold_flash'); ?></div>
+                                                            <div class="NiQ2DI">
+                                                                <div class="NwnNg9"
+                                                                     style="width: <?php the_field('quantity_sold_flash'); ?>%;">
+                                                                    <div class="zYeAeX"></div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </a>
-                                    </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </li>
                         <?php endwhile;
@@ -253,7 +247,8 @@ get_header(); ?>
                 <div class="shopee-header-section__header__title"><span
                             class="OJR0Qm">Top bán chạy</span>
                 </div>
-                <a class="shopee-header-section__header-link "   href="#top_sold2">Xem tất cả&nbsp;<span class="bg_icon_round"><?php echo ARROW_GO ?></span>
+                <a class="shopee-header-section__header-link " href="#top_sold2">Xem tất cả&nbsp;<span
+                            class="bg_icon_round"><?php echo ARROW_GO ?></span>
                 </a>
             </div>
 
@@ -375,7 +370,7 @@ get_header(); ?>
                 foreach ($posts as $post):
                     ?>
                     <div class="col-3">
-                        <a href="<?php echo get_permalink($post->ID) ?>" class="flex_item">
+                        <a href="<?php echo get_permalink($post->ID) ?>" class="whitebox">
                             <?php echo get_the_post_thumbnail($post->ID, 'thumb', array('class' => 'full')) ?>
                             <p><?php echo $post->post_title ?></p>
                         </a>

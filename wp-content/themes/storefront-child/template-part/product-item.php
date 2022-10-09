@@ -1,6 +1,6 @@
 <?php global $product; ?>
 
-<div class="product">
+<div class="product whitebox">
     <a data-sqe="link" href="<?php echo the_permalink() ?>">
         <div class="uA1waf">
             <?php echo woocommerce_get_product_thumbnail('full') ?>

@@ -124,7 +124,9 @@ ins .woocommerce-Price-amount {
 
 .price ins {
     margin-left: 0;
-    display: block;
+    /*display: block;*/
+    font-size: 16px;
+    color: #14244b;
 }
 
 .regular_price {
@@ -300,7 +302,7 @@ ul.wc-tabs {
 footer {
     /*text-align: center;*/
     background-color: #efefef;
-    color:rgba(0, 0, 0, .65);
+    color: rgba(0, 0, 0, .65);
 }
 
 footer img {
@@ -489,13 +491,16 @@ ul.order_details {
 ul.order_details li:first-child {
     padding-top: 0px;
 }
-table.woocommerce-checkout-review-order-table .product-name{
+
+table.woocommerce-checkout-review-order-table .product-name {
     width: 60%;
 }
-.woocommerce-terms-and-conditions-wrapper{
+
+.woocommerce-terms-and-conditions-wrapper {
     display: none;
 }
-.woocommerce-shipping-fields{
+
+.woocommerce-shipping-fields {
     display: none;
 }
 
@@ -567,21 +572,26 @@ ul.order_details li strong {
     content: '';
     clear: both;
 }
-.clearfix{
+
+.clearfix {
     clear: both;
 }
+
 /*thankyou page*/
-table.order_details th, table.order_details td{
+table.order_details th, table.order_details td {
     background: white;
-    border:1px solid #ccc3;
+    border: 1px solid #ccc3;
 }
-.woocommerce-thankyou-order-details{
+
+.woocommerce-thankyou-order-details {
     background: white;
 }
-.woocommerce-column--billing-address{
+
+.woocommerce-column--billing-address {
     display: none;
 }
-.woocommerce-column--shipping-address{
+
+.woocommerce-column--shipping-address {
     float: none !important;
     background: white;
     padding: 10px;
@@ -626,9 +636,11 @@ button.menu-toggle:after, button.menu-toggle:before, button.menu-toggle span:bef
 table.cart {
     margin-bottom: 0;
 }
-table.cart td.actions{
+
+table.cart td.actions {
     padding: 10px 0;
 }
+
 .cart_totals {
     border-top: 1px solid #ccc;
     background: white;
@@ -661,25 +673,30 @@ ul.products li.product .price ins {
 div[dir=auto] {
     padding: 10px;
 }
-.shop-page aside{
+
+.shop-page aside {
     width: 25%;
     float: left;
     padding: 10px;
     background: white;
 }
-.shop-page .main{
+
+.shop-page .main {
     width: 72%;
     float: right;
     /*background: white;*/
     padding: 10px;
 }
-.woof_reset_button_2{
+
+.woof_reset_button_2 {
     color: white;
 }
+
 .woocommerce-pagination .page-numbers li .page-numbers.current {
-    background-color: #14244b ;
+    background-color: #14244b;
     color: white;
 }
+
 @media (min-width: 480px) {
     .storefront-full-width-content .site-main ul.products.columns-4 li.product {
         width: 47%;
