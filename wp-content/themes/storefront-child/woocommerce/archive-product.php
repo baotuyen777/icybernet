@@ -31,7 +31,7 @@ do_action('woocommerce_before_main_content');
 ?>
     <section class="container shop-page ">
 
-        <header class="woocommerce-products-header">
+        <header class="woocommerce-products-header hidden">
             <?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
                 <h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
             <?php endif; ?>
@@ -69,7 +69,7 @@ do_action('woocommerce_before_main_content');
 
                 if (wc_get_loop_prop('total')) {
                     ?>
-                    <div class="flex">
+                    <div class="flex_row">
                         <?php
                         while (have_posts()) {
                             the_post();

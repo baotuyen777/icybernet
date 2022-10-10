@@ -42,6 +42,7 @@ function smartwp_remove_wp_block_library_css()
         wp_enqueue_style('detail', get_stylesheet_directory_uri() . '/css/detail.css');
     }
     wp_enqueue_style('detail', get_stylesheet_directory_uri() . '/css/cart.css');
+    wp_enqueue_style('list', get_stylesheet_directory_uri() . '/css/list.css');
 }
 
 add_action('wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100);
@@ -69,50 +70,14 @@ add_action('wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100);
 //    $title = $options['hrm_title'];
 //}
 ////var_dump($options);
-////sidebar
-//add_action('widgets_init', 'david_widgets_init');
-//function david_widgets_init() {
-//    register_sidebar(array(
-//        'name' => __('Shop sidebar', 'david'),
-//        'id' => 'sidebar-shop',
-//        'description' => __('Widgets in this area will be shown on shop pages.', 'david'),
-//        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-//        'after_widget' => '</div>',
-//        'before_title' => '',
-//        'after_title' => '',
-//    ));
-//}
 
-
-//add_filter('comment_form_default_fields', 'custom_fields');
-//function custom_fields($fields)
-//{
-//
-//    $commenter = wp_get_current_commenter();
-//    $req = get_option('require_name_email');
-//    $aria_req = ($req ? " aria-required='true'" : '');
-//
-//    $fields['author'] = '<p class="comment-form-author">' .
-//        '<label for="author">' . __('Name') . '</label>' .
-//        ($req ? '<span class="required">*</span>' : '') .
-//        '<input id="author" name="author" type="text" value="' . esc_attr($commenter['comment_author']) .
-//        '" size="30" tabindex="1"' . $aria_req . ' /></p>';
-//
-////    $fields[ 'email' ] = '<p class="comment-form-email">'.
-////        '<label for="email">' . __( 'Email' ) . '</label>'.
-////        ( $req ? '<span class="required">*</span>' : '' ).
-////        '<input id="email" name="email" type="text" value="'. esc_attr( $commenter['comment_author_email'] ) .
-////        '" size="30"  tabindex="2"' . $aria_req . ' /></p>';
-////
-////    $fields[ 'url' ] = '<p class="comment-form-url">'.
-////        '<label for="url">' . __( 'Website' ) . '</label>'.
-////        '<input id="url" name="url" type="text" value="'. esc_attr( $commenter['comment_author_url'] ) .
-////        '" size="30"  tabindex="3" /></p>';
-//
-//    $fields['phone'] = '<p class="comment-form-phone">' .
-//        '<label for="phone">' . __('Phone') . '</label>' .
-//        '<input id="phone" name="phone" type="text" size="30"  tabindex="4" /></p>';
-//
-//    return $fields;
-//}
-
+function my_login_logo_one() {
+    ?>
+    <style type="text/css">
+        body.login div#login h1 a {
+            background-image: none;
+            padding-bottom: 30px;
+        }
+    </style>
+    <?php
+} add_action( 'login_enqueue_scripts', 'my_login_logo_one' );

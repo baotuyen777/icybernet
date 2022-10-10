@@ -29,7 +29,9 @@ form.checkout.woocommerce-checkout {
     display: flex;
     flex-wrap: wrap;
 }
-
+.woocommerce-info{
+    margin: 10px 0;
+}
 @media (max-width: 767px) {
     #customer_details {
         width: 100%;

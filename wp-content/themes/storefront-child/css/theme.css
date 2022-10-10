@@ -1197,9 +1197,9 @@ textarea {
 /*    line-height: 1.2*/
 /*}*/
 
-.flex {
-    display: flex
-}
+/*.flex {*/
+/*    display: flex*/
+/*}*/
 
 .whitebox {
     display: block;
@@ -3403,6 +3403,12 @@ head {
     display: flex;
     flex-wrap: wrap;
 }
+.flex_row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
 
 .home_product_cat_item {
     width: 102px;
@@ -4100,6 +4106,9 @@ table.cart .actions button {
     }
     .shop-page .main{
         width: 100%;
+    }
+    .flex_row{
+        margin: 0;
     }
 }
 
