@@ -1,5 +1,5 @@
 <?php
-//add_filter('show_admin_bar', '__return_false');
+add_filter('show_admin_bar', '__return_false');
 require 'inc/cpt.php';
 require 'inc/ctx.php';
 require 'inc/icon.php';
@@ -48,6 +48,8 @@ function smartwp_remove_wp_block_library_css()
 add_action('wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100);
 
 
+
+
 //add_filter('auto_update_plugin', '__return_false');
 // Load the theme stylesheets
 //function theme_styles() {
@@ -81,3 +83,8 @@ function my_login_logo_one() {
     </style>
     <?php
 } add_action( 'login_enqueue_scripts', 'my_login_logo_one' );
+
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10 );
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
+//add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 11 );

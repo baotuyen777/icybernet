@@ -3297,12 +3297,60 @@ button._2vnl9a:focus-visible:before {
 #respond .form-submit {
     text-align: center;
 }
+
 /*.comment-form-cookies-consent{*/
 /*    display: none;*/
 /*}*/
 
+.price {
+    letter-spacing: -1px;
+}
+
+.product_meta, .woo-selected-variation-item-name {
+    display: none !important;
+}
+iframe{
+    margin: 0 auto;
+    display: block;
+}
+.rating_avg{
+    border-right: 1px solid #ccc;
+    display: inline-block;
+    padding-right: 10px;
+    margin-right: 10px;
+    color:#6593ec;
+}
+.sold_number{
+    line-height: 1.5rem;
+}
+.woocommerce-product-rating{
+    /*padding: 10px;*/
+    margin-top: 0px !important;
+}
+
 @media (max-width: 767px) {
+    body {
+        font-size: 0.8rem;
+    }
+
     .single-product div.product .summary {
         width: 100%;
+        margin-top: -40px;
     }
+
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    ins .woocommerce-Price-amount {
+        font-size: 1.5rem;
+    }
+    .flex-control-nav{
+        display: none;
+    }
+    .single-product div.product .images {
+        margin-right: 0;
+    }
+
+
 }

@@ -4087,7 +4087,7 @@ table.cart .actions button {
     }
     .body{
         margin-top: 85px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .pc {
@@ -4121,11 +4121,14 @@ table.cart .actions button {
         max-height: 118px;
         min-height: 118px;
     }
-
-    #home_slider li {
-        width: 100% !important;
-        height: 118px !important;
+    .padding20{
+        padding: 10px !important;
     }
+
+    /*#home_slider li {*/
+    /*    width: 100% !important;*/
+    /*    height: 118px !important;*/
+    /*}*/
 
     .full-home-banners__right-wrapper {
         display: none;

@@ -152,8 +152,7 @@ get_header(); ?>
                                                 <div class="shMEm0 XEjq6m">
                                                     <div class="fR8rXH _15Ul6k">
                                                         <div class="HIIASx">
-                                                            <div class="Ygavkn">Đã
-                                                                bán <?php the_field('quantity_sold_flash'); ?></div>
+                                                            <div class="Ygavkn">Đã bán <?php the_field('quantity_sold_flash'); ?></div>
                                                             <div class="NiQ2DI">
                                                                 <div class="NwnNg9"
                                                                      style="width: <?php the_field('quantity_sold_flash'); ?>%;">
