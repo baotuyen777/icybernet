@@ -18,7 +18,7 @@
 defined('ABSPATH') || exit;
 
 global $product;
-
+global $post;
 /**
  * Hook: woocommerce_before_single_product.
  *
@@ -45,6 +45,7 @@ if (post_password_required()) {
             $rating_count = $product->get_rating_count();
             $review_count = $product->get_review_count();
             $average = $product->get_average_rating();
+            $short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
             ?>
             <!--        <div class="white">-->
             <div class="summary entry-summary">
@@ -52,10 +53,12 @@ if (post_password_required()) {
                     <?php the_title('<h1 class="product_title entry-title">', '</h1>'); ?>
                     <?php echo wc_get_rating_html($average, $rating_count); // WPCS: XSS ok. ?>
                     <span class="rating_avg"><?php echo round($average, 1) ?></span>
-                    <span class="sold_number">Đã bán <?php echo get_field('quantity_sold', $product->get_id()); ?>
-                    <p class="<?php echo esc_attr(apply_filters('woocommerce_product_price_class', 'price')); ?>"><?php echo $product->get_price_html(); ?></p>
+                    <span class="sold_number">Đã bán <?php echo get_field('quantity_sold', $product->get_id()); ?></span>
+                    <p class="<?php echo esc_attr(apply_filters('woocommerce_product_price_class', 'price')); ?>">
+                        <?php echo $product->get_price_html(); ?></p>
 
                 </div>
+
                 <?php
                 /**
                  * Hook: woocommerce_single_product_summary.
@@ -71,6 +74,10 @@ if (post_password_required()) {
                  */
                 do_action('woocommerce_single_product_summary');
                 ?>
+
+                <div class="woocommerce-product-details__short-description">
+                    <?php echo $short_description; // WPCS: XSS ok. ?>
+                </div>
 
 
             </div>

@@ -1225,8 +1225,8 @@ textarea {
     --focus-indicator-stroke-width: 2px;
     --focus-indicator-spacing: 4px;
     --focus-indicator-border-radius: 2px;
-    --brand-primary-color: #ee4d2d;
-    --brand-primary-light-color: rgba(255, 87, 34, 0.1)
+    --brand-primary-color: #19b5fe ;
+    --brand-primary-light-color: #02bfa3
 }
 
 body {
@@ -3966,16 +3966,16 @@ a:hover {
     height: 72px;
 }
 
-.add_to_cart_button {
-    stroke: #ee4d2d;
-    margin-right: 10px;
-    background: var(--brand-primary-light-color);
-    color: var(--brand-primary-color);
-    border: 1px solid var(--brand-primary-color);
-    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 3%);
-    font-size: 16px;
-    font-weight: normal;
-}
+/*.add_to_cart_button {*/
+/*    stroke: #ee4d2d;*/
+/*    margin-right: 10px;*/
+/*    background: var(--brand-primary-light-color);*/
+/*    color: var(--brand-primary-color);*/
+/*    border: 1px solid var(--brand-primary-color);*/
+/*    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 3%);*/
+/*    font-size: 16px;*/
+/*    font-weight: normal;*/
+/*}*/
 
 .add_to_cart_button:hover {
     background: var(--brand-primary-light-color);

@@ -16,7 +16,7 @@ const FREESHIP = '<svg viewBox="0 0 20 12" height="12" width="20"
                                                     <circle fill="#047565" cx="8" cy="10" r="1"></circle>
                                                     <circle fill="#047565" cx="15" cy="10" r="1"></circle>
                                                 </svg>';
-const VIDEO ='<svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y="0"
+const VIDEO = '<svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y="0"
                                          class="shopee-svg-icon video-icon">
                                         <g opacity=".54">
                                             <g>
@@ -28,17 +28,17 @@ const VIDEO ='<svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" y
                                         <path d="m6.1 5.1c0-.2.1-.3.3-.2l3.3 2.3c.2.1.2.3 0 .4l-3.3 2.4c-.2.1-.3.1-.3-.2z"
                                               fill="#ffffff"></path>
                                     </svg>';
-const ARROW_LEFT='<svg enable-background="new 0 0 13 20" viewBox="0 0 13 20" x="0" y="0"
+const ARROW_LEFT = '<svg enable-background="new 0 0 13 20" viewBox="0 0 13 20" x="0" y="0"
                              class="shopee-svg-icon icon-arrow-left-bold">
                             <polygon
                                     points="4.2 10 12.1 2.1 10 -.1 1 8.9 -.1 10 1 11 10 20 12.1 17.9"></polygon>
                         </svg>';
-const ARROW_RIGHT =' <svg enable-background="new 0 0 13 21" viewBox="0 0 13 21" x="0" y="0"
+const ARROW_RIGHT = ' <svg enable-background="new 0 0 13 21" viewBox="0 0 13 21" x="0" y="0"
                              class="shopee-svg-icon icon-arrow-right-bold">
                             <polygon points="11.1 9.9 2.1 .9 -.1 3.1 7.9 11 -.1 18.9 2.1 21 11.1 12 12.1 11"></polygon>
                         </svg>';
 
-const START5 =' <div class="shopee-rating-stars">
+const START5 = ' <div class="shopee-rating-stars">
                                 <div class="shopee-rating-stars__stars">
                                     <div class="shopee-rating-stars__star-wrapper">
                                         <div class="shopee-rating-stars__lit" style="width: 100%;">
@@ -138,7 +138,7 @@ const START5 =' <div class="shopee-rating-stars">
                                     </div>
                                 </div>
                             </div>';
-const HELP ='<svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" role="img"
+const HELP = '<svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" role="img"
                                  class="stardust-icon stardust-icon-help QiuHaS">
                                 <circle cx="7.5" cy="7.5" fill="none" r="6.5"
                                         stroke-miterlimit="10"></circle>
@@ -174,7 +174,7 @@ const CART = ' <svg enable-background="new 0 0 15 15" viewBox="0 0 15 15" x="0" 
                                               x1="9" x2="9" y1="8.5" y2="5.5"></line>
                                     </g>
                                 </svg>';
-const VIDEO_RECORDER ='<svg width="23" height="18"
+const VIDEO_RECORDER = '<svg width="23" height="18"
                                                                  viewBox="0 0 23 18" fill="none">
                                                                 <g filter="url(#filter0_d)">
                                                                     <path fill-rule="evenodd"
@@ -207,7 +207,7 @@ const VIDEO_RECORDER ='<svg width="23" height="18"
                                                                     </filter>
                                                                 </defs>
                                                             </svg>';
-const LIKE ='<svg width="14px" height="13px" viewBox="0 0 14 13"
+const LIKE = '<svg width="14px" height="13px" viewBox="0 0 14 13"
                                                          version="1.1"
                                                          xmlns="http://www.w3.org/2000/svg">
                                                         <defs></defs>
@@ -230,7 +230,8 @@ const LIKE ='<svg width="14px" height="13px" viewBox="0 0 14 13"
                                                             </g>
                                                         </g>
                                                     </svg>';
-const ARROW_GO=' <svg enable-background="new 0 0 11 11" viewBox="0 0 11 11"
+const ARROW_GO = ' <svg enable-background="new 0 0 11 11" viewBox="0 0 11 11"
                                          x="0" y="0" class="shopee-svg-icon icon-arrow-right">
                                         <path d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z"></path>
                                     </svg>';
+const CHAT = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="chat-icon"><path d="M18 6.07a1 1 0 01.993.883L19 7.07v10.365a1 1 0 01-1.64.768l-1.6-1.333H6.42a1 1 0 01-.98-.8l-.016-.117-.149-1.783h9.292a1.8 1.8 0 001.776-1.508l.018-.154.494-6.438H18zm-2.78-4.5a1 1 0 011 1l-.003.077-.746 9.7a1 1 0 01-.997.923H4.24l-1.6 1.333a1 1 0 01-.5.222l-.14.01a1 1 0 01-.993-.883L1 13.835V2.57a1 1 0 011-1h13.22zm-4.638 5.082c-.223.222-.53.397-.903.526A4.61 4.61 0 018.2 7.42a4.61 4.61 0 01-1.48-.242c-.372-.129-.68-.304-.902-.526a.45.45 0 00-.636.636c.329.33.753.571 1.246.74A5.448 5.448 0 008.2 8.32c.51 0 1.126-.068 1.772-.291.493-.17.917-.412 1.246-.74a.45.45 0 00-.636-.637z"></path></svg>';

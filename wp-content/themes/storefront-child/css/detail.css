@@ -2268,14 +2268,14 @@ body, html {
     justify-content: center
 }
 
-:root {
-    --focus-indicator-color: rgba(0, 0, 0, 0.87);
-    --focus-indicator-stroke-width: 2px;
-    --focus-indicator-spacing: 4px;
-    --focus-indicator-border-radius: 2px;
-    --brand-primary-color: #ee4d2d;
-    --brand-primary-light-color: rgba(255, 87, 34, 0.1)
-}
+/*:root {*/
+/*    --focus-indicator-color: rgba(0, 0, 0, 0.87);*/
+/*    --focus-indicator-stroke-width: 2px;*/
+/*    --focus-indicator-spacing: 4px;*/
+/*    --focus-indicator-border-radius: 2px;*/
+/*    --brand-primary-color: #ee4d2d;*/
+/*    --brand-primary-light-color: rgba(255, 87, 34, 0.1)*/
+/*}*/
 
 body {
     background-color: #f5f5f5
@@ -3177,13 +3177,13 @@ button._2vnl9a:focus-visible:before {
 }
 
 .single-product div.product .summary {
-    padding: 25px 0;
+    /*padding: 25px 0;*/
     width: 56%;
 }
 
 .single-product .price {
-    padding: 15px 20px;
-    background: #fafafa;
+    /*padding: 15px 0px;*/
+    /*background: #fafafa;*/
 }
 
 .woocommerce-product-details__short-description {
@@ -3327,7 +3327,61 @@ iframe{
     /*padding: 10px;*/
     margin-top: 0px !important;
 }
+.product_title{
+    background: white;
+    padding: 10px;
+}
+.product_title h1{
+    padding: 0;
+}
 
+.star-rating{
+    display: inline-block;
+    margin-bottom: -5px;
+}
+.single-product div.product form.cart {
+    padding: 1em 10px;
+    background: white;
+}
+.single-product .quantity{
+    display: none !important;
+}
+form.cart{
+    margin: 10px 0;
+}
+.woocommerce-variation-availability{
+    display: none;
+}
+.single-product div.product .variations_button{
+    padding-top: 0;
+}
+.add_to_cart_button {
+    stroke: white;
+    margin-right: 10px;
+    background: var(--brand-primary-light-color);
+    /*color: var(--brand-primary-color);*/
+    /*border: 1px solid var(--brand-primary-color);*/
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 3%);
+    font-size: 10px;
+    font-weight: normal;
+    padding: 5px 10px;
+}
+.buy_now {
+    margin-right: 10px;
+    background: var(--brand-primary-color);
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 3%);
+    font-size: 14px;
+    font-weight: normal;
+    padding: 15px 10px;
+}
+.icon-add-to-cart{
+    display: block !important;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.added_to_cart{
+    display: none;
+}
 @media (max-width: 767px) {
     body {
         font-size: 0.8rem;

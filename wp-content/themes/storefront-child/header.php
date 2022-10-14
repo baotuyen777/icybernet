@@ -20,7 +20,7 @@
           content="Mua sắm trực tuyến hàng triệu sản phẩm ở...Giá tốt &amp; nhiều ưu đãi. Mua và bán online trong 30 giây. iCybernet đảm bảo nhận hàng hoặc hoàn tiền. iCybernet Đảm Bảo | Miễn Phí Vận Chuyển | Gợi Ý Hôm Nay"
           data-rh="true">
     <?php wp_head(); ?>
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/css/theme.css">
+<!--    <link rel="stylesheet" href="--><?php //echo get_stylesheet_directory_uri() ?><!--/css/theme.css">-->
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/css/main.css">
 </head>
 <body <?php body_class(); ?>>
