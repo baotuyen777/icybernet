@@ -1233,13 +1233,13 @@ body {
     background-color: #f5f5f5
 }
 
-.shopee-svg-icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    fill: currentColor;
-    position: relative
-}
+/*.shopee-svg-icon {*/
+/*    display: inline-block;*/
+/*    width: 1em;*/
+/*    height: 1em;*/
+/*    fill: currentColor;*/
+/*    position: relative*/
+/*}*/
 
 .icon-notification-2 {
     width: .875rem;

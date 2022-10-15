@@ -28,10 +28,10 @@ global $product;
     do_action('woocommerce_after_add_to_cart_quantity');
     $link = wc_get_checkout_url() . '?add-to-cart=' . get_the_ID() . '&variation_id=256';
     ?>
-
+    <a href="javascript:void(Tawk_API.toggle())" class="button product_type_simple add_to_cart_button"> <?php echo CHAT ?> Chat ngay</a>
     <button type="submit"
             class="single_add_to_cart_button button alt add_to_cart_button"><?php echo CART ?>Thêm vào giỏ hàng</button>
-    <a href="<?php echo $link ?>" class="buy-now button add_to_cart_button ajax_add_to_cart added buy_now">Mua ngay</a>
+    <a href="<?php echo $link ?>" class="buy-now button buy_now">Mua ngay</a>
     <?php do_action('woocommerce_after_add_to_cart_button'); ?>
 
     <input type="hidden" name="add-to-cart" value="<?php echo absint($product->get_id()); ?>"/>

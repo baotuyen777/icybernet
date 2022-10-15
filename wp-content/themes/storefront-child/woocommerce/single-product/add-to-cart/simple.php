@@ -46,13 +46,14 @@ if ( $product->is_in_stock() ) : ?>
 		do_action( 'woocommerce_after_add_to_cart_quantity' );
         $link = wc_get_checkout_url() . '?add-to-cart=' . get_the_ID() ;
 		?>
-        <button class="button product_type_simple add_to_cart_button ajax_add_to_cart added"> <?php echo CHAT ?> Chat ngay</button>
-        <a href="?add-to-cart=<?php the_ID()?>" data-quantity="1"
-           class="button product_type_simple add_to_cart_button ajax_add_to_cart added"
-           data-product_id="<?php the_ID()?>" data-product_sku="">
-            <?php echo CART ?>Thêm vào giỏ hàng</a>
-<!--		<button type="submit" name="add-to-cart" value="--><?php //echo esc_attr( $product->get_id() ); ?><!--" class="single_add_to_cart_button button alt">--><?php //echo esc_html( $product->single_add_to_cart_text() ); ?><!--</button>-->
-        <a href="<?php echo $link ?>" class="buy-now button ajax_add_to_cart added buy_now">Mua ngay</a>
+            <a href="javascript:void(Tawk_API.toggle())" class="button product_type_simple add_to_cart_button"> <?php echo CHAT ?> Chat ngay</a>
+            <a href="?add-to-cart=<?php the_ID()?>" data-quantity="1"
+               class="button product_type_simple add_to_cart_button ajax_add_to_cart added"
+               data-product_id="<?php the_ID()?>" data-product_sku="">
+                <?php echo CART ?>Thêm vào giỏ hàng</a>
+            <!--		<button type="submit" name="add-to-cart" value="--><?php //echo esc_attr( $product->get_id() ); ?><!--" class="single_add_to_cart_button button alt">--><?php //echo esc_html( $product->single_add_to_cart_text() ); ?><!--</button>-->
+            <a href="<?php echo $link ?>" class="buy-now button ajax_add_to_cart added buy_now">Mua ngay</a>
+
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 	</form>
 

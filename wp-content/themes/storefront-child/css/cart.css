@@ -29,9 +29,15 @@ form.checkout.woocommerce-checkout {
     display: flex;
     flex-wrap: wrap;
 }
-.woocommerce-info{
+
+.woocommerce-info {
     margin: 10px 0;
 }
+
+table.cart td.product-remove {
+    border-top: none !important;
+}
+
 @media (max-width: 767px) {
     #customer_details {
         width: 100%;

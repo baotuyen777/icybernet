@@ -56,7 +56,6 @@ if (post_password_required()) {
                     <span class="sold_number">Đã bán <?php echo get_field('quantity_sold', $product->get_id()); ?></span>
                     <p class="<?php echo esc_attr(apply_filters('woocommerce_product_price_class', 'price')); ?>">
                         <?php echo $product->get_price_html(); ?></p>
-
                 </div>
 
                 <?php
