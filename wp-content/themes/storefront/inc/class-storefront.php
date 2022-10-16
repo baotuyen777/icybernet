@@ -421,7 +421,7 @@ if ( ! class_exists( 'Storefront' ) ) :
 		public function child_scripts() {
 			if ( is_child_theme() ) {
 				$child_theme = wp_get_theme( get_stylesheet() );
-				wp_enqueue_style( 'storefront-child-style', get_stylesheet_uri(), array(), $child_theme->get( 'Version' ) );
+//				wp_enqueue_style( 'storefront-child-style', get_stylesheet_uri(), array(), $child_theme->get( 'Version' ) );
 			}
 		}
 

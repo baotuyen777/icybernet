@@ -21,7 +21,7 @@
           data-rh="true">
     <?php wp_head(); ?>
 <!--    <link rel="stylesheet" href="--><?php //echo get_stylesheet_directory_uri() ?><!--/css/theme.css">-->
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/css/main.css">
+<!--    <link rel="stylesheet" href="--><?php //echo get_stylesheet_directory_uri() ?><!--/css/main.css">-->
 </head>
 <body <?php body_class(); ?>>
 
@@ -96,7 +96,7 @@
         </nav>
     </div>
     <div class="container-wrapper header-with-search-wrapper">
-        <div class="container header-with-search">
+        <div class="container header-with-search ">
             <a class="header-with-search__logo-section" href="/">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo2.png" class="logo"/>
             </a>

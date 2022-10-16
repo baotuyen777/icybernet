@@ -267,7 +267,7 @@ get_header(); ?>
                                     <?php the_post_thumbnail('thumbnail'); ?>
                                     <div class="pDTGqb">Bán <?php the_field('quantity_sold_in_month'); ?> / tháng</div>
                                 </div>
-                                <div class="cXODCZ"><?php the_title() ?></div>
+                                <div class="text-center title_2line"><?php the_title() ?></div>
                             </a>
                         </li>
                     <?php
@@ -337,7 +337,7 @@ get_header(); ?>
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
                                 picture-in-picture"
                                     allowfullscreen></iframe>
-                            <div><?php echo $video['label'] ?></div>
+                            <div class="padding10"><?php echo $video['label'] ?></div>
                         </div>
 
 

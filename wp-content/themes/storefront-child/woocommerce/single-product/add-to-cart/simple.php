@@ -15,48 +15,55 @@
  * @version 3.4.0
  */
 
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 global $product;
 
-if ( ! $product->is_purchasable() ) {
-	return;
+if (!$product->is_purchasable()) {
+    return;
 }
 
-echo wc_get_stock_html( $product ); // WPCS: XSS ok.
+echo wc_get_stock_html($product); // WPCS: XSS ok.
 
-if ( $product->is_in_stock() ) : ?>
+if ($product->is_in_stock()) : ?>
 
-	<?php do_action( 'woocommerce_before_add_to_cart_form' ); ?>
+    <?php do_action('woocommerce_before_add_to_cart_form'); ?>
 
-	<form class="cart flex" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" method="post" enctype='multipart/form-data'>
-		<?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
+    <form class="cart flex"
+          method="post" enctype='multipart/form-data'>
+        <?php do_action('woocommerce_before_add_to_cart_button'); ?>
 
-		<?php
-		do_action( 'woocommerce_before_add_to_cart_quantity' );
+        <?php
+        do_action('woocommerce_before_add_to_cart_quantity');
 
-//		woocommerce_quantity_input(
-//			array(
-//				'min_value'   => apply_filters( 'woocommerce_quantity_input_min', $product->get_min_purchase_quantity(), $product ),
-//				'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->get_max_purchase_quantity(), $product ),
-//				'input_value' => isset( $_POST['quantity'] ) ? wc_stock_amount( wp_unslash( $_POST['quantity'] ) ) : $product->get_min_purchase_quantity(), // WPCS: CSRF ok, input var ok.
-//			)
-//		);
+        //		woocommerce_quantity_input(
+        //			array(
+        //				'min_value'   => apply_filters( 'woocommerce_quantity_input_min', $product->get_min_purchase_quantity(), $product ),
+        //				'max_value'   => apply_filters( 'woocommerce_quantity_input_max', $product->get_max_purchase_quantity(), $product ),
+        //				'input_value' => isset( $_POST['quantity'] ) ? wc_stock_amount( wp_unslash( $_POST['quantity'] ) ) : $product->get_min_purchase_quantity(), // WPCS: CSRF ok, input var ok.
+        //			)
+        //		);
 
-		do_action( 'woocommerce_after_add_to_cart_quantity' );
-        $link = wc_get_checkout_url() . '?add-to-cart=' . get_the_ID() ;
-		?>
-            <a href="javascript:void(Tawk_API.toggle())" class="button product_type_simple add_to_cart_button"> <?php echo CHAT ?> Chat ngay</a>
-            <a href="?add-to-cart=<?php the_ID()?>" data-quantity="1"
-               class="button product_type_simple add_to_cart_button ajax_add_to_cart added"
-               data-product_id="<?php the_ID()?>" data-product_sku="">
-                <?php echo CART ?>Thêm vào giỏ hàng</a>
-            <!--		<button type="submit" name="add-to-cart" value="--><?php //echo esc_attr( $product->get_id() ); ?><!--" class="single_add_to_cart_button button alt">--><?php //echo esc_html( $product->single_add_to_cart_text() ); ?><!--</button>-->
-            <a href="<?php echo $link ?>" class="buy-now button ajax_add_to_cart added buy_now">Mua ngay</a>
+        do_action('woocommerce_after_add_to_cart_quantity');
+        //        $link = wc_get_checkout_url() . '?add-to-cart=' . get_the_ID() ;
+        ?>
+        <a href="javascript:void(Tawk_API.toggle())"
+           class="button product_type_simple add_to_cart_button"> <?php echo CHAT ?> Chat ngay</a>
+        <a href="?add-to-cart=<?php the_ID() ?>" data-quantity="1"
+           class="button product_type_simple add_to_cart_button ajax_add_to_cart added"
+           data-product_id="<?php the_ID() ?>" data-product_sku="">
+            <?php echo CART ?>Thêm vào giỏ hàng</a>
+        <!--		<button type="submit" name="add-to-cart" value="-->
+        <?php //echo esc_attr( $product->get_id() ); ?><!--" class="single_add_to_cart_button button alt">-->
+        <?php //echo esc_html( $product->single_add_to_cart_text() ); ?><!--</button>-->
+        <!--            <a href="-->
+        <?php //echo $link ?><!--" class="buy-now button ajax_add_to_cart added buy_now">Mua ngay</a>-->
+        <button formaction="<?php echo wc_get_checkout_url() ?>" class="btn buy_now">Mua ngay</button>
 
-		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
-	</form>
+        <input type="hidden" name="add-to-cart" value="<?php echo absint($product->get_id()); ?>"/>
+        <?php do_action('woocommerce_after_add_to_cart_button'); ?>
+    </form>
 
-	<?php do_action( 'woocommerce_after_add_to_cart_form' ); ?>
+    <?php do_action('woocommerce_after_add_to_cart_form'); ?>
 
 <?php endif; ?>

@@ -30,6 +30,8 @@ if (post_password_required()) {
     echo get_the_password_form(); // WPCS: XSS ok.
     return;
 }
+$gifts = get_field('gift');
+$gift_condition = get_field('gift_condition');
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class('', $product); ?>>
     <main role="main" class="container">
@@ -45,7 +47,7 @@ if (post_password_required()) {
             $rating_count = $product->get_rating_count();
             $review_count = $product->get_review_count();
             $average = $product->get_average_rating();
-            $short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
+            $short_description = apply_filters('woocommerce_short_description', $post->post_excerpt);
             ?>
             <!--        <div class="white">-->
             <div class="summary entry-summary">
@@ -58,6 +60,21 @@ if (post_password_required()) {
                         <?php echo $product->get_price_html(); ?></p>
                 </div>
 
+                <div class="woocommerce-product-details__short-description">
+                    <div class="flex">
+                        <div class="des_label">Vận chuyển: </div>
+                        <div>
+                            <?php if(get_field('freeship')):?>
+                            <div class="pJhgZK"> 30.000 ₫</div>
+                            <div class="ship_fee">Miễn phí ship khi đơn hàng trên 200.000₫ <?php echo FREESHIP ?></div>
+                            <?php else:?>
+                                <div class="ship_fee">Free ship <?php echo FREESHIP ?></div>
+                            <?php endif;?>
+                        </div>
+
+                    </div>
+                    <?php echo $short_description; // WPCS: XSS ok. ?>
+                </div>
                 <?php
                 /**
                  * Hook: woocommerce_single_product_summary.
@@ -74,14 +91,31 @@ if (post_password_required()) {
                 do_action('woocommerce_single_product_summary');
                 ?>
 
-                <div class="woocommerce-product-details__short-description">
-                    <?php echo $short_description; // WPCS: XSS ok. ?>
-                </div>
-
 
             </div>
             <div class="clearfix"></div>
         </section>
+        <?php if ($gifts): ?>
+            <section class="white padding20">
+                <h4><?php echo $gift_condition ?></h4>
+                <ul class="flex">
+                    <?php
+
+                    foreach ($gifts as $post):
+                        setup_postdata($post);
+                        ?>
+                        <li class="white col-2 p-b-30">
+                            <a href="<?php the_permalink(); ?>">
+                                <?php the_post_thumbnail('thumbnail'); ?>
+                                <div class="cXODCZ"><?php the_title() ?></div>
+                            </a>
+                        </li>
+                    <?php
+                    endforeach;
+                    wp_reset_postdata(); ?>
+                </ul>
+            </section>
+        <?php endif; ?>
         <section class="white padding20 relative">
             <h3 class="_2N2_VN">MÔ TẢ SẢN PHẨM</h3>
             <div class="compact_box">
