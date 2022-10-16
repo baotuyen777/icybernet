@@ -53,14 +53,25 @@ form.checkout.woocommerce-checkout {
     }
 
     .shop_table {
-      border: 1px solid #ccc;
+      td {
+        vertical-align: middle;
+      }
     }
   }
 
   .payment_method_bacs .payment_box {
     padding: 0 0 0 43px !important;
   }
+  #billing_country_field{
+    display: none;
+  }
 }
+#payment .payment_methods>.wc_payment_method>label {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+}
+
 
 .woocommerce-info {
   margin: 10px 0;

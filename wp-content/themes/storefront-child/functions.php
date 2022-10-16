@@ -28,6 +28,8 @@ function nano_style()
     wp_dequeue_style('wc-blocks-style'); // Remove WooCommerce block CSS
     wp_dequeue_style('storefront-gutenberg-blocks');
     wp_dequeue_style('storefront-style');
+    wp_dequeue_style('global-styles' );
+
 
     remove_action('wp_head', 'print_emoji_detection_script', 7);
     remove_action('admin_print_scripts', 'print_emoji_detection_script');
@@ -93,3 +95,12 @@ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
 remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20 );
 //add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_rating', 11 );
+
+
+function add_additional_class_on_li($classes, $item, $args) {
+    if(isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
