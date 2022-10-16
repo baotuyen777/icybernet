@@ -1,10 +1,11 @@
 <?php
-$DB_HOST = "localhost";
-$DB_USER = "root";
-$DB_PASS = "";
-$DB_NAME = "test";
+require '../wp-config.php';
+//$DB_HOST = "localhost";
+//$DB_USER = "root";
+//$DB_PASS = "";
+//$DB_NAME = "test";
 
-$con = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
+$con = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
 
 $tables = array();
@@ -15,12 +16,12 @@ while ($row = mysqli_fetch_row($result)) {
 }
 
 $return = '';
-
+unset($tables['wp_wc_download_log']);
 foreach ($tables as $table) {
     $result = mysqli_query($con, "SELECT * FROM ".$table);
     $num_fields = mysqli_num_fields($result);
 
-    $return .= 'DROP TABLE '.$table.';';
+//    $return .= 'DROP TABLE '.$table.';';
     $row2 = mysqli_fetch_row(mysqli_query($con, 'SHOW CREATE TABLE '.$table));
     $return .= "\n\n".$row2[1].";\n\n";
 

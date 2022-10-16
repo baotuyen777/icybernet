@@ -332,11 +332,11 @@ get_header(); ?>
                     ?>
                     <div class="col-4 ">
                         <div class="whitebox">
-                            <iframe width="100%" max-height="300" src="<?php echo $video['link'] ?>"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
-                                picture-in-picture"
-                                    allowfullscreen></iframe>
+<!--                            <iframe width="100%" max-height="300" src="--><?php //echo $video['link'] ?><!--"-->
+<!--                                    title="YouTube video player" frameborder="0"-->
+<!--                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;-->
+<!--                                picture-in-picture"-->
+<!--                                    allowfullscreen></iframe>-->
                             <div class="padding10"><?php echo $video['label'] ?></div>
                         </div>
 
