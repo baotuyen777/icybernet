@@ -45,13 +45,13 @@
                 <li class="navbar__link navbar__link--tappable navbar__link--hoverable navbar__link--account">
                     <div class="stardust-popover" id="stardust-popover1" tabindex="0">
                         <div role="button" class="stardust-popover__target">
-                            <div class="navbar__link--account__container">
+                            <a href="<?php echo home_url( '/ilogin' )?>" class="navbar__link--account__container">
                                 <div class="shopee-avatar">
                                     <img class="shopee-avatar__img"
                                          src="<?php echo get_stylesheet_directory_uri() ?>/img/avatar.png">
                                 </div>
                                 <div class="navbar__username">Đăng nhập</div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </li>

@@ -95,7 +95,7 @@ add_action('login_init', 'qsoft_login_init');
 
 // frontend asset
 function qsoft_enqueue_scripts_and_styles() {
-    wp_enqueue_style('qsoft-form-css1', plugin_dir_url(__FILE__) . 'css/form.css');
+    wp_enqueue_style('qsoft-form-css', plugin_dir_url(__FILE__) . 'css/form.css');
     wp_enqueue_script('jquery');
     wp_enqueue_script('qsoft_manage_user', plugin_dir_url(__FILE__) . 'js/qsoft_manage_user.js', array(), false, true);
 }
