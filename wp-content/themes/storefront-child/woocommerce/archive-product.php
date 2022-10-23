@@ -69,7 +69,7 @@ do_action('woocommerce_before_main_content');
 
                 if (wc_get_loop_prop('total')) {
                     ?>
-                    <div class="flex_row">
+                    <div class="flex">
                         <?php
                         while (have_posts()) {
                             the_post();

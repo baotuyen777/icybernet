@@ -813,6 +813,11 @@ button._2vnl9a {
         }
     }
 }
+.comment-form-comment{
+    textarea{
+        max-height: 65px;
+    }
+}
 .woocommerce-review__published-date {
     padding-bottom: 15px;
     display: block;
@@ -907,6 +912,7 @@ form.cart {
         margin-right: 10px;
     }
 }
+
 @media (min-width: 768px) {
     .block1 {
         background: white;

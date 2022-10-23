@@ -1,10 +1,11 @@
 <?php
-add_filter('show_admin_bar', '__return_false');
+//add_filter('show_admin_bar', '__return_false');
 require 'inc/cpt.php';
 require 'inc/ctx.php';
 require 'inc/icon.php';
 require 'inc/config.php';
 require 'inc/comment_cutomize.php';
+require 'inc/customize_slug.php';
 
 //sidebar
 add_action('widgets_init', 'david_widgets_init');
