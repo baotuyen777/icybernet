@@ -62,14 +62,15 @@ $gift_condition = get_field('gift_condition');
 
                 <div class="woocommerce-product-details__short-description">
                     <div class="flex">
-                        <div class="des_label">Vận chuyển: </div>
+                        <div class="des_label">Vận chuyển:</div>
                         <div>
-                            <?php if(get_field('freeship')):?>
-                            <div class="pJhgZK"> 30.000 ₫</div>
-                            <div class="ship_fee">Miễn phí ship khi đơn hàng trên 200.000₫ <?php echo FREESHIP ?></div>
-                            <?php else:?>
+                            <?php if (get_field('freeship')): ?>
+                                <div class="pJhgZK"> 30.000 ₫</div>
+                                <div class="ship_fee">Miễn phí ship khi đơn hàng trên
+                                    200.000₫ <?php echo FREESHIP ?></div>
+                            <?php else: ?>
                                 <div class="ship_fee">Free ship <?php echo FREESHIP ?></div>
-                            <?php endif;?>
+                            <?php endif; ?>
                         </div>
 
                     </div>
@@ -141,30 +142,81 @@ $gift_condition = get_field('gift_condition');
             //            do_action('woocommerce_after_single_product_summary');
             //            call_user_func( 'comments_template', 'reviews' );
             //            comments_template('reviews')
-            comments_template('comments.php');
+            comments_template();
             ?>
         </section>
 
         <section class="white padding20">
+            <h3 class="_2N2_VN">BÌNH LUẬN</h3>
             <?php
             $commenter = wp_get_current_commenter();
-            $req = get_option('require_name_email');
-            $aria_req = ($req ? " aria-required='true'" : '');
-            $fields = array(
-                'author' => '<p class="comment-form-author">' . '<label for="author">' . __('Name') . '</label> ' . ($req ? '<span class="required">*</span>' : '') .
-                    '<input id="author" name="author" type="text" value="' . esc_attr($commenter['comment_author']) . '" size="30"' . $aria_req . ' /></p>',
-                'email' => '<p class="comment-form-email"><label for="email">' . __('Email') . '</label> ' . ($req ? '<span class="required">*</span>' : '') .
-                    '<input id="email" name="email" type="text" value="' . esc_attr($commenter['comment_author_email']) . '" size="30"' . $aria_req . ' /></p>',
-                'phone' => '<p class="comment-form-email"><label for="email">' . __('Điện thoại') . '</label> ' . ($req ? '<span class="required">*</span>' : '') .
-                    '<input id="phone" name="phone" type="text" value="" size="30"/></p>',
+            $paged = get_query_var('page') ? get_query_var('page') : 1;
+            $args = array(
+                'number' => 5,
+                'post_id' => get_the_ID(),
+//                'paged' => $paged,
+                'parent' => 0,
+                'hierarchical' => true,
+                'status' => 'approve',
+                'type' => 'comment'
             );
-            $comments_args = array(
-                'fields' => $fields,
-                'title_reply' => 'Bình luận',
-            );
-            comment_form($comments_args);
-            //            comment_form()
+            $comments = get_comments($args);
+//            comment_form();
             ?>
+
+            <div id="reviews" class="woocommerce-Reviews">
+                <div id="comments">
+                    <ol class="commentlist">
+                        <?php foreach ($comments as $comment):
+                            ?>
+                            <li class="review even thread-even depth-1" id="li-comment-34">
+                                <div id="comment-34" class="comment_container">
+                                    <img alt="" src="http://0.gravatar.com/avatar/?s=60&amp;d=mm&amp;r=g"
+                                         srcset="http://1.gravatar.com/avatar/?s=120&amp;d=mm&amp;r=g 2x"
+                                         class="avatar avatar-60 photo avatar-default" height="60" width="60"
+                                         loading="lazy">
+                                    <div class="comment-text">
+                                        <p class="meta"><strong class="woocommerce-review__author"><?php echo $comment->comment_author ?: 'Ẩn danh' ?> </strong>
+                                            <time class="woocommerce-review__published-date"
+                                                  datetime="2022-10-25T06:16:42+07:00"><?php echo $comment->comment_date?>
+                                            </time>
+                                        </p>
+                                        <div class="description"><p><?php echo $comment->comment_content ?></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li><!-- #comment-## -->
+                        <?php endforeach; ?>
+                    </ol>
+
+                </div>
+
+
+                <div class="clear"></div>
+            </div>
+
+            <form action="<?php echo get_site_url() ?>/wp-comments-post.php" method="post" id="commentform"
+                  class="comment-form" novalidate="">
+                <p class="comment-form-author">
+                    <label for="author">Tên của bạn</label>
+                    <input id="author" name="author" type="text"
+                           value="<?php echo esc_attr($commenter['comment_author']) ?>" size="30" aria-required="true">
+                </p>
+
+                <p class="comment-form-comment">
+                    <label for="comment">Nhập bình luận</label>
+                    <textarea id="comment" name="comment" cols="45" rows="4" aria-required="true"></textarea>
+                </p>
+
+                <p class="form-submit">
+                    <input name="submit" type="submit" id="submit" value="Gửi">
+                    <input type="hidden" name="comment_post_ID" value="<?php the_ID(); ?>" id="comment_post_ID">
+                    <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+                    <input type="hidden" name="type" id="comment" value="comment">
+                    <input type="hidden" name="wp-comment-cookies-consent" value="yes">
+                </p>
+            </form>
             <div class="clearfix"></div>
         </section>
     </main>

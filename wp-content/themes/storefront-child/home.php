@@ -245,7 +245,7 @@ get_header(); ?>
                 <div class="shopee-header-section__header__title"><span
                             class="OJR0Qm">Top bán chạy</span>
                 </div>
-                <a class="shopee-header-section__header-link " href="#top_sold2">Xem tất cả&nbsp;<span
+                <a class="shopee-header-section__header-link " href="<?php echo wc_get_page_permalink('shop')?>">Xem tất cả&nbsp;<span
                             class="bg_icon_round"><?php echo ARROW_GO ?></span>
                 </a>
             </div>
@@ -265,7 +265,7 @@ get_header(); ?>
                                                 src="<?php echo get_stylesheet_directory_uri() ?>/img/product_label_top.png"/>
                                     </div>
                                     <?php the_post_thumbnail('thumbnail'); ?>
-                                    <div class="pDTGqb">Bán <?php the_field('quantity_sold_in_month'); ?> / tháng</div>
+                                    <div class="pDTGqb">Đã bán <?php the_field('quantity_sold'); ?></div>
                                 </div>
                                 <div class="text-center title_2line"><?php the_title() ?></div>
                             </a>
@@ -284,7 +284,7 @@ get_header(); ?>
                             class="OJR0Qm">Gợi ý hôm nay</span>
                 </div>
                 <a class="shopee-header-section__header-link" tabindex="-1"
-                   href="#top_sold">
+                   href="<?php echo wc_get_page_permalink('shop')?>">
                     Xem tất cả&nbsp;<svg
                             enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0"
                             class="shopee-svg-icon icon-arrow-right">
@@ -315,7 +315,7 @@ get_header(); ?>
                             class="OJR0Qm">VIDEO NỔI BẬT</span>
                 </div>
 
-                <a class="shopee-header-section__header-link shopee-button-no-outline" href="#">Xem tất cả&nbsp;<svg
+                <a class="shopee-header-section__header-link shopee-button-no-outline" href="<?php echo wc_get_page_permalink('shop')?>">Xem tất cả&nbsp;<svg
                             enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0"
                             class="shopee-svg-icon icon-arrow-right">
                         <path d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z"></path>
@@ -351,7 +351,7 @@ get_header(); ?>
         <section class="container block_tech">
             <div class="shopee-header-section__header">
                 <div class="shopee-header-section__header__title">Tin công nghệ</div>
-                <a class="shopee-header-section__header-link shopee-button-no-outline" href="#">Xem tất cả&nbsp;<svg
+                <a class="shopee-header-section__header-link shopee-button-no-outline" href="<?php echo wc_get_page_permalink('shop')?>">Xem tất cả&nbsp;<svg
                             enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0"
                             class="shopee-svg-icon icon-arrow-right">
                         <path d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z"></path>
