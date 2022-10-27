@@ -4,8 +4,9 @@ require 'inc/cpt.php';
 require 'inc/ctx.php';
 require 'inc/icon.php';
 require 'inc/config.php';
-require 'inc/comment_cutomize.php';
+require 'inc/comment_customize.php';
 require 'inc/customize_slug.php';
+require 'inc/woocommerce_customize.php';
 
 //sidebar
 add_action('widgets_init', 'david_widgets_init');

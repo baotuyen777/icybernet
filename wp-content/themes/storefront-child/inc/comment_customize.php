@@ -9,3 +9,14 @@ function save_comment_meta_data($comment_id)
     }
 }
 
+// Manage comment submissions
+function preprocess_new_comment($commentdata)
+{
+    if (isset($_POST['comment_type']) && $_POST['comment_type'] == 'comment') {
+        $commentdata['comment_type'] = 'comment';
+    }
+
+    return $commentdata;
+}
+
+add_action('preprocess_comment', 'preprocess_new_comment');

@@ -37,7 +37,7 @@ get_header(); ?>
                                         class="OJR0Qm">Sản phẩm đang hot</span>
                             </div>
                             <a class="shopee-header-section__header-link" tabindex="-1"
-                               href="<?php echo wc_get_page_permalink( 'shop' ) ?>">
+                               href="<?php echo wc_get_page_permalink('shop') ?>">
                                 Xem tất cả&nbsp;<svg
                                         enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0"
                                         class="shopee-svg-icon icon-arrow-right">

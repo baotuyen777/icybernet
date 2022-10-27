@@ -103,7 +103,7 @@ if ( ! class_exists( 'CR_Reviews' ) ) :
 			$post_id = get_the_ID();
 			$html_field_attachment = '<div class="cr-upload-local-images"><div class="cr-upload-images-preview"></div>';
 			$html_field_attachment .= '<label for="review_image" class="cr-upload-images-status">';
-			$html_field_attachment .= sprintf( __( 'Upload up to %d images for your review (GIF, PNG, JPG, JPEG):', 'customer-reviews-woocommerce' ), $this->limit_file_count );
+			$html_field_attachment .= sprintf( __( 'Upload ảnh (GIF, PNG, JPG, JPEG):', 'customer-reviews-woocommerce' ), $this->limit_file_count );
 			$html_field_attachment .= '</label><input type="file" accept="image/*" multiple="multiple" name="review_image_';
 			$html_field_attachment .= $post_id . '[]" id="cr_review_image" data-nonce="' . wp_create_nonce( 'cr-upload-images-frontend' );
 			$html_field_attachment .= '" data-postid="' . $post_id . '" />';

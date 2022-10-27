@@ -87,3 +87,5 @@ jQuery(document).ready(function ($) {
     });
 
 });
+
+jQuery('#wp-comment-cookies-consent').prop('checked','checked')

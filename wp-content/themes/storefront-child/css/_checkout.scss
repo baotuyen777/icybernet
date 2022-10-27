@@ -1,0 +1,9 @@
+.shipping_method[type=radio]{
+  display: none;
+  &:not(:checked){
+    //display: none;
+    &~ label{
+      display: none;
+    }
+  }
+}

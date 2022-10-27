@@ -47,7 +47,7 @@ $gift_condition = get_field('gift_condition');
             $rating_count = $product->get_rating_count();
             $review_count = $product->get_review_count();
             $average = $product->get_average_rating();
-            $short_description = apply_filters('woocommerce_short_description', $post->post_excerpt);
+            $short_description = apply_filters('woocommerce_short_description', $post->post_excerpt);;
             ?>
             <!--        <div class="white">-->
             <div class="summary entry-summary">
@@ -57,7 +57,8 @@ $gift_condition = get_field('gift_condition');
                     <span class="rating_avg"><?php echo round($average, 1) ?></span>
                     <span class="sold_number">Đã bán <?php echo get_field('quantity_sold', $product->get_id()); ?></span>
                     <p class="<?php echo esc_attr(apply_filters('woocommerce_product_price_class', 'price')); ?>">
-                        <?php echo $product->get_price_html(); ?></p>
+                        <?php echo $product->get_price_html(); ?> <span
+                                class="alert"><?php echo getPercentSale($product) ?>% giảm</span></p>
                 </div>
 
                 <div class="woocommerce-product-details__short-description">
@@ -91,7 +92,6 @@ $gift_condition = get_field('gift_condition');
                  */
                 do_action('woocommerce_single_product_summary');
                 ?>
-
 
             </div>
             <div class="clearfix"></div>
@@ -139,7 +139,7 @@ $gift_condition = get_field('gift_condition');
              * @hooked woocommerce_upsell_display - 15
              * @hooked woocommerce_output_related_products - 20
              */
-            //            do_action('woocommerce_after_single_product_summary');
+//                        do_action('woocommerce_after_single_product_summary');
             //            call_user_func( 'comments_template', 'reviews' );
             //            comments_template('reviews')
             comments_template();
@@ -154,14 +154,13 @@ $gift_condition = get_field('gift_condition');
             $args = array(
                 'number' => 5,
                 'post_id' => get_the_ID(),
-//                'paged' => $paged,
-                'parent' => 0,
+//                'parent' => 0,
                 'hierarchical' => true,
                 'status' => 'approve',
                 'type' => 'comment'
             );
             $comments = get_comments($args);
-//            comment_form();
+
             ?>
 
             <div id="reviews" class="woocommerce-Reviews">
@@ -176,9 +175,10 @@ $gift_condition = get_field('gift_condition');
                                          class="avatar avatar-60 photo avatar-default" height="60" width="60"
                                          loading="lazy">
                                     <div class="comment-text">
-                                        <p class="meta"><strong class="woocommerce-review__author"><?php echo $comment->comment_author ?: 'Ẩn danh' ?> </strong>
+                                        <p class="meta"><strong
+                                                    class="woocommerce-review__author"><?php echo $comment->comment_author ?: 'Ẩn danh' ?> </strong>
                                             <time class="woocommerce-review__published-date"
-                                                  datetime="2022-10-25T06:16:42+07:00"><?php echo $comment->comment_date?>
+                                                  datetime="2022-10-25T06:16:42+07:00"><?php echo $comment->comment_date ?>
                                             </time>
                                         </p>
                                         <div class="description"><p><?php echo $comment->comment_content ?></p>
@@ -213,13 +213,16 @@ $gift_condition = get_field('gift_condition');
                     <input name="submit" type="submit" id="submit" value="Gửi">
                     <input type="hidden" name="comment_post_ID" value="<?php the_ID(); ?>" id="comment_post_ID">
                     <input type="hidden" name="comment_parent" id="comment_parent" value="0">
-                    <input type="hidden" name="type" id="comment" value="comment">
+                    <input type="hidden" name="comment_type" id="comment_type" value="comment">
                     <input type="hidden" name="wp-comment-cookies-consent" value="yes">
                 </p>
             </form>
             <div class="clearfix"></div>
         </section>
+        <section>
+            <?php get_template_part('template-part/products', 'upsell', ['title' => 'Sản phẩm đang hot']); ?>
+        </section>
     </main>
 </div>
 
-<?php //do_action( 'woocommerce_after_single_product' ); ?>
+<?php do_action( 'woocommerce_after_single_product' ); ?>
