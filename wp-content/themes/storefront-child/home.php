@@ -19,7 +19,7 @@ get_header(); ?>
                         $mainSlider = get_field('banner_top');
                         foreach ($mainSlider as $slide):
                             ?>
-                            <li style="width:800px; height: 235px">
+                            <li style="width:800px; height: 300px">
                                 <img src="<?php echo $slide['full_image_url'] ?>"
                                      srcset="<?php echo $slide['large_srcset'] ?>"></li>
                         <?php endforeach; ?>
@@ -319,26 +319,25 @@ get_header(); ?>
                 </a>
             </div>
             <div class="flex">
-                <?php $arrVideo = [
-                    ['label' => 'Đánh giá sạc nhanh remax', 'link' => 'https://www.youtube.com/embed/xMUeG0f4GO4'],
-                    ['label' => 'Đánh giá sạc nhanh remax', 'link' => 'https://www.youtube.com/embed/VoiDoa4s9B4'],
-                    ['label' => 'Đánh giá sạc nhanh remax', 'link' => 'https://www.youtube.com/embed/xMUeG0f4GO4'],
-                ];
-                foreach ($arrVideo as $video):
+                <?php
+                $args = array(
+                    'post_type' => 'video',
+                    'orderby' => 'id',
+                    'order' => 'ASC',
+                    'posts_per_page' => 4,
+                );
+                $posts = get_posts($args);
+                foreach ($posts as $post):
+                    setup_postdata($post);
                     ?>
-                    <div class="col-4 ">
+                    <div class="col-3 ">
                         <div class="whitebox">
-                            <iframe width="100%" max-height="300" src="<?php echo $video['link'] ?>"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
-                                picture-in-picture"
-                                    allowfullscreen></iframe>
-                            <div class="padding10"><?php echo $video['label'] ?></div>
+                            <a href="<?php the_permalink();?>" target="_blank"><?php the_post_thumbnail(); ?></a>
+                            <div class="padding10"><?php the_title()?></div>
                         </div>
-
-
                     </div>
-                <?php endforeach; ?>
+                <?php endforeach;
+                wp_reset_postdata(); ?>
 
             </div>
         </section>

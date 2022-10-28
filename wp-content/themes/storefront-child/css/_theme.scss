@@ -6,7 +6,7 @@ body {
 }
 
 .body {
-  margin-top: 70px;
+  margin-top: 88px;
 }
 
 a {
@@ -1187,8 +1187,8 @@ head {
 .full-home-banners {
   line-height: 0;
   display: flex;
-  min-height: 235px;
-  max-height: 235px;
+  //min-height: 235px;
+  //max-height: 235px;
 }
 
 .full-home-banners__full-height {
@@ -2118,6 +2118,11 @@ head {
 .no_padding {
   padding: 0 !important;
 }
+.entry-content{
+  img.wp-post-image{
+    display: none;
+  }
+}
 
 @media (-ms-high-contrast: none) {
   .hPc1Pf {
@@ -2171,10 +2176,10 @@ head {
   .col-3 {
     width: 50%;
   }
-  .full-home-banners {
-    max-height: 118px;
-    min-height: 118px;
-  }
+  //.full-home-banners {
+  //  max-height: 118px;
+  //  min-height: 118px;
+  //}
   .padding20 {
     padding: 10px !important;
   }
