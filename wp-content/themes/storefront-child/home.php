@@ -20,7 +20,8 @@ get_header(); ?>
                         foreach ($mainSlider as $slide):
                             ?>
                             <li style="width:800px; height: 235px">
-                                <img src="<?php echo $slide['full_image_url'] ?>" srcset="<?php echo $slide['large_srcset'] ?>"></li>
+                                <img src="<?php echo $slide['full_image_url'] ?>"
+                                     srcset="<?php echo $slide['large_srcset'] ?>"></li>
                         <?php endforeach; ?>
                     </ul>
                 </div>
@@ -106,6 +107,7 @@ get_header(); ?>
                     <?php require 'inc/timer.php' ?>
                     <ul class="flex">
                         <?php
+
                         $args = array(
                             'post_type' => 'product',
                             'posts_per_page' => 6,
@@ -152,7 +154,8 @@ get_header(); ?>
                                                 <div class="shMEm0 XEjq6m">
                                                     <div class="fR8rXH _15Ul6k">
                                                         <div class="HIIASx">
-                                                            <div class="Ygavkn">Đã bán <?php the_field('quantity_sold_flash'); ?></div>
+                                                            <div class="Ygavkn">Đã
+                                                                bán <?php the_field('quantity_sold_flash'); ?></div>
                                                             <div class="NiQ2DI">
                                                                 <div class="NwnNg9"
                                                                      style="width: <?php the_field('quantity_sold_flash'); ?>%;">
@@ -207,34 +210,25 @@ get_header(); ?>
                     </div>
                     <ul class="flex">
                         <?php
-                        $args = array(
-                            'post_type' => 'post',
-                            'posts_per_page' => 8,
-                            'cat' => TERM_PROMOTION
-                        );
-                        $loop = new WP_Query($args);
-                        while ($loop->have_posts()) : $loop->the_post();
-                            global $product;
-                            ?>
-                            <li class="col-3">
-                                <a target="_blank"
-                                   href="<?php the_permalink() ?>">
-                                    <?php the_post_thumbnail('thumbnail'); ?>
-                                    <div class="product_name"><?php the_title() ?> </div>
-                                </a>
-                            </li>
-                            <li class="col-3">
-                                <a target="_blank"
-                                   href="<?php the_permalink() ?>">
-                                    <?php the_post_thumbnail('thumbnail'); ?>
-                                    <div class="product_name"><?php the_title() ?> </div>
-                                </a>
-                            </li>
-                        <?php endwhile;
-                        wp_reset_query(); ?>
+                        $featured_posts = get_field('top_sale');
+                        if ($featured_posts):
+                            foreach ($featured_posts as $post):
+                                setup_postdata($post);
+                                ?>
+                                <li class="col-3">
+                                    <a target="_blank"
+                                       href="<?php the_permalink() ?>">
+                                        <?php the_post_thumbnail('thumbnail'); ?>
+                                        <div class="title_2line"><?php the_title() ?> </div>
+                                    </a>
+                                </li>
+                            <?php endforeach;
+                            wp_reset_postdata();
+                        endif;
+                        ?>
 
                     </ul>
-
+                    <div class="clearfix"></div>
                 </div>
             </div>
         </section>
@@ -245,7 +239,8 @@ get_header(); ?>
                 <div class="shopee-header-section__header__title"><span
                             class="OJR0Qm">Top bán chạy</span>
                 </div>
-                <a class="shopee-header-section__header-link " href="<?php echo wc_get_page_permalink('shop')?>">Xem tất cả&nbsp;<span
+                <a class="shopee-header-section__header-link " href="<?php echo wc_get_page_permalink('shop') ?>">Xem
+                    tất cả&nbsp;<span
                             class="bg_icon_round"><?php echo ARROW_GO ?></span>
                 </a>
             </div>
@@ -253,7 +248,7 @@ get_header(); ?>
 
             <ul class="flex">
                 <?php
-                $featured_posts = get_field('top_sale');
+                $featured_posts = get_field('top_hot');
                 if ($featured_posts):
                     foreach ($featured_posts as $post):
                         setup_postdata($post);
@@ -284,7 +279,7 @@ get_header(); ?>
                             class="OJR0Qm">Gợi ý hôm nay</span>
                 </div>
                 <a class="shopee-header-section__header-link" tabindex="-1"
-                   href="<?php echo wc_get_page_permalink('shop')?>">
+                   href="<?php echo wc_get_page_permalink('shop') ?>">
                     Xem tất cả&nbsp;<svg
                             enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0"
                             class="shopee-svg-icon icon-arrow-right">
@@ -315,7 +310,8 @@ get_header(); ?>
                             class="OJR0Qm">VIDEO NỔI BẬT</span>
                 </div>
 
-                <a class="shopee-header-section__header-link shopee-button-no-outline" href="<?php echo wc_get_page_permalink('shop')?>">Xem tất cả&nbsp;<svg
+                <a class="shopee-header-section__header-link shopee-button-no-outline"
+                   href="<?php echo wc_get_page_permalink('shop') ?>">Xem tất cả&nbsp;<svg
                             enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0"
                             class="shopee-svg-icon icon-arrow-right">
                         <path d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z"></path>
@@ -351,7 +347,8 @@ get_header(); ?>
         <section class="container block_tech">
             <div class="shopee-header-section__header">
                 <div class="shopee-header-section__header__title">Tin công nghệ</div>
-                <a class="shopee-header-section__header-link shopee-button-no-outline" href="<?php echo wc_get_page_permalink('shop')?>">Xem tất cả&nbsp;<svg
+                <a class="shopee-header-section__header-link shopee-button-no-outline"
+                   href="<?php echo wc_get_page_permalink('shop') ?>">Xem tất cả&nbsp;<svg
                             enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0"
                             class="shopee-svg-icon icon-arrow-right">
                         <path d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z"></path>

@@ -29,7 +29,8 @@ if ( $max_value && $min_value === $max_value ) {
 	?>
 	<div class="quantity">
 		<?php do_action( 'woocommerce_before_quantity_input_field' ); ?>
-		<label class="screen-reader-text" for="<?php echo esc_attr( $input_id ); ?>"><?php echo esc_attr( $label ); ?></label>
+		<label for="<?php echo esc_attr( $input_id ); ?>">Số lượng: </label>
+        <button type="button" class="minus" >-</button>
 		<input
 			type="number"
 			id="<?php echo esc_attr( $input_id ); ?>"
@@ -45,6 +46,7 @@ if ( $max_value && $min_value === $max_value ) {
 			inputmode="<?php echo esc_attr( $inputmode ); ?>"
 			autocomplete="<?php echo esc_attr( isset( $autocomplete ) ? $autocomplete : 'on' ); ?>"
 		/>
+        <button type="button" class="plus" >+</button>
 		<?php do_action( 'woocommerce_after_quantity_input_field' ); ?>
 	</div>
 	<?php

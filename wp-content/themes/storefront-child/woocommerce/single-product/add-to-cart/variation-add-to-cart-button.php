@@ -11,7 +11,7 @@ defined('ABSPATH') || exit;
 
 global $product;
 ?>
-<div class="woocommerce-variation-add-to-cart variations_button flex flex_wrap">
+<div class="quantity_wrapper">
     <?php do_action('woocommerce_before_add_to_cart_button'); ?>
 
     <?php
@@ -27,6 +27,9 @@ global $product;
 
     do_action('woocommerce_after_add_to_cart_quantity');
     ?>
+</div>
+<div class="woocommerce-variation-add-to-cart variations_button flex flex_wrap">
+
     <a href="javascript:void(Tawk_API.toggle())" class="button product_type_simple add_to_cart_button"> <?php echo CHAT ?> Chat ngay</a>
     <button type="submit"
             class="single_add_to_cart_button button alt add_to_cart_button"><?php echo CART ?>Thêm vào giỏ hàng</button>
