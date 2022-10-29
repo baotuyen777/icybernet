@@ -197,7 +197,7 @@ get_header(); ?>
                             </div>
                         </div>
                     </div>
-                    <a class="shopee-header-section__header-link" href="#">
+                    <a class="shopee-header-section__header-link" href="<?php echo wc_get_page_permalink('shop') ?>">
                         Xem tất cả
                         <span class="bg_icon_round"><?php echo ARROW_GO ?></span>
                     </a>
@@ -347,7 +347,7 @@ get_header(); ?>
             <div class="shopee-header-section__header">
                 <div class="shopee-header-section__header__title">Tin công nghệ</div>
                 <a class="shopee-header-section__header-link shopee-button-no-outline"
-                   href="<?php echo wc_get_page_permalink('shop') ?>">Xem tất cả&nbsp;<svg
+                   href="<?php echo get_category_link(TERM_NEWS) ?>">Xem tất cả&nbsp;<svg
                             enable-background="new 0 0 11 11" viewBox="0 0 11 11" x="0" y="0"
                             class="shopee-svg-icon icon-arrow-right">
                         <path d="m2.5 11c .1 0 .2 0 .3-.1l6-5c .1-.1.2-.3.2-.4s-.1-.3-.2-.4l-6-5c-.2-.2-.5-.1-.7.1s-.1.5.1.7l5.5 4.6-5.5 4.6c-.2.2-.2.5-.1.7.1.1.3.2.4.2z"></path>

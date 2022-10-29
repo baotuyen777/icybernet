@@ -100,4 +100,18 @@ jQuery(document).ready(function ($) {
 
     });
 
+
+    console.log(222);
+    $('.buy_now').onClick((event) => {
+        event.preventDefault();
+        console.log(3333)
+        return false;
+        if ($('.add_to_cart_button').hasClass('disabled')) {
+            event.preventDefault();
+            alert(1);
+            return;
+        }
+    })
+
+
 });
