@@ -101,17 +101,53 @@ jQuery(document).ready(function ($) {
     });
 
 
-    console.log(222);
-    $('.buy_now').onClick((event) => {
-        event.preventDefault();
-        console.log(3333)
-        return false;
-        if ($('.add_to_cart_button').hasClass('disabled')) {
-            event.preventDefault();
-            alert(1);
-            return;
-        }
-    })
+    // jQuery('.buy_now').on('click', (event) => {
+    //     event.preventDefault();
+    //     return false;
+    //     if ($('.add_to_cart_button').hasClass('disabled')) {
+    //         event.preventDefault();
+    //         alert(1);
+    //         return;
+    //     }
+    // })
 
+    // timer flash sale
+    const date = new Date('2022-11-04 3:05:10');
+    let h = date.getHours();
+    let m = date.getMinutes();
+    let s = date.getSeconds();
+    let timeout = null; // Timeout
+
+    function start() {
+        if (s === -1) {
+            m -= 1;
+            s = 59;
+        }
+
+        if (m === -1) {
+            h -= 1;
+            m = 59;
+        }
+
+        //  - Dừng chương trình
+        if (h == -1) {
+            clearTimeout(timeout);
+            console.log('Hết giờ');
+            return false;
+        }
+
+        /*BƯỚC 1: HIỂN THỊ ĐỒNG HỒ*/
+        document.getElementById('h').innerText = (h > 9 ? h : '0' + h).toString();
+        document.getElementById('m').innerText = (m > 9 ? m : '0' + m).toString();
+        document.getElementById('s').innerText = (s > 9 ? s : '0' + s).toString();
+
+        /*BƯỚC 2: GIẢM PHÚT XUỐNG 1 GIÂY VÀ GỌI LẠI SAU 1 GIÂY */
+        timeout = setTimeout(() => {
+            s--;
+            start()
+        }, 1000);
+    }
+
+    setTimeout(start, 100)
 
 });

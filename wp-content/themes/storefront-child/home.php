@@ -332,7 +332,7 @@ get_header(); ?>
                     ?>
                     <div class="col-3 ">
                         <div class="whitebox">
-                            <a href="<?php the_permalink();?>" target="_blank"><?php the_post_thumbnail(); ?></a>
+                            <a href="<?php the_permalink();?>" target="_blank"><?php the_post_thumbnail('thumbnail'); ?></a>
                             <div class="padding10"><?php the_title()?></div>
                         </div>
                     </div>

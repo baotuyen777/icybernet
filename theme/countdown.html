@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đồng hồ đếm ngược bằng JS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        span {
+            border: solid 1px #ACACAC;
+            padding: 2px;
+        }
+    </style>
+    <script language="javascript">
+        // var date = new Date('2022-11-04 10:00:00');
+        var date = new Date('2022-11-04 00:00:10');
+        console.log(date);
+        var h = date.getHours();
+        var m = date.getMinutes();
+        var s = date.getSeconds();
+        var timeout = null; // Timeout
+
+        function start() {
+            console.log(h);
+            if (s === -1) {
+                m -= 1;
+                s = 59;
+            }
+
+            if (m === -1) {
+                h -= 1;
+                m = 59;
+            }
+
+            //  - Dừng chương trình
+            if (h == -1) {
+                clearTimeout(timeout);
+                console.log('Hết giờ');
+                return false;
+            }
+
+            /*BƯỚC 1: HIỂN THỊ ĐỒNG HỒ*/
+            document.getElementById('h').innerText = h.toString();
+            document.getElementById('m').innerText = m.toString();
+            document.getElementById('s').innerText = s.toString();
+
+            /*BƯỚC 2: GIẢM PHÚT XUỐNG 1 GIÂY VÀ GỌI LẠI SAU 1 GIÂY */
+            timeout = setTimeout(function () {
+                s--;
+                start();
+            }, 1000);
+        }
+        setTimeout(start,100)
+    </script>
+</head>
+<body>
+<div>
+    <span id="h">Giờ</span> :
+    <span id="m">Phút</span> :
+    <span id="s">Giây</span>
+</div>
+</body>
+</html>
