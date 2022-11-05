@@ -1,6 +1,14 @@
 jQuery(".btn_show_all").on('click', function () {
     jQuery('.compact_box').toggleClass('show_all');
+    jQuery('.bg-article').toggle();
+    if(jQuery('.compact_box').hasClass('show_all')){
+        jQuery('.btn_show_all').text('Thu gọn')
+    }else{
+        jQuery('.btn_show_all').text('Xem thêm')
+    }
+
 });
+
 // jQuery(".filter_price").change(function () {
 //     var link = jQuery(this).data('link');
 //     if (this.checked) {

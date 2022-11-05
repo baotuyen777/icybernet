@@ -1093,6 +1093,10 @@ form.cart {
     margin-right: 10px;
   }
 }
+.woocommerce-product-gallery__image{
+  max-height: 500px;
+  overflow: hidden;
+}
 
 @media (min-width: 768px) {
   .block1 {
