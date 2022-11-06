@@ -48,6 +48,8 @@ $gift_condition = get_field('gift_condition');
             $review_count = $product->get_review_count();
             $average = $product->get_average_rating();
             $short_description = apply_filters('woocommerce_short_description', $post->post_excerpt);;
+
+            $percent_sale = getPercentSale($product);
             ?>
             <!--        <div class="white">-->
             <div class="summary entry-summary">
@@ -57,8 +59,11 @@ $gift_condition = get_field('gift_condition');
                     <span class="rating_avg"><?php echo round($average, 1) ?></span>
                     <span class="sold_number">Đã bán <?php echo get_field('quantity_sold', $product->get_id()); ?></span>
                     <p class="<?php echo esc_attr(apply_filters('woocommerce_product_price_class', 'price')); ?>">
-                        <?php echo $product->get_price_html(); ?> <span
-                                class="alert"><?php echo getPercentSale($product) ?>% giảm</span></p>
+                        <?php echo $product->get_price_html(); ?>
+                        <?php if ($percent_sale): ?>
+                            <span class="alert"><?php echo $percent_sale ?>% giảm</span>
+                        <?php endif; ?>
+                    </p>
                 </div>
 
                 <div class="woocommerce-product-details__short-description">
@@ -139,7 +144,7 @@ $gift_condition = get_field('gift_condition');
              * @hooked woocommerce_upsell_display - 15
              * @hooked woocommerce_output_related_products - 20
              */
-//                        do_action('woocommerce_after_single_product_summary');
+            //                        do_action('woocommerce_after_single_product_summary');
             //            call_user_func( 'comments_template', 'reviews' );
             //            comments_template('reviews')
             comments_template();
@@ -225,4 +230,4 @@ $gift_condition = get_field('gift_condition');
     </main>
 </div>
 
-<?php do_action( 'woocommerce_after_single_product' ); ?>
+<?php do_action('woocommerce_after_single_product'); ?>

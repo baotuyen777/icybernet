@@ -102,79 +102,7 @@ get_header(); ?>
         </section>
 
         <section class="container">
-            <div class="KaRq+P">
-                <div class="shopee-header-section shopee-header-section--simple">
-                    <?php require 'inc/timer.php' ?>
-                    <ul class="flex">
-                        <?php
-
-                        $args = array(
-                            'post_type' => 'product',
-                            'posts_per_page' => 6,
-                            'tax_query' => array(
-                                array(
-                                    'taxonomy' => 'group',
-                                    'field' => 'term_id',
-                                    'terms' => TERM_FLASH
-                                )
-                            )
-                        );
-                        $loop = new WP_Query($args);
-                        while ($loop->have_posts()) : $loop->the_post();
-                            global $product;
-                            ?>
-                            <li class="col-2">
-                                <div class="fR2ZHc KgcLFb">
-                                    <a href="<?php the_permalink(); ?>">
-                                        <div class="relative">
-                                            <?php if ($product->is_on_sale()): ?>
-                                                <div class="VeRrqr">
-                                                    <div class="_5ICO3M yV54ZD X7gzZ7 shopee-badge">
-                                                        <div class="_8PundJ"><span
-                                                                    class="percent">24%</span><span
-                                                                    class="tSV5KQ">giảm</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            <?php endif; ?>
-                                            <img class="product_label_bottom"
-                                                 src="<?php echo get_stylesheet_directory_uri() ?>/img/hhgt.png"/>
-
-                                            <?php echo woocommerce_get_product_thumbnail('thumbnail') ?>
-                                        </div>
-                                        <div class="TNHm44">
-                                            <div class="eHG6HN XEjq6m _0RSZ+W">
-                                                <div class="jGqYd- XEjq6m _0RSZ+W">
-                                                    <div class="R30Osg yziZbM -922Xl">
-                                                        <div class="bkz28I"><span
-                                                                    class="_7FEDbD yziZbM -922Xl">₫</span><?php echo number_format($product->get_price()) ?>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="shMEm0 XEjq6m">
-                                                    <div class="fR8rXH _15Ul6k">
-                                                        <div class="HIIASx">
-                                                            <div class="Ygavkn">Đã
-                                                                bán <?php the_field('quantity_sold_flash'); ?></div>
-                                                            <div class="NiQ2DI">
-                                                                <div class="NwnNg9"
-                                                                     style="width: <?php the_field('quantity_sold_flash'); ?>%;">
-                                                                    <div class="zYeAeX"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                        <?php endwhile;
-                        wp_reset_query(); ?>
-                    </ul>
-                </div>
-            </div>
+            <?php get_template_part('template-part/home', 'flash'); ?>
         </section>
         <section class="homepage-mall-section container white">
             <div class="shopee-header-section shopee-header-section--simple">
@@ -332,8 +260,9 @@ get_header(); ?>
                     ?>
                     <div class="col-3 ">
                         <div class="whitebox">
-                            <a href="<?php the_permalink();?>" target="_blank"><?php the_post_thumbnail('thumbnail'); ?></a>
-                            <div class="padding10"><?php the_title()?></div>
+                            <a href="<?php the_permalink(); ?>"
+                               target="_blank"><?php the_post_thumbnail('thumbnail'); ?></a>
+                            <div class="padding10"><?php the_title() ?></div>
                         </div>
                     </div>
                 <?php endforeach;

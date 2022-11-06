@@ -30,6 +30,21 @@ table.cart {
   td.product-remove {
     border-top: none !important;
   }
+
+  .product-quantity {
+    padding: 20px 0;
+    width: 120px;
+
+    .quantity {
+      label {
+        display: none;
+      }
+    }
+
+    button {
+      padding: 2px 5px;
+    }
+  }
 }
 
 #order_review {
@@ -62,11 +77,13 @@ form.checkout.woocommerce-checkout {
   .payment_method_bacs .payment_box {
     padding: 0 0 0 43px !important;
   }
-  #billing_country_field{
+
+  #billing_country_field {
     display: none;
   }
 }
-#payment .payment_methods>.wc_payment_method>label {
+
+#payment .payment_methods > .wc_payment_method > label {
   display: block;
   padding: 10px;
   cursor: pointer;

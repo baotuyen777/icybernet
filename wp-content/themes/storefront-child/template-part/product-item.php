@@ -1,4 +1,6 @@
-<?php global $product; ?>
+<?php global $product;
+$percent_sale = getPercentSale($product);
+?>
 
 <div class="product whitebox">
     <a data-sqe="link" href="<?php echo the_permalink() ?>">
@@ -7,15 +9,16 @@
             <div class="X5j9y1">
                 <div class="VGupoO wuWR8e"
                      style="color: rgb(242, 82, 32);">
-                    <span class="_6UEPfo"><?php the_field('product_label');?></span>
+                    <span class="_6UEPfo"><?php the_field('product_label'); ?></span>
                 </div>
             </div>
-            <div class="vmaKHl">
-                <div class="C2-vN- dCT7bq Od5TJM">
-                    <span class="percent">31%</span><span class="mXP-A3">giảm</span>
+            <?php if ($percent_sale): ?>
+                <div class="vmaKHl">
+                    <div class="C2-vN- dCT7bq Od5TJM">
+                        <span class="percent"><?php echo $percent_sale ?>%</span><span class="mXP-A3">giảm</span>
+                    </div>
                 </div>
-            </div>
-
+            <?php endif; ?>
             <div class="W3bJfG">
                 <div class="qUEEG4">
                     <div class="hPc1Pf">

@@ -59,6 +59,9 @@ function getPercentSale($product)
         default:
             $regular_price = (float)$product->get_regular_price();
             $sale_price = (float)$product->get_sale_price();
+            if(!$regular_price || !$sale_price){
+                return 0;
+            }
 
             if ($sale_price < $regular_price) {
                 $percentages['max'] = (($regular_price - $sale_price) / $regular_price) * 100;
