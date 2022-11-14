@@ -66,99 +66,14 @@ get_header(); ?>
         </section>
 
         <section class="container">
-            <div class="shopee-header-section shopee-header-section--simple">
-                <div class="shopee-header-section__header">
-                    <div class="shopee-header-section__header__title">Danh Mục</div>
-                </div>
-                <ul class="flex">
-                    <?php
-                    $terms = get_terms(array(
-                        'taxonomy' => 'product_cat',
-                        'hide_empty' => false,
-                        'hierarchical' => false
-                    ));
-                    foreach ($terms as $term):
-                        $thumbnail_id = get_term_meta($term->term_id, 'thumbnail_id', true);
-                        $image = wp_get_attachment_url($thumbnail_id);
-                        ?>
-                        <li class="col-1 no_padding">
-                            <div class="home-category-list__group">
-                                <a class="home-category-list__category-grid"
-                                   href="<?php echo get_term_link($term->term_id) ?>">
-                                    <div class="_1l+Pw-">
-                                        <div class="H8mXLe">
-                                            <img src="<?php echo $image ?>"/>
-                                        </div>
-                                        <div class="cZdsLQ">
-                                            <?php echo $term->name ?>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
-            </div>
+            <?php get_template_part('template-part/home', 'cats'); ?>
         </section>
 
         <section class="container">
             <?php get_template_part('template-part/home', 'flash'); ?>
         </section>
         <section class="homepage-mall-section container white">
-            <div class="shopee-header-section shopee-header-section--simple">
-                <div class="shopee-header-section__header">
-                    <div class="shopee-header-section__header__title">
-                        <div class="_9FdTU0"><a class="ecCXWo usxt6W" href="#">Siêu khuyến mại</a>
-                            <div class="_5Ru4Na pc">
-                                <div class="LetK2C"><img class="a8XyX2"
-                                                         src="<?php echo get_stylesheet_directory_uri() ?>/img/icon/doitra.png">7
-                                    ngày miễn phí trả hàng
-                                </div>
-                                <div class="LetK2C"><img class="a8XyX2"
-                                                         src="<?php echo get_stylesheet_directory_uri() ?>/img/icon/chinhhang.png">Hàng
-                                    chính hãng 100%
-                                </div>
-                                <div class="LetK2C"><img class="a8XyX2"
-                                                         src="<?php echo get_stylesheet_directory_uri() ?>/img/icon/freeshipred.png">Miễn
-                                    phí vận chuyển
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="shopee-header-section__header-link" href="<?php echo wc_get_page_permalink('shop') ?>">
-                        Xem tất cả
-                        <span class="bg_icon_round"><?php echo ARROW_GO ?></span>
-                    </a>
-                </div>
-                <div class="shopee-header-section__content">
-                    <div class="pull-left pc">
-                        <div style="width: 100%;">
-                            <img src="<?php echo get_stylesheet_directory_uri() ?>/img/banner/banner4.png">
-                        </div>
-                    </div>
-                    <ul class="flex">
-                        <?php
-                        $featured_posts = get_field('top_sale');
-                        if ($featured_posts):
-                            foreach ($featured_posts as $post):
-                                setup_postdata($post);
-                                ?>
-                                <li class="col-3">
-                                    <a target="_blank"
-                                       href="<?php the_permalink() ?>">
-                                        <?php the_post_thumbnail('thumbnail'); ?>
-                                        <div class="title_2line"><?php the_title() ?> </div>
-                                    </a>
-                                </li>
-                            <?php endforeach;
-                            wp_reset_postdata();
-                        endif;
-                        ?>
-
-                    </ul>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
+            <?php get_template_part('template-part/home', 'sales'); ?>
         </section>
 
         <!--                            section  top ban chay-->

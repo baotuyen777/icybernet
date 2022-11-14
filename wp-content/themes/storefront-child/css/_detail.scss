@@ -846,7 +846,8 @@ button._2vnl9a {
             border: 1px solid #ccc;
             outline: none;
           }
-          button{
+
+          button {
             height: 30px;
             padding: 0px 16px;
             background: white;
@@ -875,6 +876,11 @@ button._2vnl9a {
 
   .des_label {
     padding-right: 10px;
+  }
+
+  ul {
+    list-style-type: "- ";
+    margin-left: 10px;
   }
 }
 
@@ -1093,7 +1099,8 @@ form.cart {
     margin-right: 10px;
   }
 }
-.woocommerce-product-gallery__image{
+
+.woocommerce-product-gallery__image {
   max-height: 500px;
   overflow: hidden;
 }

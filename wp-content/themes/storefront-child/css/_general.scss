@@ -940,6 +940,10 @@ div[dir=auto] {
   }
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 @media (min-width: 480px) {
   .storefront-full-width-content {
     .site-main {
