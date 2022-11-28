@@ -98,12 +98,18 @@
     border-color: rgba(0, 0, 0, .12);
     box-shadow: 0 0 .8125rem 0 rgba(0, 0, 0, .05);
   }
-
-  &:before {
-    content: "";
-    display: block;
-    padding-top: 100%;
+  img{
+    margin: 0 auto;
   }
+  p{
+    margin: 10px;
+  }
+
+  //&:before {
+  //  content: "";
+  //  display: block;
+  //  padding-top: 100%;
+  //}
 }
 
 .home-page {

@@ -56,7 +56,9 @@ $gift_condition = get_field('gift_condition');
                 <div class="product_title">
                     <?php the_title('<h1 class="product_title entry-title">', '</h1>'); ?>
                     <?php echo wc_get_rating_html($average, $rating_count); // WPCS: XSS ok. ?>
-                    <span class="rating_avg"><?php echo round($average, 1) ?></span>
+                    <?php if ((float)$average>0): ?>
+                        <span class="rating_avg"><?php echo round($average, 1) ?></span>
+                    <?php endif; ?>
                     <span class="sold_number">Đã bán <?php echo get_field('quantity_sold', $product->get_id()); ?></span>
                     <p class="<?php echo esc_attr(apply_filters('woocommerce_product_price_class', 'price')); ?>">
                         <?php echo $product->get_price_html(); ?>
@@ -71,11 +73,11 @@ $gift_condition = get_field('gift_condition');
                         <div class="des_label">Vận chuyển:</div>
                         <div>
                             <?php if (get_field('freeship')): ?>
+                                <div class="ship_fee">Free ship <?php echo FREESHIP ?></div>
+                            <?php else: ?>
                                 <div class="pJhgZK"> 30.000 ₫</div>
                                 <div class="ship_fee">Miễn phí ship khi đơn hàng trên
                                     200.000₫ <?php echo FREESHIP ?></div>
-                            <?php else: ?>
-                                <div class="ship_fee">Free ship <?php echo FREESHIP ?></div>
                             <?php endif; ?>
                         </div>
 

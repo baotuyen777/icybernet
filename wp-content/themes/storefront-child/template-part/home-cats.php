@@ -18,14 +18,8 @@
                 <div class="home-category-list__group">
                     <a class="home-category-list__category-grid"
                        href="<?php echo get_term_link($term->term_id) ?>">
-                        <div class="_1l+Pw-">
-                            <div class="H8mXLe">
-                                <img src="<?php echo $image ?>"/>
-                            </div>
-                            <div >
-                                <?php echo $term->name ?>
-                            </div>
-                        </div>
+                        <img  src="<?php echo $image ?>"/>
+                        <p><?php echo $term->name ?></p>
                     </a>
                 </div>
             </li>

@@ -1,4 +1,5 @@
 table.shop_table_responsive {
+  background: white;
   tr {
     td {
       display: table-cell;
@@ -68,6 +69,7 @@ form.checkout.woocommerce-checkout {
     }
 
     .shop_table {
+
       td {
         vertical-align: middle;
       }
