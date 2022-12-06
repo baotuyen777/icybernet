@@ -104,12 +104,6 @@
   p{
     margin: 10px;
   }
-
-  //&:before {
-  //  content: "";
-  //  display: block;
-  //  padding-top: 100%;
-  //}
 }
 
 .home-page {
@@ -130,3 +124,13 @@
   }
 }
 
+.banner_sale {
+  width: 100%;
+  max-width: 384px;
+  float: left;
+  margin-right: 15px;
+}
+.card_title{
+  height: 4em;
+  padding: 5px;
+}

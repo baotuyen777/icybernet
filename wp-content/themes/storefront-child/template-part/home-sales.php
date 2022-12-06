@@ -1,3 +1,7 @@
+<?php
+$saleBanner = get_field('banner_sale') ?? get_stylesheet_directory_uri() . '/img/banner/banner4.png';
+
+?>
 <div class="shopee-header-section shopee-header-section--simple">
     <div class="shopee-header-section__header">
         <div class="shopee-header-section__header__title">
@@ -24,10 +28,8 @@
         </a>
     </div>
     <div class="shopee-header-section__content">
-        <div class="pull-left pc">
-            <div style="width: 100%;">
-                <img src="<?php echo get_stylesheet_directory_uri() ?>/img/banner/banner4.png">
-            </div>
+        <div class="banner_sale">
+            <img src="<?php echo $saleBanner ?>">
         </div>
         <ul class="flex">
             <?php

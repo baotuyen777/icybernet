@@ -4,13 +4,11 @@
  *
  * @package david
  */
-
 get_header(); ?>
-
     <main class="home-page">
         <!--    banner-->
         <section class="container">
-            <div class="full-home-banners">
+            <div class="home_banner">
                 <div id="home_slider" class="slider">
                     <a href="#" class="control_next">></a>
                     <a href="#" class="control_prev"><</a>
@@ -26,22 +24,19 @@ get_header(); ?>
                     </ul>
                 </div>
 
-                <div class="full-home-banners__right-wrapper">
-                    <a class="full-home-banners__right-banner"
-                       href="#">
-                        <div class="n-CE6j full-home-banners__full-height full-home-banners__light-background">
-                            <div class="full-home-banners__right-banner-image edy5hG"
-                                 style="background-image: url(<?php echo get_stylesheet_directory_uri() ?>/img/banner/banner3.jpg); background-size: cover; background-repeat: no-repeat;"></div>
-                        </div>
-                    </a>
-                    <a href=""
-                       class="full-home-banners__right-banner" target="_blank"
-                       rel="noopener noreferrer">
-                        <div class="n-CE6j full-home-banners__full-height full-home-banners__light-background">
-                            <div class="full-home-banners__right-banner-image edy5hG"
-                                 style="background-image: url(<?php echo get_stylesheet_directory_uri() ?>/img/banner/banner2.jpg); background-size: cover; background-repeat: no-repeat;"></div>
-                        </div>
-                    </a>
+                <div class="right_banners">
+                    <?php
+                    $mainSmall = get_field('banner_smaill');
+                    foreach ($mainSmall as $banner):
+                        $link = $banner['full_image_url'] ?? get_stylesheet_directory_uri() . '/img/banner/banner3.jpg';
+                        ?>
+                        <a href="<?php echo $banner['url'] ?? '#' ?>" target="_blank">
+                            <div class="bg_img"
+                                 style="background-image: url(<?php echo $link ?>)">
+                            </div>
+                        </a>
+
+                    <?php endforeach; ?>
                 </div>
             </div>
         </section>
@@ -146,6 +141,7 @@ get_header(); ?>
                 wp_reset_query(); ?>
             </div>
         </section>
+
         <!--video-->
         <section class="stardust-tabs-panels__panel container">
             <div class="shopee-header-section__header">
@@ -176,8 +172,8 @@ get_header(); ?>
                     <div class="col-3 ">
                         <div class="whitebox">
                             <a href="<?php the_permalink(); ?>"
-                               target="_blank"><?php the_post_thumbnail('thumbnail'); ?></a>
-                            <div class="padding10"><?php the_title() ?></div>
+                               target="_blank"><?php the_post_thumbnail('thumbnail', ['class' => 'fullwidth']); ?></a>
+                            <div class="card_title"><?php the_title() ?></div>
                         </div>
                     </div>
                 <?php endforeach;

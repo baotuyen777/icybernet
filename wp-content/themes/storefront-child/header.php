@@ -31,17 +31,17 @@
 <header class="shopee-top shopee-top--sticky">
     <div class="navbar-wrapper container-wrapper">
         <nav class="container navbar">
-            <div class="flex v-center FAQGyh">
-                <div class="">
-                    <a class="_2TLLZP" href="<?php echo get_home_url()?>">Tải ứng dụng</a></div>
-                <div class="flex _2TLLZP ZUq1cc HniJJe">Kết nối</div>
-                <div class="flex _2TLLZP FK3705"><a
-                            class="D7dyDc header-navbar-background header-navbar-facebook-png"
-                            href="https://facebook.com/icybernet" target="_blank" rel="noopener noreferrer"
-                            title="Kết nối Facebook"></a>
-                </div>
-            </div>
-            <div class="navbar__spacer"></div>
+<!--            <div class="flex v-center FAQGyh">-->
+<!--                <div class="">-->
+<!--                    <a class="_2TLLZP" href="--><?php //echo get_home_url()?><!--">Tải ứng dụng</a></div>-->
+<!--                <div class="flex _2TLLZP ZUq1cc HniJJe">Kết nối</div>-->
+<!--                <div class="flex _2TLLZP FK3705"><a-->
+<!--                            class="D7dyDc header-navbar-background header-navbar-facebook-png"-->
+<!--                            href="https://facebook.com/icybernet" target="_blank" rel="noopener noreferrer"-->
+<!--                            title="Kết nối Facebook"></a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="navbar__spacer"></div>-->
             <ul class="navbar__links">
                 <li class="navbar__link navbar__link--tappable navbar__link--hoverable navbar__link--account">
                     <div class="stardust-popover" id="stardust-popover1" tabindex="0">
@@ -65,14 +65,14 @@
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo2.png" class="logo"/>
             </a>
             <div class="header-with-search__search-section">
-                <div class="shopee-searchbar">
-                    <form role="search" class="" autocomplete="off">
+                <div class="searchbar">
+                    <form role="search" class="" autocomplete="off" action="<?php echo home_url( '/'); ?>">
                         <input
-                                aria-label="FLASH SALE -50%" class=""
+                                placeholder="FLASH SALE" class="" name="s"
                                 maxlength="128" autocomplete="off"
                                 aria-expanded="false" role="combobox" value="">
-                    </form>
-                    <button type="button"
+                        <input type="hidden" name="post_type" value="product" />
+                    <button type="submit"
                             class="btn btn-solid-primary btn--s btn--inline shopee-searchbar__search-button">
                         <svg height="19" viewBox="0 0 19 19" width="19" class="shopee-svg-icon">
                             <g fill-rule="evenodd" stroke="none" stroke-width="1">
@@ -89,6 +89,7 @@
                             </g>
                         </svg>
                     </button>
+                    </form>
                 </div>
 
             </div>
