@@ -98,7 +98,8 @@ jQuery(document).ready(function ($) {
     // })
 
     // timer flash sale
-    const date = new Date('2022-11-04 3:05:10');
+    // const date = new Date('2022-11-04 3:05:10');
+    const date = new Date('2022-12-17T03:15:00');
     let h = date.getHours();
     let m = date.getMinutes();
     let s = date.getSeconds();

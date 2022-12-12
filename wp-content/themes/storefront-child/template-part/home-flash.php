@@ -24,7 +24,7 @@
             </svg>
         </a>
     </div>
-    <ul class="flex">
+    <ul class="flex_row">
         <?php
 
         $args = array(

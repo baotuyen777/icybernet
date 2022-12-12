@@ -77,7 +77,7 @@ $gift_condition = get_field('gift_condition');
                             <?php else: ?>
                                 <div class="pJhgZK"> 30.000 ₫</div>
                                 <div class="ship_fee">Miễn phí ship khi đơn hàng trên
-                                    200.000₫ <?php echo FREESHIP ?></div>
+                                    500.000₫ <?php echo FREESHIP ?></div>
                             <?php endif; ?>
                         </div>
 

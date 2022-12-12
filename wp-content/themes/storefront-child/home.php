@@ -125,7 +125,7 @@ get_header(); ?>
                     </svg>
                 </a>
             </div>
-            <div class="flex">
+            <div class="flex_row">
                 <?php
                 $args = array(
                     'post_type' => 'product',
@@ -157,7 +157,7 @@ get_header(); ?>
                     </svg>
                 </a>
             </div>
-            <div class="flex">
+            <div class="flex_row">
                 <?php
                 $args = array(
                     'post_type' => 'video',
@@ -194,7 +194,7 @@ get_header(); ?>
                     </svg>
                 </a>
             </div>
-            <div class="flex">
+            <div class="flex_row">
                 <?php
                 $args = array(
                     'post_type' => 'post',
@@ -206,7 +206,7 @@ get_header(); ?>
                 $posts = get_posts($args);
                 foreach ($posts as $post):
                     ?>
-                    <div class="col-3">
+                    <div class="col-3 ">
                         <a href="<?php echo get_permalink($post->ID) ?>" class="whitebox">
                             <?php echo get_the_post_thumbnail($post->ID, 'thumb', array('class' => 'full')) ?>
                             <p><?php echo $post->post_title ?></p>
