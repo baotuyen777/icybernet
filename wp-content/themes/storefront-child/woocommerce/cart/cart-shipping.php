@@ -42,7 +42,7 @@ if ($is_free_ship) {
 }else{
     unset($available_methods['free_shipping:1']);
 }
-//var_dump($available_methods);
+
 ?>
 <tr class="woocommerce-shipping-totals shipping">
     <th><?php echo wp_kses_post($package_name); ?></th>
